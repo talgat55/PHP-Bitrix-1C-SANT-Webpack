@@ -6,6 +6,5 @@ $APPLICATION->SetTitle("Главная");
 ?>
 
 
-<!-- --><!-- -->
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
