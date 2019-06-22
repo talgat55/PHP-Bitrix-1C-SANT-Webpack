@@ -1,0 +1,41 @@
+
+.summer-theme #main-navigation{
+    background: #60B40C;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
+}
+#main-navigation .center-menu{
+    margin: 0;
+    padding: 0;
+
+}
+#main-navigation .center-menu li{
+    list-style: none;
+}
+#main-navigation .center-menu li a{
+    font-family: 'Playfair Display';
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 19px 30px;
+
+}
+
+.bottom #main-navigation{
+    display: inline-block;
+}
+.bottom #buy-ticket{
+    display: inline-block;
+    background: #4C8E0A;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
+}
+.bottom #buy-ticket a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Playfair Display';
+    font-size: 14px;
+    padding: 19px 24px;
+    display: inline-block;
+    font-weight: 700;
+
+}

@@ -1,36 +1,57 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Главная", 
+		"О центре", 
 		"/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Профиль", 
+		"Отзывы", 
 		"/personal/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Контент", 
+		"Новости", 
 		"/content/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Магазин", 
+		"Консультации", 
 		"/e-store/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Типовые примеры", 
+		"Контакты", 
 		"/examples/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Услуги", 
+		"", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Прайс", 
+		"", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Противодействие коррупции", 
+		"", 
 		Array(), 
 		Array(), 
 		"" 

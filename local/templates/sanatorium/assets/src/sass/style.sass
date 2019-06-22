@@ -1,2 +1,165 @@
 body
   color: red
+  font-size: 18px
+  line-height: 1.5
+
+@font-face
+  font-family: 'Playfair Display'
+  src: local('PlayfairDisplayBold'), local('PlayfairDisplayBold'),
+  url('PlayfairDisplayBold.woff') format('woff'),
+  url('PlayfairDisplayBold.ttf') format('truetype')
+  font-weight: 700
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'Playfair Display'
+  src: local('PlayfairDisplayRegular'), local('PlayfairDisplayRegular'),
+  url('PlayfairDisplayRegular.woff') format('woff'),
+  url('PlayfairDisplayRegular.ttf') format('truetype')
+  font-weight: 400
+  font-display: swap
+  font-style: normal
+
+
+
+@font-face
+  font-family: 'OpenSans'
+  src: local('OpenSans-SemiBold'), local('OpenSans-SemiBold'),
+  url('OpenSans-SemiBold.woff') format('woff'),
+  url('OpenSans-SemiBold.ttf') format('truetype')
+  font-weight: 600
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'OpenSans'
+  src: local('OpenSans-Regular'), local('OpenSans-Regular'),
+  url('OpenSans-Regular.woff') format('woff'),
+  url('OpenSans-Regular.ttf') format('truetype')
+  font-weight: 400
+  font-display: swap
+  font-style: normal
+
+
+
+//
+// Main
+//
+$font_playfair: 'Playfair Display'
+$font_opensans:  'OpenSans'
+
+$summer_main_color: #60B40C
+$winter_main_color: #3288C5
+$autumn_main_color: #D47D2D
+$spring_main_color: #D04E5D
+
+
+#primary
+  margin-left: 280px
+
+//
+// Header
+//
+header
+  width: 280px
+  overflow-y: auto
+  position: fixed
+  left: 0
+  height: 100%
+
+  #logo
+    padding: 24px 20px  20px 20px
+
+
+
+
+//
+// Top bar
+//
+#top-bar
+  background-color: #313131
+  overflow: hidden
+
+  .top
+    .list-info
+      margin: 0
+      padding: 12px 30px
+
+
+      li
+        list-style: none
+        margin-right: 30px
+
+        &:last-child
+          margin-right: 0
+        a
+          text-decoration: none
+          color: #fff
+          font-family: $font_opensans
+          font-weight: 400
+
+          p
+            margin-bottom: 0
+            padding-left: 10px
+            font-size: 12px
+
+          i
+            font-size: 16px
+
+    .list-actions
+      margin: 0
+      li
+        list-style: none
+        a
+          padding: 11px 20px
+          border-left: 1px solid rgba(255, 255, 255, 0.1)
+
+          p
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            font-family: $font_opensans
+            font-weight: 400
+            color: #fff
+            font-size: 12px
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            margin-bottom: 0
+            margin-left: 12px
+
+
+
+        .ru-img
+          display: none
+
+
+
+
+.summer-theme
+  #top-bar
+    .top
+      .list-info
+        i
+          color: $summer_main_color
+
+
+.winter-theme
+  #top-bar
+    .top
+      .list-info
+        i
+          color: $winter_main_color
+
+
+.autumn-theme
+  #top-bar
+    .top
+      .list-info
+        i
+          color: $autumn_main_color
+
+.spring-theme
+  #top-bar
+    .top
+      .list-info
+        i
+          color: $spring_main_color
