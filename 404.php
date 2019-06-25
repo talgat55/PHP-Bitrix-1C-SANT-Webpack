@@ -13,7 +13,7 @@ $APPLICATION->IncludeComponent("bitrix:main.map", ".default", Array(
 	"COL_NUM"	=>	"2",
 	"SHOW_DESCRIPTION"	=>	"Y",
 	"SET_TITLE"	=>	"Y",
-	"CACHE_TIME"	=>	"3600"
+	"CACHE_TIME"	=>	"36000000"
 	)
 );
 

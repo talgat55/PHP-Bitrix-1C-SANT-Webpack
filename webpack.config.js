@@ -123,9 +123,6 @@ const config = {
 		    fileName: '[name].js',
 		    filesToConcat: [
 		    	'jquery',
-		    	'jquery-validation',
-				'@fancyapps/fancybox',
-				'slick-carousel',
 			],
 		    attributes: {
 		        async: true

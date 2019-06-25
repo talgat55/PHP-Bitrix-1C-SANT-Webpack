@@ -101,6 +101,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_default_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_default_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
+jQuery(document).ready(function () {
+  "use strict";
+
+  lasyLoad(); // end redy function
+}); //----------------------------------
+//   Lasyload
+//---------------------------------------
+
+function lasyLoad() {
+  "use strict";
+
+  var lasyClass = jQuery('.lazy');
+
+  if (lasyClass.length) {
+    lasyClass.lazy({
+      effect: "fadeIn",
+      effectTime: 700
+    });
+  }
+}
 
 /***/ }),
 

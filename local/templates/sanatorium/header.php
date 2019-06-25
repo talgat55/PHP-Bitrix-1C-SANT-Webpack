@@ -8,17 +8,17 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 ?><!DOCTYPE html>
 <html xml:lang="<?= LANGUAGE_ID;?>" lang="<?= LANGUAGE_ID;?>" class="<?$APPLICATION->ShowProperty('HtmlClass');?>">
 <head>
-	<?$APPLICATION->ShowProperty('AfterHeadOpen');?>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title><? $APPLICATION->ShowTitle(); ?></title>
 
 
-    <?$APPLICATION->ShowHead();?>
+    <?$APPLICATION->ShowMeta("keywords")?>
+    <?$APPLICATION->ShowMeta("description")?>
     <?$APPLICATION->ShowHeadStrings()?>
+    <?$APPLICATION->ShowCSS();?>
 
-    <?$APPLICATION->ShowHeadScripts()?>
     <?php
 //    $APPLICATION->AddHeadScript('/bitrix/templates/.default/additional.js');
 //    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/assets/build/css/bootstrap.min.css");
@@ -28,9 +28,15 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
     <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH; ?>/assets/build/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH; ?>/assets/build/app.css">
 
+    <script src="<?= SITE_TEMPLATE_PATH; ?>/assets/build/global.js"></script>
+    <?$APPLICATION->ShowHeadScripts()?>
 
     <?php
-        $_GLOBAL['theme'] = 'summer';
+
+    $APPLICATION->AddHeadScript("/local/templates/sanatorium/assets/build/js/jquery.lazy.min.js");
+    $APPLICATION->AddHeadScript("/local/templates/sanatorium/assets/build/app.js");
+
+    $GLOBALS['theme'] = 'summer';
     ?>
 </head>
 
@@ -42,7 +48,7 @@ $APPLICATION->ShowPanel();
     <header>
         <div id="logo">
             <a href="/"  title="Перейти на главную страницу">
-                <img src="/images/logo.jpg" alt="логтип" />
+                <img src="/images/logo.jpg" alt="логотип" />
             </a>
         </div>
         <ul id="nav-list-services">

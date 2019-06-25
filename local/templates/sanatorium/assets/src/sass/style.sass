@@ -1,13 +1,15 @@
 body
-  color: red
+  color: #313131
   font-size: 18px
   line-height: 1.5
+  font-family: 'OpenSans'
+  font-weight: 400
 
 @font-face
   font-family: 'Playfair Display'
   src: local('PlayfairDisplayBold'), local('PlayfairDisplayBold'),
-  url('PlayfairDisplayBold.woff') format('woff'),
-  url('PlayfairDisplayBold.ttf') format('truetype')
+  url('/local/templates/sanatorium/assets/build/css/PlayfairDisplayBold.woff') format('woff'),
+  url('/local/templates/sanatorium/assets/build/css/PlayfairDisplayBold.ttf') format('truetype')
   font-weight: 700
   font-display: swap
   font-style: normal
@@ -15,8 +17,8 @@ body
 @font-face
   font-family: 'Playfair Display'
   src: local('PlayfairDisplayRegular'), local('PlayfairDisplayRegular'),
-  url('PlayfairDisplayRegular.woff') format('woff'),
-  url('PlayfairDisplayRegular.ttf') format('truetype')
+  url('/local/templates/sanatorium/assets/build/css/PlayfairDisplayRegular.woff') format('woff'),
+  url('/local/templates/sanatorium/assets/build/css/PlayfairDisplayRegular.ttf') format('truetype')
   font-weight: 400
   font-display: swap
   font-style: normal
@@ -26,8 +28,8 @@ body
 @font-face
   font-family: 'OpenSans'
   src: local('OpenSans-SemiBold'), local('OpenSans-SemiBold'),
-  url('OpenSans-SemiBold.woff') format('woff'),
-  url('OpenSans-SemiBold.ttf') format('truetype')
+  url('/local/templates/sanatorium/assets/build/css/OpenSans-SemiBold.woff') format('woff'),
+  url('/local/templates/sanatorium/assets/build/css/OpenSans-SemiBold.ttf') format('truetype')
   font-weight: 600
   font-display: swap
   font-style: normal
@@ -35,9 +37,18 @@ body
 @font-face
   font-family: 'OpenSans'
   src: local('OpenSans-Regular'), local('OpenSans-Regular'),
-  url('OpenSans-Regular.woff') format('woff'),
-  url('OpenSans-Regular.ttf') format('truetype')
+  url('/local/templates/sanatorium/assets/build/css/OpenSans-Regular.woff') format('woff'),
+  url('/local/templates/sanatorium/assets/build/css/OpenSans-Regular.ttf') format('truetype')
   font-weight: 400
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'OpenSans'
+  src: local('OpenSans-Light'), local('OpenSans-Light'),
+  url('/local/templates/sanatorium/assets/build/css/OpenSans-Light.woff') format('woff'),
+  url('/local/templates/sanatorium/assets/build/css/OpenSans-Light.ttf') format('truetype')
+  font-weight: 300
   font-display: swap
   font-style: normal
 
@@ -57,6 +68,45 @@ $spring_main_color: #D04E5D
 
 #primary
   margin-left: 280px
+.summer-theme
+  a.main-link
+    background: linear-gradient(180deg, #60B40C 0%, #4C8E0A 100%)
+
+a.main-link
+  text-decoration: none
+  color: #fff
+  padding: 14px 34px
+
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25)
+  border-radius: 100px
+  width: 260px
+  transition: all .3s
+  font-family: 'Playfair Display'
+  font-weight: 700
+  font-size: 14px
+  letter-spacing: 0.02em
+
+  &:hover
+    background: linear-gradient(180deg, #333 0%, #333 100%)
+
+  span
+    padding-right: 32px
+
+  i
+    font-size: 10px
+    color: #fff
+
+
+.sub-title
+  font-size: 28px
+  text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3)
+  margin-top: 0
+  margin-bottom: 25px
+  font-family: 'Playfair Display'
+  font-weight: 400
+
+
+
 
 //
 // Header
@@ -163,3 +213,53 @@ header
       .list-info
         i
           color: $spring_main_color
+
+
+
+
+
+
+
+//
+// Home page
+//
+
+//
+// Descriptino block
+//
+#home-sescription
+  padding-bottom: 40px
+  border-bottom: 1px solid #E5E5E5
+
+  p
+    margin-bottom: 30px
+    font-weight: 300
+
+    b
+      font-weight: 400
+
+
+
+
+
+//
+//  Key advantages
+//
+#key-advantages
+  margin-top: 50px
+
+  .sub-title
+    margin-bottom: 70px
+
+  .item
+    margin-bottom: 52px
+    .image-block
+      height: 82px
+      margin-bottom: 20px
+
+
+    .text
+      font-family: $font_opensans
+      font-weight: 600
+      font-size: 16px
+      text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3)
