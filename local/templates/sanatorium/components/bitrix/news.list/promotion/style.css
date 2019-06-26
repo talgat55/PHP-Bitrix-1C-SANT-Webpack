@@ -1,0 +1,80 @@
+#promotion-block .item .content .title a{
+    font-size: 22px;
+    text-decoration-line: underline;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    color: #4C8E0A;
+    text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
+    transition: all .3s;
+}
+#promotion-block .item .content .title a:hover{
+    color:#313131;
+                                         }
+
+#promotion-block .item .content .date{
+    font-family: 'OpenSans';
+    font-weight: 300;
+    font-size: 14px;
+    color: #313131;
+    text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
+    padding: 15px 0 20px;
+}
+#promotion-block .item .content .title{
+    margin: 0;
+    min-height: 99px;
+}
+#promotion-block .item .content .link-promotion{
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: #313131;
+    text-decoration: none;
+    padding: 8px 31px;
+    border: 0.5px solid #313131;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 100px;
+}
+
+#promotion-block .item .content .link-promotion:hover{
+    background: linear-gradient(180deg, #60B40C 0%, #4C8E0A 100%);
+    color: #fff;
+    border-color: #60B40C;
+}
+
+#promotion-block .item .content{
+    background-color: #fff;
+    padding: 28px 30px;
+}
+#promotion-block .item{
+    margin-bottom: 51px;
+}
+#promotion-block .item .img-block{
+    height: 170px;
+    box-shadow: 0px 4px 50px #6B8F1D;
+}
+#promotion-block .item .img-block img{
+    min-width: 100%;
+}
+#promotion-block .sub-title{
+    margin-bottom: 0;
+}
+#promotion-block .first-row{
+    margin-bottom: 35px;
+}
+#promotion-block{
+    padding-top: 35px;
+}
+#promotion-block a.main-link.alt{
+    margin: 0 0 0 auto;
+}
+#promotion-block{
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: bottom;
+}
+.summer-theme #promotion-block{
+    background-color: #8DB833;
+    background-image: url("/images/promotion-bg-summer.jpg");
+
+}
