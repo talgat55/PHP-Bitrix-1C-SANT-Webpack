@@ -101,10 +101,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_default_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_default_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
+
+/***/ }),
+
+/***/ "./local/templates/sanatorium/assets/src/js/default.js":
+/*!*************************************************************!*\
+  !*** ./local/templates/sanatorium/assets/src/js/default.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
 jQuery(document).ready(function () {
   "use strict";
 
-  lasyLoad(); // end redy function
+  lasyLoad();
+  yMap(); // end redy function
 }); //----------------------------------
 //   Lasyload
 //---------------------------------------
@@ -120,18 +131,36 @@ function lasyLoad() {
       effectTime: 700
     });
   }
+} //----------------------------------
+//   Map
+//---------------------------------------
+
+
+function yMap() {
+  "use strict";
+
+  var mapClass = jQuery('#map');
+
+  if (mapClass.length) {
+    ymaps.ready(function () {
+      var myMap = new ymaps.Map('map', {
+        center: [55.017798, 73.340481],
+        zoom: 13,
+        controls: []
+      }, {// searchControlProvider: 'yandex#search'
+      });
+      myMap.geoObjects.add(new ymaps.Placemark([55.017798, 73.340481], {
+        balloonContent: 'ул. Березовая, д. 1',
+        iconCaption: 'Наш офис'
+      }, {
+        preset: 'islands#greenDotIconWithCaption'
+      }));
+      myMap.behaviors.disable('scrollZoom');
+      myMap.behaviors.disable('multiTouch');
+      myMap.behaviors.disable('drag');
+    });
+  }
 }
-
-/***/ }),
-
-/***/ "./local/templates/sanatorium/assets/src/js/default.js":
-/*!*************************************************************!*\
-  !*** ./local/templates/sanatorium/assets/src/js/default.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
 
 /***/ }),
 

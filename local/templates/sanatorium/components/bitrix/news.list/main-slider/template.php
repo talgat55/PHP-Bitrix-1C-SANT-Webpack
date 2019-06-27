@@ -36,10 +36,10 @@ $this->setFrameMode(true);
             />
             <div class="container position-relative h-100">
                 <div class="row">
-                    <h1 class="main-title">
-                        <?= $arItem["NAME"] ?>
-                    </h1>
-                </div>
+                        <h1 class="main-title">
+                            <?= $arItem["NAME"] ?>
+                        </h1>
+                    </div>
             </div>
             <!--        $arItem["DISPLAY_PROPERTIES"]-->
         <?php endif; ?>

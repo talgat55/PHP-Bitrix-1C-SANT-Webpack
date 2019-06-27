@@ -50,10 +50,12 @@ body {
   margin-left: 280px;
 }
 
+.summer-theme button.main-link,
 .summer-theme a.main-link {
   background: linear-gradient(180deg, #60B40C 0%, #4C8E0A 100%);
 }
 
+button.main-link,
 a.main-link {
   text-decoration: none;
   color: #fff;
@@ -62,20 +64,23 @@ a.main-link {
   border-radius: 100px;
   width: 260px;
   transition: all .3s;
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.02em;
 }
 
+button.main-link:hover,
 a.main-link:hover {
   background: linear-gradient(180deg, #333 0%, #333 100%);
 }
 
+button.main-link span,
 a.main-link span {
   padding-right: 32px;
 }
 
+button.main-link i,
 a.main-link i {
   font-size: 10px;
   color: #fff;
@@ -89,7 +94,7 @@ a.main-link.alt {
   border-radius: 100px;
   width: 260px;
   transition: all .3s;
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -120,7 +125,7 @@ a.main-link.alt i {
   text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
   margin-top: 0;
   margin-bottom: 25px;
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-weight: 400;
 }
 
@@ -253,4 +258,190 @@ header #logo {
   font-weight: 600;
   font-size: 16px;
   text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
+}
+
+#home-contacts {
+  padding-top: 45px;
+}
+
+#home-contacts .first-block .sub-title {
+  margin-bottom: 65px;
+}
+
+#home-contacts .first-block .list-info {
+  margin: 0 0 50px;
+  padding: 0;
+}
+
+#home-contacts .first-block .list-info li {
+  list-style: none;
+  margin-bottom: 35px;
+}
+
+#home-contacts .first-block .list-info li:last-child {
+  margin-bottom: 0;
+}
+
+#home-contacts .first-block .list-info li .title {
+  font-size: 16px;
+  color: #313131;
+  font-family: "Playfair Display";
+  margin: 0 0 10px;
+}
+
+#home-contacts .first-block .list-info li a {
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #313131;
+  transition: all .3s;
+  font-family: "OpenSans";
+}
+
+#home-contacts .first-block .list-info li a.map-field {
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+#home-contacts .first-block .list-info li a.email-field {
+  font-weight: 300;
+  text-transform: lowercase;
+  text-decoration: underline;
+}
+
+#home-contacts .first-block .list-info li a.email-field:hover {
+  color: #313131 !important;
+}
+
+#home-contacts .second-block .title {
+  margin: 0 0 25px;
+  font-size: 28px;
+  color: #313131;
+  text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
+  font-family: "Playfair Display";
+}
+
+.summer-theme #home-contacts .first-block .list-info .email-field {
+  color: #60B40C;
+}
+
+#feedback-form {
+  padding: 20px 25px;
+  border: 1px solid rgba(76, 99, 139, 0.2);
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+}
+
+#feedback-form .form-group {
+  margin-bottom: 0;
+}
+
+#feedback-form *:focus,
+#feedback-form *:active {
+  outline: none;
+}
+
+#feedback-form label {
+  font-size: 12px;
+  color: #313131;
+  font-family: "Playfair Display";
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#feedback-form textarea,
+#feedback-form .text-input {
+  font-weight: 300;
+  border: none;
+  font-size: 14px;
+  color: #313131;
+  font-family: "OpenSans";
+  border-bottom: 1px solid #E5E5E5;
+  padding: 16px 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#feedback-form textarea::-webkit-input-placeholder,
+#feedback-form .text-input::-webkit-input-placeholder {
+  color: rgba(49, 49, 49, 0.4);
+  font-family: "OpenSans";
+  font-size: 14px;
+}
+
+#feedback-form textarea:-moz-placeholder,
+#feedback-form .text-input:-moz-placeholder {
+  color: rgba(49, 49, 49, 0.4);
+  font-family: "OpenSans";
+  font-size: 14px;
+}
+
+#feedback-form textarea::-moz-placeholder,
+#feedback-form .text-input::-moz-placeholder {
+  color: rgba(49, 49, 49, 0.4);
+  font-family: "OpenSans";
+  font-size: 14px;
+}
+
+#feedback-form textarea:-ms-input-placeholder,
+#feedback-form .text-input:-ms-input-placeholder {
+  color: rgba(49, 49, 49, 0.4);
+  font-family: "OpenSans";
+  font-size: 14px;
+}
+
+#feedback-form textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+#feedback-form .policy-block {
+  font-family: "OpenSans";
+  font-weight: 300;
+  font-size: 12px;
+  color: #313131;
+  text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
+}
+
+#feedback-form .policy-block a {
+  text-decoration: underline;
+  color: #313131;
+}
+
+#feedback-form button {
+  border: none;
+}
+
+.summer-theme #feedback-form .policy-block a:hover {
+  color: #60B40C;
+}
+
+#map {
+  width: 100%;
+  height: 280px;
+  margin-bottom: 50px;
+}
+
+footer {
+  border-top: 1px solid #E5E5E5;
+  padding: 40px 0 50px;
+}
+
+footer .bottom-footer {
+  margin-top: 35px;
+}
+
+footer .bottom-footer .copyright {
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 18px;
+  color: #313131;
+  font-family: "OpenSans";
+}
+
+footer .bottom-footer .link-scroll-up {
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration-line: underline;
+  color: #4C8E0A;
+  font-family: "Playfair Display";
 }

@@ -14,8 +14,7 @@ $this->setFrameMode(true);
 ?>
 <div id="promotion-block">
     <div class="container">
-        <div class="first-row row  ">
-            <div class="w-100 row d-flex justify-content-between align-items-center">
+        <div class="first-row row     d-flex justify-content-between align-items-center">
                 <div class="col-md-6 col-xs-12">
                     <h2 class="sub-title text-white">
                         Последние акции
@@ -27,13 +26,11 @@ $this->setFrameMode(true);
                         <i class="fas fa-chevron-circle-right"></i>
                     </a>
                 </div>
-            </div>
         </div>
     </div>
 
     <div class="container">
         <div class="second-row row">
-        <div class="w-100 row">
 
 
             <? foreach ($arResult["ITEMS"] as $arItem): ?>
@@ -69,7 +66,6 @@ $this->setFrameMode(true);
                 </div>
 
             <? endforeach; ?>
-        </div>
         </div>
     </div>
 

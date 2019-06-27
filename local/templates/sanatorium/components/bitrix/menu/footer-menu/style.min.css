@@ -1,0 +1,26 @@
+
+#footer-navigation .title {
+    font-size: 20px;
+    color: #313131;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    margin: 0 0 20px;
+}
+
+#footer-navigation .footer-menu li{
+    list-style: none;
+}
+#footer-navigation .footer-menu  a{
+    font-size: 14px;
+    text-decoration-line: underline;
+    color: #313131;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 15px;
+    transition: all .3s;
+}
+
+.summer-theme #footer-navigation .footer-menu  a:hover{
+    color: #60B40C;
+}

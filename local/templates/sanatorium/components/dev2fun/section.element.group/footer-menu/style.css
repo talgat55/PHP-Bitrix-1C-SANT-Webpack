@@ -1,0 +1,48 @@
+#footer-service-menu .parent-list > ul {
+	padding: 0;
+}
+#footer-service-menu .child-list{
+	padding: 0;
+	column-count: 2;
+}
+
+#footer-service-menu .parent-list  .item > a .title{
+	font-family: 'Playfair Display';
+	font-weight: 400;
+	font-size: 20px;
+	margin: 0 0 20px;
+}
+#footer-service-menu .parent-list  .item > a{
+
+	color: #313131;
+	text-decoration: none;
+
+}
+#footer-service-menu .sub-title{
+	margin-bottom: 30px;
+}
+
+
+
+#footer-service-menu > ul  li,
+#footer-service-menu .parent-list li{
+	list-style: none;
+}
+
+#footer-service-menu  .element-item a{
+	font-size: 14px;
+	text-decoration-line: underline;
+	color: #313131;
+	font-family: 'Playfair Display';
+	font-weight: 400;
+	display: inline-block;
+	margin-bottom: 15px;
+	transition: all .3s;
+}
+.summer-theme #footer-service-menu  .element-item a:hover{
+	color: #60B40C;
+}
+
+#footer-service-menu > ul li > ul{
+	padding: 0;
+}

@@ -20,7 +20,7 @@ $this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js")
 <div class="home-slider">
 <div class="container  position-relative  ">
     <div class="row ">
-
+        <div class="col-sm-12 col-xs-12">
 
         <ul class="home-slider-wrap">
 
@@ -92,6 +92,7 @@ $this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js")
                 </a>
             </li>
         </ul>
+    </div>
     </div>
 </div>
 </div>
