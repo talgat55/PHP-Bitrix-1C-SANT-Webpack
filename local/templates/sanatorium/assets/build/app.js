@@ -115,10 +115,17 @@ jQuery(document).ready(function () {
   "use strict";
 
   lasyLoad();
-  yMap(); // end redy function
-}); //----------------------------------
+  yMap();
+  menuToggle();
+  backToTop(); // end redy function
+});
+
+window.onload = function () {
+  menuLoadFirstBlock();
+}; //----------------------------------
 //   Lasyload
 //---------------------------------------
+
 
 function lasyLoad() {
   "use strict";
@@ -160,6 +167,42 @@ function yMap() {
       myMap.behaviors.disable('drag');
     });
   }
+} //------------------------
+//  Menu toggle  and click menu
+//----------------------------------
+
+
+function menuToggle() {
+  "use strict";
+
+  jQuery('#header-service-menu-list a.sub-section').click(function (e) {
+    e.preventDefault();
+    jQuery(this).next().stop().slideToggle();
+    jQuery(this).toggleClass('is-active');
+  }).next().stop().hide();
+} //------------------------
+//  Open menu first drop down after load all
+//----------------------------------
+
+
+function menuLoadFirstBlock() {
+  "use strict";
+
+  jQuery('#header-service-menu-list .item:first-child  a.sub-section').trigger('click');
+} // ---------------------------------------------------------
+// Back To Top
+// ---------------------------------------------------------
+
+
+function backToTop() {
+  "use strict";
+
+  jQuery(document).on('click', '.link-scroll-up', function (e) {
+    e.preventDefault();
+    jQuery('body,html').animate({
+      scrollTop: 0
+    }, jQuery(window).scrollTop() / 3, 'linear');
+  });
 }
 
 /***/ }),

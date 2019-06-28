@@ -1,0 +1,91 @@
+#header-service-menu #header-service-menu-list{
+    margin: 0;
+    padding: 0;
+}
+
+#header-service-menu #header-service-menu-list li .child-list{
+    padding: 0;
+}
+#header-service-menu #header-service-menu-list li .sub-section i{
+    font-size: 10px;
+}
+#header-service-menu #header-service-menu-list li .sub-section{
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 20px;
+}
+.summer-theme #header-service-menu #header-service-menu-list li .sub-section{
+    background: #60B40C;
+}
+#header-service-menu #header-service-menu-list li .sub-section:hover{
+    text-decoration: none;
+    background: #313131;
+}
+
+#header-service-menu #header-service-menu-list li .child-list .element-item  .arrow-hover{
+    display: none;
+}
+#header-service-menu #header-service-menu-list li .child-list .element-item a{
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #313131;
+    padding: 10px 20px;
+    border-bottom: 1px solid #F5F5F5;
+    display: inline-block;
+}
+
+.summer-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover{
+    background: #60B40C;
+}
+#header-service-menu #header-service-menu-list li .child-list .element-item a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.summer-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover  .arrow-main,
+.summer-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover  .main-icon{
+    display: none;
+}
+.summer-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover  .arrow-hover,
+.summer-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover  .hover-icon{
+    display: inline-block!important;
+}
+
+#header-service-menu #header-service-menu-list li .child-list .element-item:last-child a{
+    border: none;
+}
+
+
+#header-service-menu #header-service-menu-list .child-list{
+    display: none;
+}
+#header-service-menu #header-service-menu-list li{
+    list-style: none;
+}
+
+#header-service-menu #header-service-menu-list  .images-icon img{
+    width: 16px;
+    height: 16px;
+}
+
+#header-service-menu #header-service-menu-list  .images-icon .hover-icon{
+    display: none;
+}
+
+#header-service-menu #header-service-menu-list   .fa-chevron-circle-right{
+    transition: all .3s;
+}
+#header-service-menu #header-service-menu-list  .is-active .fa-chevron-circle-right{
+    transform: rotateZ(-90deg);
+}
+#header-service-menu #header-service-menu-list  .images-icon{
+    margin-right: 12px;
+}
+
+
+
+

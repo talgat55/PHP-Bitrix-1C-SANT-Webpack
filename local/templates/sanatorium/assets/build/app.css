@@ -129,6 +129,30 @@ a.main-link.alt i {
   font-weight: 400;
 }
 
+.link-feedback {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 20px;
+  margin-top: 30px;
+  font-family: "Playfair Display";
+}
+
+.link-feedback:hover {
+  background: #313131 !important;
+  color: #fff;
+  text-decoration: none;
+}
+
+.link-feedback i {
+  color: #fff;
+  font-size: 10px;
+}
+
+.summer-theme .link-feedback {
+  background: #4C8E0A;
+}
+
 header {
   width: 280px;
   overflow-y: auto;
@@ -444,4 +468,25 @@ footer .bottom-footer .link-scroll-up {
   text-decoration-line: underline;
   color: #4C8E0A;
   font-family: "Playfair Display";
+  transition: all .3s;
+}
+
+footer .bottom-footer .link-scroll-up:hover {
+  color: #313131;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f8f8f8;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #313131;
 }

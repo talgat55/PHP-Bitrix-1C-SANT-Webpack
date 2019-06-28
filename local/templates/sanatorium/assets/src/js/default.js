@@ -1,14 +1,18 @@
-
 jQuery(document).ready(function () {
     "use strict";
 
 
     lasyLoad();
     yMap();
-
-
+    menuToggle();
+    backToTop();
     // end redy function
 });
+
+
+window.onload = function () {
+    menuLoadFirstBlock();
+};
 
 
 //----------------------------------
@@ -32,18 +36,18 @@ function lasyLoad() {
 //----------------------------------
 //   Map
 //---------------------------------------
-function  yMap(){
+function yMap() {
     "use strict";
     var mapClass = jQuery('#map');
     if (mapClass.length) {
         ymaps.ready(function () {
             var myMap = new ymaps.Map('map', {
-                    center: [55.017798, 73.340481],
-                    zoom: 13,
-                    controls: []
-                }, {
-                    // searchControlProvider: 'yandex#search'
-                });
+                center: [55.017798, 73.340481],
+                zoom: 13,
+                controls: []
+            }, {
+                // searchControlProvider: 'yandex#search'
+            });
 
 
             myMap.geoObjects
@@ -58,8 +62,48 @@ function  yMap(){
             myMap.behaviors.disable('drag');
 
 
-
-
         });
     }
+}
+
+
+//------------------------
+//  Menu toggle  and click menu
+//----------------------------------
+function menuToggle() {
+    "use strict";
+
+    jQuery('#header-service-menu-list a.sub-section').click(function (e) {
+        e.preventDefault();
+        jQuery(this).next().stop().slideToggle();
+        jQuery(this).toggleClass('is-active');
+
+    }).next().stop().hide();
+
+}
+
+//------------------------
+//  Open menu first drop down after load all
+//----------------------------------
+function menuLoadFirstBlock() {
+    "use strict";
+
+    jQuery('#header-service-menu-list .item:first-child  a.sub-section').trigger('click');
+
+}
+
+
+
+// ---------------------------------------------------------
+// Back To Top
+// ---------------------------------------------------------
+function backToTop(){
+    "use strict";
+
+    jQuery(document).on('click','.link-scroll-up',function(e){
+        e.preventDefault();
+
+        jQuery('body,html').animate({scrollTop: 0}, jQuery(window).scrollTop()/3, 'linear');
+    });
+
 }

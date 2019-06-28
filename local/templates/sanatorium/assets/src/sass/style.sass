@@ -146,8 +146,26 @@ a.main-link.alt
   font-family: $font_playfair
   font-weight: 400
 
+.link-feedback
+  display: inline-block
+  text-decoration: none
+  color: #fff
+  padding: 15px 20px
+  margin-top: 30px
+  font-family: $font_playfair
+  &:hover
+    background: #313131!important
+    color: #fff
+    text-decoration: none
+
+  i
+    color: #fff
+    font-size: 10px
 
 
+
+.summer-theme  .link-feedback
+  background: #4C8E0A
 
 //
 // Header
@@ -456,9 +474,22 @@ footer
       text-decoration-line: underline
       color: #4C8E0A
       font-family: $font_playfair
+      transition: all .3s
+
+      &:hover
+        color: #313131
 
 
 
 
 
+::-webkit-scrollbar
+  width: 10px
 
+/* Track */
+::-webkit-scrollbar-track
+  background: #f8f8f8
+
+/* Handle */
+::-webkit-scrollbar-thumb
+  background: #313131
