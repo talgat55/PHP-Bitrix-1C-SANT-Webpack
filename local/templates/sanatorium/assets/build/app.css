@@ -519,3 +519,81 @@ footer .bottom-footer .link-scroll-up:hover {
 ::-webkit-scrollbar-thumb {
   background: #313131;
 }
+
+.page-contacts .block-contact .title {
+  font-weight: 400;
+  font-size: 28px;
+  color: #313131;
+  font-family: "Playfair Display";
+  margin-bottom: 30px;
+}
+
+.page-contacts .list-info {
+  margin: 0 0 50px;
+  padding: 0;
+}
+
+.page-contacts .list-info li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.page-contacts .list-info li .heading {
+  font-family: "OpenSans";
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.page-contacts .list-info .main .first {
+  font-weight: 400;
+  font-size: 20px;
+  color: #313131;
+  font-family: "Playfair Display";
+}
+
+.page-contacts .list-info .main .second a {
+  font-weight: 300;
+  font-size: 20px;
+  color: #313131;
+  font-family: "OpenSans";
+  text-decoration: none;
+}
+
+.page-contacts .list-info .main .second a span {
+  font-weight: 700;
+}
+
+.page-contacts .list-info-two {
+  margin: 0 0 70px;
+  padding: 0;
+}
+
+.page-contacts .list-info-two li {
+  margin-bottom: 15px;
+  list-style: none;
+  font-family: "OpenSans";
+  font-size: 18px;
+  color: #000000;
+  font-weight: 300;
+}
+
+.page-contacts .list-info-two li a {
+  text-decoration: underline;
+  transition: all .3s;
+}
+
+.page-contacts .list-info-two li a:hover {
+  color: #313131;
+}
+
+.page-contacts .list-info-two li .heading {
+  font-weight: 600;
+  padding-right: 5px;
+}
+
+.summer-theme .page-contacts .list-info-two a {
+  color: #60B40C;
+}
