@@ -48,6 +48,7 @@ body {
 
 #primary {
   margin-left: 280px;
+  box-shadow: -10px 0px 40px rgba(0, 0, 0, 0.12);
 }
 
 .summer-theme button.main-link,
@@ -151,6 +152,34 @@ a.main-link.alt i {
 
 .summer-theme .link-feedback {
   background: #4C8E0A;
+}
+
+.main-title {
+  margin-top: 0;
+  font-size: 38px;
+  color: #FFFFFF;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  margin-bottom: 40px;
+  padding: 12px 8px;
+  display: inline-block;
+}
+
+.summer-theme .main-title {
+  background-color: #60B40C;
+}
+
+.pagination-wrapper .load-more {
+  margin: 0 auto 70px auto;
+  background: #4E9D89 !important;
+}
+
+.pagination-wrapper .load-more:hover {
+  background: #313131 !important;
+}
+
+.pagination-wrapper .load-more span {
+  padding-right: 82px;
 }
 
 header {
