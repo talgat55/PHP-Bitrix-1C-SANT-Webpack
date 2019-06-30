@@ -2,21 +2,21 @@
 $aMenuLinks = Array(
 	Array(
 		"О центре", 
-		"/", 
+		"/about", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Отзывы", 
-		"/personal/", 
+		"/reviews/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Новости", 
-		"/content/", 
+		"/news/", 
 		Array(), 
 		Array(), 
 		"" 
@@ -30,7 +30,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Контакты", 
-		"/examples/", 
+		"/contacts/", 
 		Array(), 
 		Array(), 
 		"" 
