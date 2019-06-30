@@ -597,3 +597,108 @@ footer .bottom-footer .link-scroll-up:hover {
 .summer-theme .page-contacts .list-info-two a {
   color: #60B40C;
 }
+
+.page-about p {
+  font-family: "OpenSans";
+  font-weight: 300;
+}
+
+.page-about .title {
+  font-size: 28px;
+  font-family: "Playfair Display";
+  font-weight: 400;
+}
+
+.page-about .bg-about {
+  position: relative;
+}
+
+.page-about .bg-about img {
+  width: 100%;
+}
+
+.page-about .content {
+  position: absolute;
+  bottom: 40px;
+}
+
+.page-about .content .bx-breadcrumb {
+  width: 100%;
+  color: #fff;
+}
+
+.page-about .content .bx-breadcrumb span,
+.page-about .content .bx-breadcrumb a {
+  color: #fff;
+}
+
+.page-about .block-about {
+  margin-top: 40px;
+}
+
+.page-about .about-list {
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.page-about .about-list li {
+  margin-bottom: 10px;
+  list-style: none;
+  position: relative;
+  font-family: "OpenSans";
+  font-weight: 300;
+  font-size: 18px;
+  color: #000000;
+  padding-left: 25px;
+}
+
+.page-about .about-list li::before {
+  content: "";
+  background: url(/images/about-icon-summer.png);
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 11px;
+  height: 11px;
+}
+
+.page-about .special-block {
+  padding: 30px 40px;
+  background: #FBFBFB;
+  font-family: "OpenSans";
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.page-about .about-list-links {
+  margin: 0 0 70px;
+  padding: 0;
+}
+
+.page-about .about-list-links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.page-about .about-list-links li a {
+  font-size: 18px;
+  text-decoration-line: underline;
+  font-family: "OpenSans";
+  transition: all .3s;
+}
+
+.page-about .about-list-links li a:hover {
+  color: #313131;
+  text-decoration: none;
+}
+
+.summer-theme .page-about .about-list-links li a,
+.summer-theme .page-about .special-block {
+  color: #60B40C;
+}
+
+.summer-theme .page-about .main-title {
+  background: rgba(96, 180, 12, 0.8);
+}

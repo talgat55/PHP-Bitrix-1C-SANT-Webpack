@@ -33,7 +33,8 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     <?php
 
     $APPLICATION->AddHeadScript("/local/templates/sanatorium/assets/build/js/jquery.lazy.min.js");
-    if ($APPLICATION->GetCurPage(false) === '/') {
+
+    if ($APPLICATION->GetCurPage(false) === '/' ||  $APPLICATION->GetCurPage(false) === '/about/'  ) {
 
         $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
 

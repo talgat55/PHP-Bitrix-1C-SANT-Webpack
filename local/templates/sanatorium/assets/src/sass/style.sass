@@ -594,6 +594,97 @@ footer
 
 
 
+//
+// About
+//
+.page-about
+  p
+    font-family: $font_opensans
+    font-weight: 300
+
+  .title
+    font-size: 28px
+    font-family: $font_playfair
+    font-weight: 400
+
+  .bg-about
+    position: relative
+    img
+      width: 100%
+
+  .content
+    position: absolute
+    bottom: 40px
+
+    .bx-breadcrumb
+      width: 100%
+      color: #fff
+      span,
+      a
+        color: #fff
+
+  .block-about
+    margin-top: 40px
+
+  .about-list
+    margin-bottom: 25px
+    padding: 0
+    li
+      margin-bottom: 10px
+      list-style: none
+      position: relative
+      font-family: $font_opensans
+      font-weight: 300
+      font-size: 18px
+      color: #000000
+      padding-left: 25px
+
+      &::before
+          content: ""
+          background: url(/images/about-icon-summer.png)
+          display: block
+          position: absolute
+          top: 10px
+          left: 0
+          width: 11px
+          height: 11px
+
+  .special-block
+    padding: 30px 40px
+    background: #FBFBFB
+    font-family: $font_opensans
+    margin-bottom: 40px
+    font-weight: 600
+    font-size: 18px
+
+  .about-list-links
+    margin: 0 0 70px
+    padding: 0
+
+    li
+      list-style: none
+      margin-bottom: 10px
+      a
+        font-size: 18px
+        text-decoration-line: underline
+        font-family: $font_opensans
+        transition: all .3s
+        &:hover
+          color: #313131
+          text-decoration: none
+
+
+
+
+
+
+
+.summer-theme .page-about .about-list-links  li a,
+.summer-theme .page-about .special-block
+  color: $summer_main_color
+
+.summer-theme .page-about .main-title
+  background: rgba(96,180 ,12 ,.8)
 
 
 
