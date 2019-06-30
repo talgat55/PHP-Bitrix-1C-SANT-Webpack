@@ -1,0 +1,35 @@
+.page-news .bx-breadcrumb{
+	width: 100%;
+}
+.news-list{
+	padding: 0;
+	margin: 0 -15px;
+
+}
+.news-list li  .title{
+	font-weight: 400;
+	font-size: 22px;
+	text-decoration-line: underline;
+	font-family: 'Playfair Display';
+	transition: all .3s;
+	margin-top: 25px;
+	margin-bottom: 14px;
+	display: inline-block;
+}
+.news-list li  .title:hover{
+	color: #313131!important;
+}
+.news-list li .news-date-time{
+	font-weight: 300;
+	font-size: 14px;
+	color: #313131;
+	font-family: "OpenSans";
+}
+.news-list li {
+	list-style: none;
+	margin-bottom: 40px;
+}
+
+.summer-theme .news-list li  .title{
+	color: #60B40C;
+}
