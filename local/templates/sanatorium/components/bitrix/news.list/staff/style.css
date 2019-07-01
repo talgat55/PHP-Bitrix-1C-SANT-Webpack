@@ -1,0 +1,33 @@
+.staff-list{
+    margin: 0;
+    padding: 0;
+}
+.staff-list li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.staff-list .staff-item img{
+    min-width: 100%;
+}
+
+.staff-list .staff-item .title{
+    font-weight: 700;
+    font-size: 18px;
+    display: inline-block;
+    font-family: 'Playfair Display';
+    margin: 15px 0 10px;
+}
+
+.staff-list .staff-item .position{
+    font-weight: 300;
+    font-size: 14px;
+    color: #313131;
+    font-family: 'OpenSans';
+    min-height: 60px;
+
+}
+
+.summer-theme .staff-list .staff-item .title{
+    color: #60B40C;
+}

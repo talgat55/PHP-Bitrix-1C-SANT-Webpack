@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("news");
 	"bitrix:news", 
 	"news-page", 
 	array(
-		"ADD_ELEMENT_CHAIN" => "N",
+		"ADD_ELEMENT_CHAIN" => "Y",
 		"ADD_SECTIONS_CHAIN" => "N",
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
@@ -32,7 +32,7 @@ $APPLICATION->SetTitle("news");
 			0 => "",
 			1 => "",
 		),
-		"DETAIL_SET_CANONICAL_URL" => "N",
+		"DETAIL_SET_CANONICAL_URL" => "Y",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "Y",
 		"DISPLAY_NAME" => "Y",
@@ -64,8 +64,8 @@ $APPLICATION->SetTitle("news");
 		"PAGER_TEMPLATE" => ".default",
 		"PAGER_TITLE" => "Новости",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"SEF_MODE" => "N",
-		"SET_LAST_MODIFIED" => "N",
+		"SEF_MODE" => "Y",
+		"SET_LAST_MODIFIED" => "Y",
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "Y",
 		"SHOW_404" => "N",
@@ -82,9 +82,11 @@ $APPLICATION->SetTitle("news");
 		"USE_SEARCH" => "N",
 		"USE_SHARE" => "N",
 		"COMPONENT_TEMPLATE" => "news-page",
-		"VARIABLE_ALIASES" => array(
-			"SECTION_ID" => "SECTION_ID",
-			"ELEMENT_ID" => "ELEMENT_ID",
+		"SEF_FOLDER" => "/news/",
+		"SEF_URL_TEMPLATES" => array(
+			"news" => "",
+			"section" => "",
+			"detail" => "#ELEMENT_ID#/",
 		)
 	),
 	false

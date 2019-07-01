@@ -702,3 +702,46 @@ footer .bottom-footer .link-scroll-up:hover {
 .summer-theme .page-about .main-title {
   background: rgba(96, 180, 12, 0.8);
 }
+
+.news-detail .img-block img {
+  max-width: 100%;
+}
+
+.news-detail .title {
+  font-size: 28px;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  color: #313131;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.news-detail .news-date-time {
+  font-weight: 300;
+  font-size: 20px;
+  font-family: "OpenSans";
+  color: rgba(49, 49, 49, 0.6);
+  margin-bottom: 40px;
+}
+
+.news-detail .content {
+  font-weight: 300;
+  font-size: 18px;
+  color: #000000;
+  font-family: "OpenSans";
+}
+
+.page-beststaff .bx-breadcrumb {
+  width: 100%;
+}
+
+.page-beststaff .pre-block {
+  margin-bottom: 40px;
+}
+
+.page-beststaff .pre-block .title {
+  font-weight: 400;
+  font-size: 28px;
+  color: #313131;
+  font-family: "Playfair Display";
+}
