@@ -173,7 +173,12 @@ $APPLICATION->ShowPanel();
         <div id="top-bar">
             <div class="top">
                 <div class="row">
-                    <div class="first col-lg-6 col-xs-12">
+                    <div class="first col-lg-6 col-xs-12 d-flex align-items-center">
+                        <a id="mobile-toggle" href="#menu" class="mobile-toggle hamburger hamburger--collapse hamburger--3dx  ">
+                                 <span class="hamburger-box">
+                                     <span class="hamburger-inner"></span>
+                                 </span>
+                        </a>
                         <ul class="list-info d-flex">
                             <li>
                                 <a class="d-flex align-items-center" href="tel:+7 (3812) 23-15-32">

@@ -55,7 +55,7 @@ $this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js")
 
                         <? } ?>
                         <? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])): ?>
-                            <div class="blog-img col-md-6 col-xs-12">
+                            <div class="blog-img col-md-6 col-xs-12 d-flex  align-center-items">
 
 
                                 <img

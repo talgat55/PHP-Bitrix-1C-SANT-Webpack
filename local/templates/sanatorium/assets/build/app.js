@@ -117,7 +117,8 @@ jQuery(document).ready(function () {
   lasyLoad();
   yMap();
   menuToggle();
-  backToTop(); // end redy function
+  backToTop();
+  mobileMenu(); // end redy function
 });
 
 window.onload = function () {
@@ -202,6 +203,22 @@ function backToTop() {
     jQuery('body,html').animate({
       scrollTop: 0
     }, jQuery(window).scrollTop() / 3, 'linear');
+  });
+} //----------------------------------
+//   Mobile Menu
+//------------------------------------
+
+
+function mobileMenu() {
+  "use strict";
+
+  let menuClass = '#mobile-toggle';
+  let mobileClass = jQuery('header');
+  let bodyClass = 'body';
+  jQuery(bodyClass).on('click', menuClass, function () {
+    mobileClass.toggleClass('is-active');
+    jQuery(menuClass).toggleClass('is-active');
+    return false;
   });
 }
 

@@ -2,7 +2,7 @@
 <div class="bottom  ">
     <div class="row  ">
         <? if (!empty($arResult)): ?>
-            <nav id="main-navigation" class="col-md-10  col-xs-12">
+            <nav id="main-navigation" class="col-md-10  col-xs-12 d-flex align-items-center">
 
 
                 <ul class="center-menu  d-flex">
