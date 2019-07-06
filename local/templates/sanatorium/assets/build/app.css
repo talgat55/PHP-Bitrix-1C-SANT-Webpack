@@ -49,7 +49,7 @@ body {
 #primary {
   margin-left: 280px;
   box-shadow: -10px 0px 40px rgba(0, 0, 0, 0.12);
-  z-index: 111111;
+  z-index: 1000;
   position: relative;
 }
 
@@ -548,21 +548,26 @@ header.is-active {
   color: #60B40C;
 }
 
+#booking-form,
 #feedback-form {
   padding: 20px 25px;
   border: 1px solid rgba(76, 99, 139, 0.2);
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
 }
 
+#booking-form .form-group,
 #feedback-form .form-group {
   margin-bottom: 0;
 }
 
+#booking-form *:focus,
+#booking-form *:active,
 #feedback-form *:focus,
 #feedback-form *:active {
   outline: none;
 }
 
+#booking-form label,
 #feedback-form label {
   font-size: 12px;
   color: #313131;
@@ -571,6 +576,8 @@ header.is-active {
   width: 100%;
 }
 
+#booking-form textarea,
+#booking-form .text-input,
 #feedback-form textarea,
 #feedback-form .text-input {
   font-weight: 300;
@@ -584,6 +591,8 @@ header.is-active {
   margin-bottom: 20px;
 }
 
+#booking-form textarea::-webkit-input-placeholder,
+#booking-form .text-input::-webkit-input-placeholder,
 #feedback-form textarea::-webkit-input-placeholder,
 #feedback-form .text-input::-webkit-input-placeholder {
   color: #313131;
@@ -591,6 +600,8 @@ header.is-active {
   font-size: 14px;
 }
 
+#booking-form textarea:-moz-placeholder,
+#booking-form .text-input:-moz-placeholder,
 #feedback-form textarea:-moz-placeholder,
 #feedback-form .text-input:-moz-placeholder {
   color: #313131;
@@ -598,6 +609,8 @@ header.is-active {
   font-size: 14px;
 }
 
+#booking-form textarea::-moz-placeholder,
+#booking-form .text-input::-moz-placeholder,
 #feedback-form textarea::-moz-placeholder,
 #feedback-form .text-input::-moz-placeholder {
   color: #313131;
@@ -605,6 +618,8 @@ header.is-active {
   font-size: 14px;
 }
 
+#booking-form textarea:-ms-input-placeholder,
+#booking-form .text-input:-ms-input-placeholder,
 #feedback-form textarea:-ms-input-placeholder,
 #feedback-form .text-input:-ms-input-placeholder {
   color: #313131;
@@ -612,11 +627,38 @@ header.is-active {
   font-size: 14px;
 }
 
+#booking-form textarea,
 #feedback-form textarea {
   resize: none;
   overflow: hidden;
 }
 
+#booking-form select,
+#feedback-form select {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #E5E5E5;
+  width: 100%;
+  padding: 16px 0;
+  color: #313131;
+  font-family: "OpenSans";
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+#booking-form .icon-select,
+#feedback-form .icon-select {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-24%);
+}
+
+#booking-form .policy-block,
 #feedback-form .policy-block {
   font-family: "OpenSans";
   font-weight: 300;
@@ -624,15 +666,23 @@ header.is-active {
   color: #313131;
 }
 
+#booking-form .policy-block a,
 #feedback-form .policy-block a {
   text-decoration: underline;
   color: #313131;
 }
 
+#booking-form button,
 #feedback-form button {
   border: none;
 }
 
+.summer-theme #booking-form .icon-select,
+.summer-theme #feedback-form .icon-select {
+  color: #60B40C;
+}
+
+.summer-theme #booking-form .policy-block a:hover,
 .summer-theme #feedback-form .policy-block a:hover {
   color: #60B40C;
 }
@@ -900,10 +950,6 @@ footer .bottom-footer .link-scroll-up:hover {
   font-family: "OpenSans";
 }
 
-.page-beststaff .bx-breadcrumb {
-  width: 100%;
-}
-
 .page-beststaff .pre-block {
   margin-bottom: 40px;
 }
@@ -913,6 +959,35 @@ footer .bottom-footer .link-scroll-up:hover {
   font-size: 28px;
   color: #313131;
   font-family: "Playfair Display";
+}
+
+#ticket-block {
+  background: url(/images/bg-ticket.jpg);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  padding: 80px 0;
+  background-position-y: center !important;
+}
+
+#ticket-block #booking-form {
+  background-color: #fff;
+}
+
+#ticket-block #booking-form button.main-link {
+  margin-top: 25px;
+}
+
+.page-ticket .bx-breadcrumb,
+.page-beststaff .bx-breadcrumb {
+  width: 100%;
+}
+
+.page-ticket .describe-ticket-block,
+.page-beststaff .describe-ticket-block {
+  margin-top: 40px;
+  font-size: 12px;
+  font-family: "OpenSans";
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1400px) {

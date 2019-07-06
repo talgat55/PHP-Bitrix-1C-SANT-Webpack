@@ -77,7 +77,7 @@ $spring_main_color: #D04E5D
 #primary
   margin-left: 280px
   box-shadow: -10px 0px 40px rgba(0, 0, 0, 0.12)
-  z-index: 111111
+  z-index: 1000
   position: relative
 
 .summer-theme button.main-link,
@@ -542,6 +542,8 @@ header
 //
 //
 //
+
+#booking-form,
 #feedback-form
   padding: 20px 25px
   border: 1px solid rgba(76, 99, 139, 0.2)
@@ -579,6 +581,26 @@ header
     resize: none
     overflow: hidden
 
+  select
+    border: none
+    background: transparent
+    border-bottom: 1px solid #E5E5E5
+    width: 100%
+    padding: 16px 0
+    color: #313131
+    font-family: $font_opensans
+    font-weight: 600
+    font-size: 20px
+    -webkit-appearance: none
+    -moz-appearance: none
+    text-indent: 1px
+    text-overflow: ''
+
+  .icon-select
+    position: absolute
+    right: 16px
+    top: 50%
+    transform: translateY(-24%)
   .policy-block
     font-family: $font_opensans
     font-weight: 300
@@ -594,6 +616,13 @@ header
 
 
 .summer-theme
+  #booking-form,
+  #feedback-form
+    .icon-select
+      color: $summer_main_color
+
+.summer-theme
+  #booking-form,
   #feedback-form
     .policy-block
       a:hover
@@ -849,8 +878,6 @@ footer
 // Best staff
 //
 .page-beststaff
-  .bx-breadcrumb
-    width: 100%
   .pre-block
     margin-bottom: 40px
     .title
@@ -858,6 +885,34 @@ footer
       font-size: 28px
       color: #313131
       font-family: $font_playfair
+
+
+//
+//  Buy ticket page
+//
+#ticket-block
+  background: url(/images/bg-ticket.jpg)
+  background-repeat: no-repeat!important
+  background-size: cover!important
+  padding: 80px 0
+  background-position-y: center!important
+  #booking-form
+    background-color: #fff
+
+    button.main-link
+      margin-top: 25px
+
+.page-ticket,
+.page-beststaff
+  .bx-breadcrumb
+    width: 100%
+
+  .describe-ticket-block
+    margin-top: 40px
+    font-size: 12px
+    font-family: $font_opensans
+    margin-bottom: 10px
+
 
 
 @media (max-width: 1400px)
