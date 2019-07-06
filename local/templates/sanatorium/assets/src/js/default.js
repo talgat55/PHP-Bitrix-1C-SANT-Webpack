@@ -7,6 +7,7 @@ jQuery(document).ready(function () {
     menuToggle();
     backToTop();
     mobileMenu();
+    hideLeftMenuOnScroll();
     // end redy function
 });
 
@@ -129,3 +130,24 @@ function mobileMenu(){
 
 
 }
+
+
+//----------------------------------
+//   Mobile Menu
+//------------------------------------
+function hideLeftMenuOnScroll(){
+    "use strict";
+    var menuClass           = '#mobile-toggle';
+    var headerClass         = 'header';
+
+    jQuery(window).scroll(function(){
+        var  scroll = jQuery(window).scrollTop();
+
+        if (scroll >= 120) {
+            jQuery(menuClass +', '+headerClass).removeClass('is-active');
+        }
+
+    });
+
+}
+

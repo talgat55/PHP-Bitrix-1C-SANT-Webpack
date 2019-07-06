@@ -133,7 +133,8 @@ $APPLICATION->SetTitle("Главная");
                             специализированная Здравница-2013».</b> Форум проходил 20-23 мая в г.Сочи.
                     </p>
                     <a href="#" class=" d-flex align-items-center main-link">
-                        Подробнее о центре <i class="fas fa-chevron-circle-right"></i> </a>
+                        <span>Подробнее о центре</span>
+                        <i class="fas fa-chevron-circle-right"></i> </a>
                 </div>
             </div>
         </div>

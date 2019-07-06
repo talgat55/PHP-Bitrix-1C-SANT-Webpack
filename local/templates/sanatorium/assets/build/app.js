@@ -118,7 +118,8 @@ jQuery(document).ready(function () {
   yMap();
   menuToggle();
   backToTop();
-  mobileMenu(); // end redy function
+  mobileMenu();
+  hideLeftMenuOnScroll(); // end redy function
 });
 
 window.onload = function () {
@@ -219,6 +220,23 @@ function mobileMenu() {
     mobileClass.toggleClass('is-active');
     jQuery(menuClass).toggleClass('is-active');
     return false;
+  });
+} //----------------------------------
+//   Mobile Menu
+//------------------------------------
+
+
+function hideLeftMenuOnScroll() {
+  "use strict";
+
+  var menuClass = '#mobile-toggle';
+  var headerClass = 'header';
+  jQuery(window).scroll(function () {
+    var scroll = jQuery(window).scrollTop();
+
+    if (scroll >= 120) {
+      jQuery(menuClass + ', ' + headerClass).removeClass('is-active');
+    }
   });
 }
 

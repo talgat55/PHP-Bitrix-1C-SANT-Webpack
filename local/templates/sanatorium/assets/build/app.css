@@ -8,7 +8,7 @@ body {
 
 @font-face {
   font-family: 'Playfair Display';
-  src: local("PlayfairDisplayBold"), local("PlayfairDisplayBold"), url("/local/templates/sanatorium/assets/build/css/PlayfairDisplayBold.woff") format("woff"), url("/local/templates/sanatorium/assets/build/css/PlayfairDisplayBold.ttf") format("truetype");
+  src: local("PlayfairDisplayBold"), local("PlayfairDisplayBold"), url("/local/templates/sanatorium/assets/build/css/Modern-Bold.woff") format("woff"), url("/local/templates/sanatorium/assets/build/css/Modern-Bold.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -16,7 +16,7 @@ body {
 
 @font-face {
   font-family: 'Playfair Display';
-  src: local("PlayfairDisplayRegular"), local("PlayfairDisplayRegular"), url("/local/templates/sanatorium/assets/build/css/PlayfairDisplayRegular.woff") format("woff"), url("/local/templates/sanatorium/assets/build/css/PlayfairDisplayRegular.ttf") format("truetype");
+  src: local("PlayfairDisplayRegular"), local("PlayfairDisplayRegular"), url("/local/templates/sanatorium/assets/build/css/Modern-Regular.woff") format("woff"), url("/local/templates/sanatorium/assets/build/css/Modern-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -49,6 +49,8 @@ body {
 #primary {
   margin-left: 280px;
   box-shadow: -10px 0px 40px rgba(0, 0, 0, 0.12);
+  z-index: 111111;
+  position: relative;
 }
 
 .summer-theme button.main-link,
@@ -87,6 +89,10 @@ a.main-link i {
   color: #fff;
 }
 
+button.main-link i {
+  padding-left: 32px;
+}
+
 a.main-link.alt {
   text-decoration: none;
   background: #fff;
@@ -123,7 +129,6 @@ a.main-link.alt i {
 
 .sub-title {
   font-size: 28px;
-  text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
   margin-top: 0;
   margin-bottom: 25px;
   font-family: "Playfair Display";
@@ -407,7 +412,7 @@ header.is-active {
 }
 
 #top-bar .top .list-actions li a {
-  padding: 11px 20px;
+  padding: 20px;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -417,8 +422,7 @@ header.is-active {
   font-family: "OpenSans";
   font-weight: 400;
   color: #fff;
-  font-size: 12px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 8px;
   margin-bottom: 0;
   margin-left: 12px;
 }
@@ -478,7 +482,6 @@ header.is-active {
   font-family: "OpenSans";
   font-weight: 600;
   font-size: 16px;
-  text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
 }
 
 #home-contacts {
@@ -538,7 +541,6 @@ header.is-active {
   margin: 0 0 25px;
   font-size: 28px;
   color: #313131;
-  text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
   font-family: "Playfair Display";
 }
 
@@ -584,28 +586,28 @@ header.is-active {
 
 #feedback-form textarea::-webkit-input-placeholder,
 #feedback-form .text-input::-webkit-input-placeholder {
-  color: rgba(49, 49, 49, 0.4);
+  color: #313131;
   font-family: "OpenSans";
   font-size: 14px;
 }
 
 #feedback-form textarea:-moz-placeholder,
 #feedback-form .text-input:-moz-placeholder {
-  color: rgba(49, 49, 49, 0.4);
+  color: #313131;
   font-family: "OpenSans";
   font-size: 14px;
 }
 
 #feedback-form textarea::-moz-placeholder,
 #feedback-form .text-input::-moz-placeholder {
-  color: rgba(49, 49, 49, 0.4);
+  color: #313131;
   font-family: "OpenSans";
   font-size: 14px;
 }
 
 #feedback-form textarea:-ms-input-placeholder,
 #feedback-form .text-input:-ms-input-placeholder {
-  color: rgba(49, 49, 49, 0.4);
+  color: #313131;
   font-family: "OpenSans";
   font-size: 14px;
 }
@@ -620,7 +622,6 @@ header.is-active {
   font-weight: 300;
   font-size: 12px;
   color: #313131;
-  text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
 }
 
 #feedback-form .policy-block a {

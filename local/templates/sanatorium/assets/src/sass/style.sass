@@ -8,8 +8,8 @@ body
 @font-face
   font-family: 'Playfair Display'
   src: local('PlayfairDisplayBold'), local('PlayfairDisplayBold'),
-  url('/local/templates/sanatorium/assets/build/css/PlayfairDisplayBold.woff') format('woff'),
-  url('/local/templates/sanatorium/assets/build/css/PlayfairDisplayBold.ttf') format('truetype')
+  url('/local/templates/sanatorium/assets/build/css/Modern-Bold.woff') format('woff'),
+  url('/local/templates/sanatorium/assets/build/css/Modern-Bold.ttf') format('truetype')
   font-weight: 700
   font-display: swap
   font-style: normal
@@ -17,8 +17,8 @@ body
 @font-face
   font-family: 'Playfair Display'
   src: local('PlayfairDisplayRegular'), local('PlayfairDisplayRegular'),
-  url('/local/templates/sanatorium/assets/build/css/PlayfairDisplayRegular.woff') format('woff'),
-  url('/local/templates/sanatorium/assets/build/css/PlayfairDisplayRegular.ttf') format('truetype')
+  url('/local/templates/sanatorium/assets/build/css/Modern-Regular.woff') format('woff'),
+  url('/local/templates/sanatorium/assets/build/css/Modern-Regular.ttf') format('truetype')
   font-weight: 400
   font-display: swap
   font-style: normal
@@ -77,6 +77,8 @@ $spring_main_color: #D04E5D
 #primary
   margin-left: 280px
   box-shadow: -10px 0px 40px rgba(0, 0, 0, 0.12)
+  z-index: 111111
+  position: relative
 
 .summer-theme button.main-link,
 .summer-theme a.main-link
@@ -106,6 +108,9 @@ a.main-link
   i
     font-size: 10px
     color: #fff
+button.main-link
+  i
+    padding-left: 32px
 
 a.main-link.alt
   text-decoration: none
@@ -141,7 +146,6 @@ a.main-link.alt
 
 .sub-title
   font-size: 28px
-  text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3)
   margin-top: 0
   margin-bottom: 25px
   font-family: $font_playfair
@@ -376,7 +380,7 @@ header
       li
         list-style: none
         a
-          padding: 11px 20px
+          padding: 20px
           border-left: 1px solid rgba(255, 255, 255, 0.1)
 
           p
@@ -385,8 +389,7 @@ header
             font-family: $font_opensans
             font-weight: 400
             color: #fff
-            font-size: 12px
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            font-size: 8px
             margin-bottom: 0
             margin-left: 12px
 
@@ -476,7 +479,6 @@ header
       font-family: $font_opensans
       font-weight: 600
       font-size: 16px
-      text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3)
 
 
 //
@@ -528,7 +530,6 @@ header
       margin: 0 0 25px
       font-size: 28px
       color: #313131
-      text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3)
       font-family: $font_playfair
 
 
@@ -570,7 +571,7 @@ header
     width: 100%
     margin-bottom: 20px
     +placeholder
-      color: rgba(49, 49, 49, 0.4)
+      color: #313131
       font-family: $font_opensans
       font-size: 14px
 
@@ -583,7 +584,6 @@ header
     font-weight: 300
     font-size: 12px
     color: #313131
-    text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3)
 
     a
       text-decoration: underline
