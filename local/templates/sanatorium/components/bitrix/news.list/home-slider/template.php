@@ -35,9 +35,11 @@ $this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js")
                         <div class="text">
                             ' . $arItem["PREVIEW_TEXT"] . '
                         </div>
-                        <a href="#" class="link-more d-flex align-items-center main-link" >
-                        <span>Подробнее об услуге </span>
-                        <i class="fas fa-chevron-circle-right"></i>
+                        <a href="#" class="link-more d-flex align-items-center main-link  justify-content-center" >
+                        <div>
+                            <span>Подробнее об услуге </span>
+                            <i class="fas fa-chevron-circle-right"></i>
+                        </div>
                         </a>
 
                     </div>';

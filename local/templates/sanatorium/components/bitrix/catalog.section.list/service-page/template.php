@@ -60,32 +60,30 @@ if ('Y' == $arParams['SHOW_PARENT_NAME'] && 0 < $arResult['SECTION']['ID']) {
         );
         ?></a></h1><?
 }
-if (0 < $arResult["SECTIONS_COUNT"]) {
-    ?>
-    <div class="swtich-cat-services-block">
+if (0 < $arResult["SECTIONS_COUNT"]) { ?>
+    <div class="w-100">
+        <div class="swtich-cat-services-block">
+            <ul class="swtich-cat-services d-flex">
+                <?php
+                foreach ($arResult['SECTIONS'] as $key => &$arSection) {
 
 
-    <ul class="swtich-cat-services d-flex">
-        <?php
-        foreach ($arResult['SECTIONS'] as  $key => &$arSection) {
+                    $this->AddEditAction($arSection['ID'], $arSection['EDIT_LINK'], $strSectionEdit);
+                    $this->AddDeleteAction($arSection['ID'], $arSection['DELETE_LINK'], $strSectionDelete, $arSectionDeleteParams);
+                    ?>
+                <li id="<? echo $arSection['ID']; ?>" class=" <?php echo ($key == 0) ? 'active' : ''; ?>">
+                    <a href="#" data-id="<? echo $arSection['ID']; ?>">
+                        <? echo $arSection['NAME']; ?>
+
+                    </a>
+                    </li><?
+                }
 
 
-            $this->AddEditAction($arSection['ID'], $arSection['EDIT_LINK'], $strSectionEdit);
-            $this->AddDeleteAction($arSection['ID'], $arSection['DELETE_LINK'], $strSectionDelete, $arSectionDeleteParams);
-            ?>
-            <li id="<? echo $arSection['ID']; ?>" class=" <?php  echo  ($key == 0)  ?  'active' : ''; ?>" >
-                <a href="#"   data-id="<? echo $arSection['ID']; ?>">
-                    <? echo $arSection['NAME']; ?>
-
-                </a>
-            </li><?
-        }
-
-
-        ?>
-    </ul>
+                ?>
+            </ul>
+        </div>
     </div>
-    <?
-    echo('LINE' != $arParams['VIEW_MODE'] ? '<div style="clear: both;"></div>' : '');
+    <? echo('LINE' != $arParams['VIEW_MODE'] ? '<div style="clear: both;"></div>' : '');
 }
 ?>

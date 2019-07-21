@@ -9,7 +9,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <title><? $APPLICATION->ShowTitle(); ?></title>
 
 
@@ -51,11 +51,18 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 <?
 $APPLICATION->ShowPanel();
 ?>
-<main class="<? $APPLICATION->ShowProperty('MainClass'); ?>">
+<main class="<? $APPLICATION->ShowProperty('MainClass'); ?>   position-relative">
     <header>
         <div id="logo">
             <a href="/" title="Перейти на главную страницу">
-                <img src="/images/logo.jpg" alt="логотип"/>
+                <div class="img-block d-flex justify-content-between ">
+                    <img style="max-width: 100%;" src="/images/logo-left.png" alt="Логотип">
+                    <img style="max-width: 100%;"  src="/images/logo-right.png" alt="Логотип">
+                </div>
+                <div class="text-block">
+                    <div class="first">«Омский»</div>
+                    <div class="second">центр реабилитации</div>
+                </div>
             </a>
         </div>
         <? $APPLICATION->IncludeComponent(
@@ -169,16 +176,17 @@ $APPLICATION->ShowPanel();
 ); ?>
 
     </header>
+    <a id="mobile-toggle" href="#menu" class="mobile-toggle hamburger hamburger--collapse hamburger--3dx  ">
+                                 <span class="hamburger-box">
+                                     <span class="hamburger-inner"></span>
+                                 </span>
+    </a>
     <div id="primary">
         <div id="top-bar">
             <div class="top">
                 <div class="row">
                     <div class="first col-lg-6 col-xs-12 d-flex align-items-center">
-                        <a id="mobile-toggle" href="#menu" class="mobile-toggle hamburger hamburger--collapse hamburger--3dx  ">
-                                 <span class="hamburger-box">
-                                     <span class="hamburger-inner"></span>
-                                 </span>
-                        </a>
+
                         <ul class="list-info d-flex">
                             <li>
                                 <a class="d-flex align-items-center" href="tel:+7 (3812) 23-15-32">

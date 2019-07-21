@@ -24,8 +24,11 @@
             </nav>
         <? endif ?>
         <div id="buy-ticket" class="col-md-2 col-xs-12">
-            <a href="#">
-                Купить путевку
+            <a href="#" class="d-flex align-items-center justify-content-between">
+                <p>
+                    Купить путевку
+                </p>
+                <img src="/images/ticker-icon.png" alt="иконка" />
             </a>
         </div>
     </div>

@@ -46,13 +46,14 @@
     color: #fff;
     text-decoration: none;
 }
-.summer-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover  .arrow-main,
-.summer-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover  .main-icon{
+.summer-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover  .arrow-main {
     display: none;
 }
-.summer-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover  .arrow-hover,
-.summer-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover  .hover-icon{
+.summer-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover  .arrow-hover {
     display: inline-block!important;
+}
+.summer-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover svg path {
+    fill: white;
 }
 
 #header-service-menu #header-service-menu-list li .child-list .element-item:last-child a{

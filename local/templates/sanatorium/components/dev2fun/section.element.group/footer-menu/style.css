@@ -36,7 +36,6 @@
 	font-family: 'Playfair Display';
 	font-weight: 400;
 	display: inline-block;
-	margin-bottom: 15px;
 	transition: all .3s;
 }
 .summer-theme #footer-service-menu  .element-item a:hover{

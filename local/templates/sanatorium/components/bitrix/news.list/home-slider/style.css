@@ -14,6 +14,9 @@
     list-style: none;
     background-color: #fff;
 }
+.home-slider-wrap .blog-img img {
+    height: auto;
+}
 .home-slider-wrap .blog-img{
     background: url("/images/home-slider-mask.png");
     position: relative;

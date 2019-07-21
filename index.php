@@ -132,9 +132,14 @@ $APPLICATION->SetTitle("Главная");
                         Центр реабилитации «Омский» был <b>награжден золотой медалью в номинации «Лучшая
                             специализированная Здравница-2013».</b> Форум проходил 20-23 мая в г.Сочи.
                     </p>
-                    <a href="#" class=" d-flex align-items-center main-link">
-                        <span>Подробнее о центре</span>
-                        <i class="fas fa-chevron-circle-right"></i> </a>
+
+                    <a href="#" class=" d-flex align-items-center main-link justify-content-center">
+                        <div >
+                            <span>Подробнее о центре</span>
+                            <i class="fas fa-chevron-circle-right"></i>
+                        </div>
+                    </a>
+
                 </div>
             </div>
         </div>

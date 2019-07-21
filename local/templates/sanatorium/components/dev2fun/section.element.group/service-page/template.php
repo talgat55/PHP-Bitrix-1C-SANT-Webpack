@@ -20,7 +20,7 @@
 $this->setFrameMode(true);
 $GLOBALS['arParams'] = $arParams;
 ?>
-<div class="service-list">
+<div class="service-list w-100">
     <?if($arParams["DISPLAY_TOP_PAGER"]):?>
         <?=$arResult["NAV_STRING"]?><br />
     <?endif;?>

@@ -154,6 +154,11 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
                 </a>
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-12 col-xs-12 text-center">
+                <a target="_blank" class="bottom-copyright" title="Перейти на сайт разработчика" href="http://asmart-group.ru/">Сайт разработан IT-company <span>ASMART</span></a>
+            </div>
+        </div>
     </div>
 </footer>
 </div>

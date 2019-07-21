@@ -7,17 +7,20 @@
                 <ul class="list-info">
                     <li>
                         <h4 class="title">
-                            Позвоните нам </h4>
+                            Позвоните нам
+                        </h4>
                         <a href="tel:+7 (3812) 23-15-32" class="phone-field">
                             +7 (3812) 23-15-32 </a></li>
                     <li>
                         <h4 class="title">
-                            Адрес клиники </h4>
+                            Адрес клиники
+                        </h4>
                         <a href="#" class="map-field">
                             Ул. Березовая, д. 1 </a></li>
                     <li>
                         <h4 class="title">
-                            E-mail </h4>
+                            Почта
+                        </h4>
                         <a href="mailto:sanom@mail.ru" class="email-field">
                             sanom@mail.ru </a></li>
                 </ul>

@@ -17,12 +17,10 @@ $APPLICATION->SetTitle("contacts");
                             Контакты
                         </h1>
                     </div>
-
-
                 </div>
                 <div class="col-md-7 col-xs-12">
                     <div class="row">
-                        <div class="block-contact">
+                        <div class="block-contact w-100">
                             <h2 class="title">
                                 Служба бронирования и размещения
                             </h2>
@@ -95,12 +93,12 @@ $APPLICATION->SetTitle("contacts");
                                         ФБУ Центр реабилитации ФСС РФ «Омский»
                                     </div>
                                 </li>
-                                <li class="item d-flex" >
+                                <li class="item d-flex">
                                     <span class="heading">
                                       Юр. адрес:
                                     </span>
                                     <div class="main  ">
-                                        644012, г.Омск, ул. Березовая, д.1 <a href="#" >Схема проезда</a>
+                                        644012, г.Омск, ул. Березовая, д.1 <a href="#">Схема проезда</a>
                                     </div>
                                 </li>
                                 <li class="item d-flex">
@@ -128,7 +126,8 @@ $APPLICATION->SetTitle("contacts");
                                        Банк:
                                     </span>
                                     <div class="main  ">
-                                        УФК по Омской области (ФБУ Центр реабилитации Фонда социального страхования Российской Федерации "Омский" л/сч 20526Щ20910)
+                                        УФК по Омской области (ФБУ Центр реабилитации Фонда социального страхования
+                                        Российской Федерации "Омский" л/сч 20526Щ20910)
                                     </div>
                                 </li>
                                 <li class="item d-flex">
@@ -136,7 +135,7 @@ $APPLICATION->SetTitle("contacts");
                                        Р/c:
                                     </span>
                                     <div class="main  ">
-                                        40501810552092000001  /
+                                        40501810552092000001 /
                                         <span class="heading">
                                         БИК:
                                         </span>

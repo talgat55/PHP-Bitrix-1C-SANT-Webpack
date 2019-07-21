@@ -12,6 +12,15 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
+<? $APPLICATION->IncludeComponent(
+    "bitrix:breadcrumb",
+    "main",
+    Array(
+        "PATH" => "",
+        "SITE_ID" => "s1",
+        "START_FROM" => "0"
+    )
+); ?>
 <?$ElementID = $APPLICATION->IncludeComponent(
 	"bitrix:news.detail",
 	"",
