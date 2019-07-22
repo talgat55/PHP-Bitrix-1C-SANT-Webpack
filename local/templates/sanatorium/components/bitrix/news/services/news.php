@@ -26,7 +26,6 @@ $this->setFrameMode(true);
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-xs-12">
-                <div class="row">
 
                     <h1 class="main-title  ">
                         Услуги
@@ -166,7 +165,6 @@ $this->setFrameMode(true);
                             "TEMP_OUTPUT_SECTIONS" => "subSection.php"
                         )
                     ); ?>
-                </div>
             </div>
         </div>
     </div>

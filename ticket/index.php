@@ -6,7 +6,6 @@ $APPLICATION->SetTitle("Купить путевку");
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-xs-12">
-                    <div class="row">
                         <? $APPLICATION->IncludeComponent("bitrix:breadcrumb", "main-plain", Array(
                             "PATH" => "",    // Путь, для которого будет построена навигационная цепочка (по умолчанию, текущий путь)
                             "SITE_ID" => "s1",    // Cайт (устанавливается в случае многосайтовой версии, когда DOCUMENT_ROOT у сайтов разный)
@@ -107,8 +106,6 @@ $APPLICATION->SetTitle("Купить путевку");
                                 </div>
                             </form>
                         </div>
-
-                    </div>
                 </div>
             </div>
         </div>

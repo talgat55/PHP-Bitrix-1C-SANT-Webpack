@@ -12,14 +12,12 @@ $APPLICATION->SetTitle("contacts");
         <div class="row">
             <div class="main-content w-100  page-contacts">
                 <div class="col-md-12 col-xs-12">
-                    <div class="row">
+
                         <h1 class="main-title">
                             Контакты
                         </h1>
-                    </div>
                 </div>
                 <div class="col-md-7 col-xs-12">
-                    <div class="row">
                         <div class="block-contact w-100">
                             <h2 class="title">
                                 Служба бронирования и размещения
@@ -75,11 +73,9 @@ $APPLICATION->SetTitle("contacts");
                             </ul>
 
                         </div>
-                    </div>
 
                 </div>
                 <div class="col-md-12 col-xs-12">
-                    <div class="row">
                         <div class="block-contact">
                             <h2 class="title">
                                 Реквизиты
@@ -146,7 +142,6 @@ $APPLICATION->SetTitle("contacts");
                             </ul>
 
                         </div>
-                    </div>
 
                 </div>
             </div>

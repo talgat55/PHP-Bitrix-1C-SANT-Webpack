@@ -24,7 +24,7 @@
             </nav>
         <? endif ?>
         <div id="buy-ticket" class="col-md-2 col-xs-12">
-            <a href="#" class="d-flex align-items-center justify-content-between">
+            <a href="/ticket/" class="d-flex align-items-center justify-content-between">
                 <p>
                     Купить путевку
                 </p>

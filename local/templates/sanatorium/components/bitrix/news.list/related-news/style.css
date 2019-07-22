@@ -39,6 +39,7 @@
     font-family: 'Playfair Display';
     font-weight: 400;
     transition: all .3s;
+    text-decoration: none;
 }
 
 .summer-theme #news-block .item .content .title a{

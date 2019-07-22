@@ -9,7 +9,7 @@ $APPLICATION->SetTitle("about");
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-xs-12">
-                            <div class="row">
+
                                 <? $APPLICATION->IncludeComponent("bitrix:breadcrumb", "main-plain", Array(
                                     "PATH" => "",    // Путь, для которого будет построена навигационная цепочка (по умолчанию, текущий путь)
                                     "SITE_ID" => "s1",    // Cайт (устанавливается в случае многосайтовой версии, когда DOCUMENT_ROOT у сайтов разный)
@@ -20,7 +20,6 @@ $APPLICATION->SetTitle("about");
                                 <h1 class="main-title">
                                     О центре
                                 </h1>
-                            </div>
                         </div>
                     </div>
                 </div>
