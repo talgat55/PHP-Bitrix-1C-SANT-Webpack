@@ -20,6 +20,10 @@
     margin: 15px 0 10px;
 }
 
+.staff-list .staff-item {
+    max-width: 20%;
+    margin-bottom: 30px;
+}
 .staff-list .staff-item .position{
     font-weight: 300;
     font-size: 14px;
