@@ -1029,6 +1029,63 @@ footer .bottom-footer .link-scroll-up:hover {
   margin-bottom: 10px;
 }
 
+#block-contacts {
+  margin-bottom: 50px;
+}
+
+#block-contacts .first-block {
+  top: 0;
+}
+
+#block-contacts .first-block .sub-title {
+  margin-bottom: 40px;
+}
+
+#block-contacts .first-block .list-info {
+  margin: 0 0 50px;
+  padding: 0;
+}
+
+#block-contacts .first-block .list-info li {
+  list-style: none;
+  margin-bottom: 35px;
+}
+
+#block-contacts .first-block .list-info li:last-child {
+  margin-bottom: 0;
+}
+
+#block-contacts .first-block .list-info li .title {
+  font-size: 16px;
+  color: #313131;
+  font-family: "Playfair Display";
+  margin: 0 0 10px;
+  padding: 0;
+  background-color: transparent !important;
+}
+
+#block-contacts .first-block .list-info li a {
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #313131;
+  transition: all .3s;
+  font-family: "OpenSans";
+}
+
+#block-contacts .first-block .list-info li a:hover {
+  color: #313131 !important;
+}
+
+#block-contacts .second-block .title {
+  margin: 0 0 25px;
+  font-size: 28px;
+  color: #313131;
+  font-family: "Playfair Display";
+  background-color: transparent;
+  padding: 0;
+}
+
 @media (max-width: 1538px) {
   #main-navigation .center-menu li a {
     padding: 19px 15px;

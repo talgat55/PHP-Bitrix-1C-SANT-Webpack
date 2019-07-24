@@ -1,0 +1,185 @@
+.service-page-detail .service-detail .detail_picture{
+    width: 100%;
+    height: auto;
+}
+
+
+.service-page-detail .service-detail .img-wrapper{
+    height: 500px;
+    overflow: hidden;
+}
+
+.service-page-detail .service-detail  .wrapper-slider{
+    margin-bottom: 60px;
+}
+.service-page-detail .service-detail  .first-block{
+    position: relative;
+    top: -240px;
+    margin-bottom: -240px;
+}
+
+
+.service-page-detail .service-detail .bx-breadcrumb a,
+.service-page-detail .service-detail .bx-breadcrumb ,
+.service-page-detail .service-detail .bx-breadcrumb span{
+    color: #fff;
+}
+
+
+.service-page-detail .service-detail .title{
+    font-family: 'Playfair Display';
+    font-size: 38px;
+    color: #fff;
+    margin: 0 0 30px;
+    padding: 10px;
+
+}
+.service-page-detail.summer-theme .service-detail .title{
+    background-color: #60B40C;
+}
+
+
+.service-page-detail .service-detail .short-text-block{
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.service-page-detail .service-detail .short-text-block .sub-title-detail{
+    font-size: 28px;
+    font-family: 'Playfair Display';
+    margin-bottom: 30px;
+}
+
+.service-page-detail .service-detail .short-text-block .content{
+    font-weight: 300;
+}
+
+.service-page-detail .service-detail .short-text-block .icon {
+    position: absolute;
+    right: -20px;
+    bottom: -15px;
+}
+.service-page-detail .service-detail .short-text-block .icon svg{
+    width: 85px;
+    height: auto;
+}
+
+.service-page-detail.summer-theme .service-detail .short-text-block .icon svg path{
+    fill: #60B40C;
+}
+
+.service-page-detail.summer-theme .service-detail .main-content h2,
+.service-page-detail.summer-theme .service-detail .main-content h3,
+.service-page-detail.summer-theme .service-detail .main-content h4{
+    font-family: 'Playfair Display';
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.service-page-detail  .service-detail .work-time i{
+    padding: 0 10px;
+}
+.service-page-detail.summer-theme  .service-detail .service-slider-arrow .arrow i,
+.service-page-detail.summer-theme .service-detail .work-time i{
+    color:  #60B40C;
+
+}
+.service-page-detail .service-detail .work-time{
+    background-color: #f9f9f9;
+    font-weight: 300;
+    padding: 30px 40px;
+    margin-bottom: 50px;
+}
+
+.service-page-detail .service-detail .main-content {
+    margin-bottom: 40px;
+}
+.service-page-detail .service-detail .main-content *{
+    font-weight: 300;
+}
+.service-page-detail .service-detail .main-content ul{
+    column-count: 2;
+}
+.service-page-detail.summer-theme .service-detail .main-content ul{
+    list-style-image: url(/images/star-summer.svg);
+}
+
+.service-page-detail .service-detail .half-slider{
+    height: 477px;
+    overflow: hidden;
+}
+.service-page-detail .service-detail .half-slider,
+.service-page-detail .service-detail .main-slider{
+    margin: 0;
+    padding: 0;
+}
+.service-page-detail .service-detail .half-slider li,
+.service-page-detail .service-detail .main-slider li {
+    list-style: none;
+}
+.service-page-detail .service-detail .half-slider li .wrapper{
+    
+}
+
+.service-page-detail .service-detail .half-slider li img{
+    height: 120px;
+    object-fit: cover;
+    padding: 5px 0 ;
+}
+.service-page-detail .service-detail .half-slider li img,
+.service-page-detail .service-detail .main-slider li img{
+    width: 100%;
+}
+
+.service-page-detail .service-detail .half-slider .slick-active{
+    position: relative;
+}
+.service-page-detail .service-detail .half-slider .slick-current:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.6);
+}
+
+.service-page-detail.summer-theme .service-detail .half-slider .slick-current:before{
+    border: 1px solid #60B40C;
+}
+
+
+.service-page-detail .service-detail .service-slider-arrow{
+    margin: 0;
+    padding: 0;
+}
+.service-page-detail .service-detail .service-slider-arrow li{
+    list-style: none;
+}
+
+.service-page-detail .service-detail .service-slider-arrow .arrow{
+    position: absolute;
+    top: 50%;
+    background: #fff;
+    border-radius: 50%;
+    padding: 11px 23px;
+    transition: all .3s;
+    opacity: .6;
+    transform: translateY(-50%);
+}
+.service-page-detail .service-detail .service-slider-arrow .arrow:hover{
+  opacity: .2;
+}
+.service-page-detail .service-detail .service-slider-arrow .arrow i {
+    font-size: 40px;
+}
+.service-page-detail .service-detail .service-slider-arrow .prev{
+    left:40px;
+}
+.service-page-detail .service-detail .service-slider-arrow .next{
+    right: 40px;
+}
+
+
