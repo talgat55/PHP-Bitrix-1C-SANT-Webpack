@@ -53,8 +53,7 @@
 }
 .home-slider-wrap .text-block .title{
     margin: 0;
-    font-family: 'Playfair Display';
-    text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
+    font-family: 'PT Sans', sans-serif;
     font-size: 38px;
     color: #313131;
     font-weight: 400;
@@ -62,7 +61,7 @@
 
 }
 .home-slider-wrap .text-block .title b{
-    font-family: 'Playfair Display';
+    font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     color: #60B40C;
 
@@ -77,7 +76,6 @@
     font-family: 'OpenSans';
     font-weight: 400;
     color: #313131;
-    text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
     font-size: 18px;
     margin-bottom: 45px;
 }

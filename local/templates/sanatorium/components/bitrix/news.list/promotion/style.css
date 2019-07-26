@@ -1,7 +1,7 @@
 #promotion-block .item .content .title a{
     font-size: 22px;
-    text-decoration-line: underline;
-    font-family: 'Playfair Display';
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     transition: all .3s;
 }
@@ -23,7 +23,7 @@
     min-height: 99px;
 }
 #promotion-block .item .content .link-promotion{
-    font-family: 'Playfair Display';
+    font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.02em;

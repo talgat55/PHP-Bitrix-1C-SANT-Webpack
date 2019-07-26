@@ -7,22 +7,6 @@ body {
 }
 
 @font-face {
-  font-family: 'Playfair Display';
-  src: local("PlayfairDisplayBold"), local("PlayfairDisplayBold"), url("/local/templates/sanatorium/assets/build/css/Modern-Bold.woff") format("woff"), url("/local/templates/sanatorium/assets/build/css/Modern-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: local("PlayfairDisplayRegular"), local("PlayfairDisplayRegular"), url("/local/templates/sanatorium/assets/build/css/Modern-Regular.woff") format("woff"), url("/local/templates/sanatorium/assets/build/css/Modern-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'OpenSans';
   src: local("OpenSans-SemiBold"), local("OpenSans-SemiBold"), url("/local/templates/sanatorium/assets/build/css/OpenSans-SemiBold.woff") format("woff"), url("/local/templates/sanatorium/assets/build/css/OpenSans-SemiBold.ttf") format("truetype");
   font-weight: 600;
@@ -67,7 +51,7 @@ a.main-link {
   border-radius: 100px;
   width: 260px;
   transition: all .3s;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -101,7 +85,7 @@ a.main-link.alt {
   border-radius: 100px;
   width: 260px;
   transition: all .3s;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -131,7 +115,7 @@ a.main-link.alt i {
   font-size: 28px;
   margin-top: 0;
   margin-bottom: 25px;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
 }
 
@@ -141,7 +125,7 @@ a.main-link.alt i {
   color: #fff;
   padding: 15px 20px;
   margin-top: 30px;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
 }
 
 .link-feedback:hover {
@@ -163,7 +147,7 @@ a.main-link.alt i {
   margin-top: 0;
   font-size: 38px;
   color: #FFFFFF;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   margin-bottom: 40px;
   padding: 12px 8px;
@@ -223,7 +207,7 @@ a.main-link.alt i {
 #mobile-toggle .menu-menu-lk li a {
   padding: 0 30px;
   font-size: 18px;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
 }
 
 #mobile-toggle.is-active {
@@ -394,7 +378,7 @@ header #logo a .text-block {
 header #logo a .text-block .first {
   font-weight: 700;
   font-size: 26px;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
 }
 
 header #logo a .text-block .second {
@@ -551,7 +535,7 @@ header.is-active {
 #home-contacts .first-block .list-info li .title {
   font-size: 16px;
   color: #313131;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
   margin: 0 0 10px;
 }
 
@@ -572,7 +556,7 @@ header.is-active {
   margin: 0 0 25px;
   font-size: 28px;
   color: #313131;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
 }
 
 .summer-theme #home-contacts .first-block .list-info .email-field {
@@ -602,7 +586,7 @@ header.is-active {
 #feedback-form label {
   font-size: 12px;
   color: #313131;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
   margin-bottom: 0;
   width: 100%;
 }
@@ -753,7 +737,7 @@ footer .bottom-footer .link-scroll-up {
   font-size: 18px;
   text-decoration-line: underline;
   color: #4C8E0A;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
   transition: all .3s;
 }
 
@@ -781,7 +765,7 @@ footer .bottom-footer .link-scroll-up:hover {
   font-weight: 400;
   font-size: 28px;
   color: #313131;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
   margin-bottom: 30px;
 }
 
@@ -808,7 +792,7 @@ footer .bottom-footer .link-scroll-up:hover {
   font-weight: 400;
   font-size: 20px;
   color: #313131;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
 }
 
 .page-contacts .list-info .main .second a {
@@ -862,7 +846,7 @@ footer .bottom-footer .link-scroll-up:hover {
 
 .page-about .title {
   font-size: 28px;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
 }
 
@@ -966,7 +950,7 @@ footer .bottom-footer .link-scroll-up:hover {
 
 .news-detail .title {
   font-size: 28px;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   color: #313131;
   margin-top: 30px;
@@ -997,7 +981,7 @@ footer .bottom-footer .link-scroll-up:hover {
   font-weight: 400;
   font-size: 28px;
   color: #313131;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
 }
 
 #ticket-block {
@@ -1058,7 +1042,7 @@ footer .bottom-footer .link-scroll-up:hover {
 #block-contacts .first-block .list-info li .title {
   font-size: 16px;
   color: #313131;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
   margin: 0 0 10px;
   padding: 0;
   background-color: transparent !important;
@@ -1081,7 +1065,7 @@ footer .bottom-footer .link-scroll-up:hover {
   margin: 0 0 25px;
   font-size: 28px;
   color: #313131;
-  font-family: "Playfair Display";
+  font-family: "PT Sans", sans-serif;
   background-color: transparent;
   padding: 0;
 }

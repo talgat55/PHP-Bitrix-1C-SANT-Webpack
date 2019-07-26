@@ -24,6 +24,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 
     //    $this->getTemplate()->addExternalJs("/local/addcss.css");
     ?>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH; ?>/assets/build/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH; ?>/assets/build/app.css">
 
