@@ -156,7 +156,8 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
         </div>
         <div class="row">
             <div class="col-lg-12 col-xs-12 text-center">
-                <a target="_blank" class="bottom-copyright" title="Перейти на сайт разработчика" href="http://asmart-group.ru/">Сайт разработан IT-company <span>ASMART</span></a>
+                <a target="_blank" class="bottom-copyright" title="Перейти на сайт разработчика"
+                   href="http://asmart-group.ru/">Сайт разработан IT-company <span>ASMART</span></a>
             </div>
         </div>
     </div>
@@ -164,6 +165,15 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 </div>
 
 </main>
+<?
+$APPLICATION->IncludeFile(
+    SITE_DIR."/include/success_send_mail.php",
+    Array(),
+    Array("MODE"=>"html")
+);
+?>
+
+
 
 <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH; ?>/assets/build/css/fontawesome-all.min.css">
 

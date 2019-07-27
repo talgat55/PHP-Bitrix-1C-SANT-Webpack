@@ -139,6 +139,10 @@ a.main-link.alt i {
   font-size: 10px;
 }
 
+.page-policy p {
+  font-weight: 300;
+}
+
 .summer-theme .link-feedback {
   background: #4C8E0A;
 }
@@ -935,6 +939,11 @@ footer .bottom-footer .link-scroll-up:hover {
   text-decoration: none;
 }
 
+.page-about #home-map,
+.page-about #home-contacts {
+  margin: 0 -15px;
+}
+
 .summer-theme .page-about .about-list-links li a,
 .summer-theme .page-about .special-block {
   color: #60B40C;
@@ -1070,6 +1079,43 @@ footer .bottom-footer .link-scroll-up:hover {
   padding: 0;
 }
 
+.overlay-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+}
+
+.success-send-mail-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+}
+
+.success-send-mail-modal .content {
+  background: #fff;
+  padding: 40px;
+  width: 35%;
+  text-align: center;
+}
+
+.active-mode {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
 @media (max-width: 1538px) {
   #main-navigation .center-menu li a {
     padding: 19px 15px;
@@ -1117,6 +1163,10 @@ footer .bottom-footer .link-scroll-up:hover {
   header {
     left: -280px;
     transition: all .3s;
+  }
+
+  header #logo {
+    padding-top: 70px;
   }
 
   #primary {

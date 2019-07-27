@@ -27,19 +27,24 @@
             </div>
             <div class="second-block col-lg-8 col-xs-12">
                 <h3 class="title">
-                    Связь с нами </h3>
-                <form id="feedback-form" method="post" action="/ajax/feedback">
+                    Связь с нами
+                </h3>
+                <form id="feedback-form" method="post" action="/ajax/send.php">
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-6 col-xs-12">
                                 <label>
-                                    Как вас зовут? </label> <input type="text" name="name" placeholder="Ваше имя"
-                                                                   class="text-input">
+                                    Как вас зовут?
+                                </label>
+                                <input type="text" name="name" placeholder="Ваше имя"
+                                       class="text-input"  required>
                             </div>
                             <div class="col-md-6 col-xs-12">
                                 <label>
-                                    Электронный адрес </label> <input type="email" name="email" placeholder="E-mail"
-                                                                      class="text-input">
+                                    Электронный адрес
+                                </label>
+                                <input type="email" name="email" placeholder="E-mail"
+                                       class="text-input" required>
                             </div>
                         </div>
                     </div>
@@ -47,9 +52,11 @@
                         <div class="row">
                             <div class="col-md-12 col-xs-12">
                                 <label>
-                                    Сообщение </label> <textarea rows="1" name="comment"
-                                                                 placeholder="Введите ваше сообщение"
-                                                                 class="textarea-input"></textarea>
+                                    Сообщение
+                                </label>
+                                <textarea rows="1" name="comment"
+                                          placeholder="Введите ваше сообщение"
+                                          class="textarea-input"></textarea>
                             </div>
                         </div>
                     </div>
@@ -57,7 +64,9 @@
                         <div class="row d-flex align-items-center">
                             <div class="col-md-5 col-xs-12">
                                 <button type="submit" form="feedback-form" class="main-link">
-                                    Отправить письмо <i class="fas fa-chevron-circle-right"></i></button>
+                                    Отправить письмо <i class="fas fa-chevron-circle-right"></i>
+                                </button>
+                                <input type="hidden" name="event" value="FEEDBACK_EVENT" />
                             </div>
                             <div class="policy-block col-md-7 col-xs-12">
                                 Нажимая кнопку «Отправить письмо» вы даете свое согласие на <a href="/policy">

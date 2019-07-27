@@ -119,7 +119,8 @@ jQuery(document).ready(function () {
   menuToggle();
   backToTop();
   mobileMenu();
-  hideLeftMenuOnScroll(); // end redy function
+  hideLeftMenuOnScroll();
+  formHandler(); // end redy function
 });
 
 window.onload = function () {
@@ -237,6 +238,34 @@ function hideLeftMenuOnScroll() {
     if (scroll >= 120) {
       jQuery(menuClass + ', ' + headerClass).removeClass('is-active');
     }
+  });
+} //----------------------------------
+//   Form handler
+//------------------------------------
+
+
+function formHandler() {
+  "use strict";
+
+  var thisForm = jQuery('form');
+  var overlayLayer = jQuery('.overlay-layer');
+  var modallayLayer = jQuery('.success-send-mail-modal');
+  var activeClass = 'active-mode';
+  thisForm.submit(function () {
+    var formData = thisForm.serialize();
+    jQuery.post('ajax/send.php', formData, function (data) {
+      if (data) {
+        // reset form
+        thisForm[0].reset();
+        overlayLayer.addClass(activeClass);
+        modallayLayer.addClass(activeClass);
+        setTimeout(function () {
+          overlayLayer.removeClass(activeClass);
+          modallayLayer.removeClass(activeClass);
+        }, 2000);
+      }
+    });
+    return false;
   });
 }
 

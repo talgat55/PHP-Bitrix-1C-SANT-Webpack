@@ -8,6 +8,7 @@ jQuery(document).ready(function () {
     backToTop();
     mobileMenu();
     hideLeftMenuOnScroll();
+    formHandler();
     // end redy function
 });
 
@@ -95,17 +96,16 @@ function menuLoadFirstBlock() {
 }
 
 
-
 // ---------------------------------------------------------
 // Back To Top
 // ---------------------------------------------------------
-function backToTop(){
+function backToTop() {
     "use strict";
 
-    jQuery(document).on('click','.link-scroll-up',function(e){
+    jQuery(document).on('click', '.link-scroll-up', function (e) {
         e.preventDefault();
 
-        jQuery('body,html').animate({scrollTop: 0}, jQuery(window).scrollTop()/3, 'linear');
+        jQuery('body,html').animate({scrollTop: 0}, jQuery(window).scrollTop() / 3, 'linear');
     });
 
 }
@@ -114,13 +114,13 @@ function backToTop(){
 //----------------------------------
 //   Mobile Menu
 //------------------------------------
-function mobileMenu(){
+function mobileMenu() {
     "use strict";
-    let menuClass           = '#mobile-toggle';
-    let mobileClass         = jQuery('header');
-    let bodyClass           = 'body';
+    let menuClass = '#mobile-toggle';
+    let mobileClass = jQuery('header');
+    let bodyClass = 'body';
 
-    jQuery(bodyClass).on('click', menuClass ,function(){
+    jQuery(bodyClass).on('click', menuClass, function () {
 
         mobileClass.toggleClass('is-active');
         jQuery(menuClass).toggleClass('is-active');
@@ -135,17 +135,56 @@ function mobileMenu(){
 //----------------------------------
 //   Mobile Menu
 //------------------------------------
-function hideLeftMenuOnScroll(){
+function hideLeftMenuOnScroll() {
     "use strict";
-    var menuClass           = '#mobile-toggle';
-    var headerClass         = 'header';
+    var menuClass = '#mobile-toggle';
+    var headerClass = 'header';
 
-    jQuery(window).scroll(function(){
-        var  scroll = jQuery(window).scrollTop();
+    jQuery(window).scroll(function () {
+        var scroll = jQuery(window).scrollTop();
 
         if (scroll >= 120) {
-            jQuery(menuClass +', '+headerClass).removeClass('is-active');
+            jQuery(menuClass + ', ' + headerClass).removeClass('is-active');
         }
+
+    });
+
+}
+
+//----------------------------------
+//   Form handler
+//------------------------------------
+function formHandler() {
+    "use strict";
+    var thisForm = jQuery('form');
+    var overlayLayer = jQuery('.overlay-layer');
+    var modallayLayer = jQuery('.success-send-mail-modal');
+    var activeClass = 'active-mode';
+
+
+    thisForm.submit(function () {
+        var formData = thisForm.serialize();
+
+        jQuery.post('ajax/send.php', formData, function (data) {
+
+            if (data) {
+                // reset form
+                thisForm[0].reset();
+
+                overlayLayer.addClass(activeClass);
+                modallayLayer.addClass(activeClass);
+                setTimeout(function() {
+                    overlayLayer.removeClass(activeClass);
+                    modallayLayer.removeClass(activeClass);
+                }, 2000);
+
+            }
+
+
+        });
+
+
+        return false;
 
     });
 

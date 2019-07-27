@@ -150,6 +150,9 @@ a.main-link.alt
     color: #fff
     font-size: 10px
 
+.page-policy
+  p
+    font-weight: 300
 
 
 .summer-theme  .link-feedback
@@ -844,9 +847,9 @@ footer
           color: #313131
           text-decoration: none
 
-
-
-
+  #home-map,
+  #home-contacts
+    margin: 0 -15px
 
 
 
@@ -979,6 +982,40 @@ footer
       padding: 0
 
 
+//
+// Modal
+//
+.overlay-layer
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 99999
+  background: rgba(0,0,0,.6)
+  opacity: 0
+  visibility: hidden
+  transition: all .3s
+
+.success-send-mail-modal
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 999999
+  opacity: 0
+  visibility: hidden
+  transition: all .3s
+  .content
+    background: #fff
+    padding: 40px
+    width: 35%
+    text-align: center
+
+.active-mode
+  opacity: 1!important
+  visibility: visible!important
 
 
 @media (max-width: 1538px)
@@ -1037,6 +1074,9 @@ footer
   header
     left: -280px
     transition: all .3s
+
+    #logo
+      padding-top: 70px
 
   #primary
     margin-left: 0

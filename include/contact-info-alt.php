@@ -34,14 +34,14 @@
                                     Как вас зовут?
                                 </label>
                                 <input type="text" name="name" placeholder="Ваше имя"
-                                       class="text-input">
+                                       class="text-input" required>
                             </div>
                             <div class="col-md-6 col-xs-12">
                                 <label>
                                     Телефон
                                 </label>
                                 <input type="text" name="phone" placeholder="Телефон"
-                                                class="text-input phone-input">
+                                                class="text-input phone-input" required>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,13 @@
                         <div class="row d-flex align-items-center">
                             <div class="col-md-5 col-xs-12">
                                 <button type="submit" form="feedback-form" class="main-link">
-                                    Отправить письмо <i class="fas fa-chevron-circle-right"></i></button>
+                                    Отправить письмо <i class="fas fa-chevron-circle-right"></i>
+                                </button>
+                                <input type="hidden" name="event" value="ORDER_SERVICE">
+                                <?
+                                $title = $APPLICATION->GetTitle();
+                                ?>
+                                <input type="hidden" name="service_name" value="<?=$title; ?>">
                             </div>
                             <div class="policy-block col-md-7 col-xs-12">
                                 Нажимая кнопку «Отправить письмо» вы даете свое согласие на <a href="/policy">

@@ -22,9 +22,10 @@
 .page-services  .swtich-cat-services li.active a{
 	color: #fff;
 }
-.page-services  .swtich-cat-services li.active{
-	background: #4E9D89;
+.summer-theme .page-services  .swtich-cat-services li.active{
+	background: #60B40C;
 }
+
 .page-services  .swtich-cat-services li.active:hover a{
 	color: #fff!important;
 	text-decoration: none;
@@ -41,9 +42,9 @@
 	border: 1px solid #EDEDED;
 	margin-bottom: 40px;
 }
-.page-services  .swtich-cat-services li a:hover{
+.summer-theme  .page-services  .swtich-cat-services li a:hover{
 
-	color: #4E9D89;
+	color: #60B40C;
 }
 .page-services  .list-service-cats .item .m-l-30{
 	padding: 0;
