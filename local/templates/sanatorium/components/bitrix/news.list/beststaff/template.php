@@ -13,7 +13,7 @@
 $this->setFrameMode(true);
 ?>
 
-    <div class="staff-list ">
+    <div class="staff-list list-insert">
 
         <? $i = 1; ?>
         <? foreach ($arResult["ITEMS"] as $arItem): ?>
@@ -22,7 +22,7 @@ $this->setFrameMode(true);
         $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
         ?>
         <?= ($i == 1) ? '<div class="row w-100">' : ''; ?>
-        <div class="staff-item  col  col-xs-12" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
+        <div class="staff-item  item-insert col  col-xs-12" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
             <? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])): ?>
                 <? if (!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])): ?>
                     <img
@@ -88,12 +88,7 @@ $this->setFrameMode(true);
     </div>
     <? endforeach; ?>
 
-<div class="pagination-wrapper w-100">
-    <a href="#" class="load-more d-flex align-items-center main-link">
-        <span>Показать ещё </span>
-        <i class="fas fa-sync-alt"></i>
-    </a>
-</div>
+
 <? if ($arParams["DISPLAY_BOTTOM_PAGER"]): ?>
     <?= $arResult["NAV_STRING"] ?>
 <? endif; ?>

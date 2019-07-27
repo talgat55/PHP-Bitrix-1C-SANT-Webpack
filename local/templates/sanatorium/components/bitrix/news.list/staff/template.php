@@ -32,7 +32,7 @@ $this->setFrameMode(true);
     <div class="row">
         <div class="col-md-12 col-xs-12">
             <div class="row">
-                <ul class="staff-list ">
+                <ul class="staff-list list-insert">
                     <? if ($arParams["DISPLAY_TOP_PAGER"]): ?>
                         <?= $arResult["NAV_STRING"] ?><br/>
                     <? endif; ?>
@@ -46,7 +46,7 @@ $this->setFrameMode(true);
                             <div class="d-flex w-100">
 
                         <? } ?>
-                    <li class="staff-item  col col-xs-12" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
+                    <li class="staff-item item-insert  col col-xs-12" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
                         <? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])): ?>
                             <? if (!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])): ?>
                                <img
@@ -111,12 +111,7 @@ $this->setFrameMode(true);
                     <? endforeach; ?>
 
                 </ul>
-                <div class="pagination-wrapper w-100">
-                    <a href="#" class="load-more d-flex align-items-center main-link">
-                        <span>Показать ещё </span>
-                        <i class="fas fa-sync-alt"></i>
-                    </a>
-                </div>
+
                 <? if ($arParams["DISPLAY_BOTTOM_PAGER"]): ?>
                     <?= $arResult["NAV_STRING"] ?>
                 <? endif; ?>

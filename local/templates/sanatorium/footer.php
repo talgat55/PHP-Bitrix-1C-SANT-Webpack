@@ -125,14 +125,14 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
                     "footer-menu",
                     array(
                         "ALLOW_MULTI_SELECT" => "N",
-                        "CHILD_MENU_TYPE" => "left",
+                        "CHILD_MENU_TYPE" => "footer",
                         "DELAY" => "N",
                         "MAX_LEVEL" => "1",
                         "MENU_CACHE_GET_VARS" => array(),
                         "MENU_CACHE_TIME" => "3600",
                         "MENU_CACHE_TYPE" => "N",
                         "MENU_CACHE_USE_GROUPS" => "Y",
-                        "ROOT_MENU_TYPE" => "top",
+                        "ROOT_MENU_TYPE" => "footer",
                         "USE_EXT" => "N",
                         "COMPONENT_TEMPLATE" => "footer-menu"
                     ),
@@ -167,12 +167,11 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 </main>
 <?
 $APPLICATION->IncludeFile(
-    SITE_DIR."/include/success_send_mail.php",
+    SITE_DIR . "/include/success_send_mail.php",
     Array(),
-    Array("MODE"=>"html")
+    Array("MODE" => "html")
 );
 ?>
-
 
 
 <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH; ?>/assets/build/css/fontawesome-all.min.css">

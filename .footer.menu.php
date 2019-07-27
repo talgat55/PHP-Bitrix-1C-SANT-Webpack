@@ -1,0 +1,74 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"О центре", 
+		"/about", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Отзывы", 
+		"/reviews/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Новости", 
+		"/news/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Консультации", 
+		"/e-store/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Услуги", 
+		"", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Прайс", 
+		"", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Противодействие коррупции", 
+		"", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Врачи", 
+		"/staff/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Доска почета", 
+		"/beststaff/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>
