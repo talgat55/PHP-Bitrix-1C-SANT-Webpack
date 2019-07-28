@@ -2,7 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Политика конфиденциальности");
 ?>
-    <div class="main-content w-100  page-policy">
+    <div class="main-content w-100  page-policy page-main">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-xs-12">
@@ -22,7 +22,7 @@ $APPLICATION->SetTitle("Политика конфиденциальности");
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-xs-12">
+                <div class="col-md-12 col-xs-12 main-text">
                     <h2>Общая информация</h2>
                     <p>
                         Настоящая Политика конфиденциальности определяет, каким образом&nbsp; &nbsp;dizel-grupp.ru
