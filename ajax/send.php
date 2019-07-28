@@ -34,6 +34,7 @@ if(isset($_POST)){
 
     CEvent::Send($EVENT,"s1", $arEventFields, "N", "", "");
 
+    echo 'true';
 
 }
 

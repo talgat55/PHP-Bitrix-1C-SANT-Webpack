@@ -23,7 +23,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Консультации", 
-		"/e-store/", 
+		"/consultation/", 
 		Array(), 
 		Array(), 
 		"" 
@@ -37,21 +37,21 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Услуги", 
-		"", 
+		"/uslugi/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Прайс", 
-		"", 
+		"/prices/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Противодействие коррупции", 
-		"", 
+		"/corruption/",
 		Array(), 
 		Array(), 
 		"" 
@@ -69,6 +69,16 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
+	),
+    	Array(
+		"Акции",
+		"/promotions/",
+		Array(),
+		Array(),
+		""
 	)
+
+
+
 );
 ?>

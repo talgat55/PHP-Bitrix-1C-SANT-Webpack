@@ -21,7 +21,7 @@ $this->setFrameMode(true);
                     </h2>
                 </div>
                 <div class="col-md-6 col-xs-12">
-                    <a href="#" class=" d-flex align-items-center main-link  ">
+                    <a href="/news/" class=" d-flex align-items-center main-link  ">
                         <span>Смотреть все новости</span>
                         <i class="fas fa-chevron-circle-right"></i>
                     </a>

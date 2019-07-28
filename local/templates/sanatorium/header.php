@@ -82,7 +82,7 @@ $APPLICATION->ShowPanel();
                 "CACHE_TIME" => "36000000",
                 "CACHE_TYPE" => "A",
                 "CHECK_DATES" => "Y",
-                "DETAIL_URL" => "#SITE_DIR#/services/detail.php?ID=#ELEMENT_ID#",
+                "DETAIL_URL" => "#SITE_DIR#/uslugi/?ELEMENT_ID=#ELEMENT_ID#",
                 "DISPLAY_BOTTOM_PAGER" => "Y",
                 "DISPLAY_DATE" => "Y",
                 "DISPLAY_NAME" => "Y",

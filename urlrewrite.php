@@ -8,12 +8,12 @@ $arUrlRewrite=array (
     'PATH' => '/uslugi/detail.php',
     'SORT' => 100,
   ),
-  0 => 
+  4 => 
   array (
-    'CONDITION' => '#^/rest/#',
+    'CONDITION' => '#^/promotions/#',
     'RULE' => '',
-    'ID' => NULL,
-    'PATH' => '/bitrix/services/rest/index.php',
+    'ID' => 'bitrix:news',
+    'PATH' => '/promotions/index.php',
     'SORT' => 100,
   ),
   3 => 
@@ -22,6 +22,14 @@ $arUrlRewrite=array (
     'RULE' => '',
     'ID' => 'bitrix:news',
     'PATH' => '/news/index.php',
+    'SORT' => 100,
+  ),
+  0 => 
+  array (
+    'CONDITION' => '#^/rest/#',
+    'RULE' => '',
+    'ID' => NULL,
+    'PATH' => '/bitrix/services/rest/index.php',
     'SORT' => 100,
   ),
 );

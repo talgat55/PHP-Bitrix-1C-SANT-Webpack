@@ -15,7 +15,7 @@ $this->setFrameMode(true);
 <div class="container">
     <div class="row">
         <div class="col-md-12 col-xs-12">
-            <ul id="review-list">
+            <ul id="review-list" class="w-100 list-insert">
 
 
                 <? foreach ($arResult["ITEMS"] as $arItem): ?>
@@ -23,7 +23,7 @@ $this->setFrameMode(true);
                     $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
                     $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
                     ?>
-                    <li class="review-item" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
+                    <li class="review-item item-insert" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
                         <div class="content">
                             <? echo $arItem["PREVIEW_TEXT"]; ?>
                         </div>
@@ -43,12 +43,7 @@ $this->setFrameMode(true);
                 <? endforeach; ?>
 
             </ul>
-            <div class="pagination-wrapper">
-                <a href="#" class="load-more d-flex align-items-center main-link">
-                    <span>Показать ещё </span>
-                    <i class="fas fa-sync-alt"></i>
-                </a>
-            </div>
+
             <? if ($arParams["DISPLAY_BOTTOM_PAGER"]): ?>
                 <?= $arResult["NAV_STRING"] ?>
             <? endif; ?>

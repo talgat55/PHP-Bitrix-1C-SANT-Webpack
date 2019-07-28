@@ -6,7 +6,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 
 ?>
 
-<footer>
+<footer class="w-100">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 col-xs-12">
@@ -26,7 +26,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
                         "CACHE_TIME" => "36000000",
                         "CACHE_TYPE" => "A",
                         "CHECK_DATES" => "Y",
-                        "DETAIL_URL" => "#SITE_DIR#/services/detail.php?ID=#ELEMENT_ID#",
+                        "DETAIL_URL" => "#SITE_DIR#/uslugi/?ELEMENT_ID=#ELEMENT_ID#",
                         "DISPLAY_BOTTOM_PAGER" => "Y",
                         "DISPLAY_DATE" => "Y",
                         "DISPLAY_NAME" => "Y",
