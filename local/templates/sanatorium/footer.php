@@ -176,6 +176,7 @@ $APPLICATION->IncludeFile(
 
 <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH; ?>/assets/build/css/fontawesome-all.min.css">
 
+
 <? $APPLICATION->ShowProperty('FooterJS'); ?>
 <? $APPLICATION->ShowProperty('BeforeBodyClose'); ?>
 </body>

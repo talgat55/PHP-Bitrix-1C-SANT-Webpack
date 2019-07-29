@@ -252,20 +252,22 @@ function formHandler() {
   var modallayLayer = jQuery('.success-send-mail-modal');
   var activeClass = 'active-mode';
   thisForm.submit(function () {
-    var formData = thisForm.serialize();
-    jQuery.post('ajax/send.php', formData, function (data) {
-      if (data) {
-        // reset form
-        thisForm[0].reset();
-        overlayLayer.addClass(activeClass);
-        modallayLayer.addClass(activeClass);
-        setTimeout(function () {
-          overlayLayer.removeClass(activeClass);
-          modallayLayer.removeClass(activeClass);
-        }, 2000);
-      }
-    });
-    return false;
+    if (!thisForm.parent().hasClass('search-page')) {
+      var formData = thisForm.serialize();
+      jQuery.post('ajax/send.php', formData, function (data) {
+        if (data) {
+          // reset form
+          thisForm[0].reset();
+          overlayLayer.addClass(activeClass);
+          modallayLayer.addClass(activeClass);
+          setTimeout(function () {
+            overlayLayer.removeClass(activeClass);
+            modallayLayer.removeClass(activeClass);
+          }, 2000);
+        }
+      });
+      return false;
+    }
   });
 }
 

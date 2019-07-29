@@ -1,0 +1,46 @@
+a.search-page-params {
+	border-bottom: 1px dashed blue;
+	text-decoration: none;
+}
+div.search-page-params {
+	margin-top: 6px;
+}
+.search-item-rate {font-size: 11px;}
+
+.search-page form input[type=text]{
+	font-weight: 300;
+	border: none;
+	font-size: 14px;
+	color: #313131;
+	font-family: 'OpenSans';
+	border-bottom: 1px solid #E5E5E5;
+	padding: 16px 0;
+	width: 100%;
+}
+.search-page form input[type=submit]{
+	text-decoration: none;
+	color: #fff;
+	padding: 14px 34px;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+	border-radius: 100px;
+	width: 260px;
+	transition: all .3s;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 0.02em;
+	border: none;
+}
+.summer-theme .search-page form input[type=submit]{
+	background: #60B40C;
+}
+.search-page form input[type=submit]:hover{
+	background: linear-gradient(180deg, #333 0%, #333 100%)
+}
+
+.search-page form input *,
+.search-page form input:active,
+.search-page form input:focus{
+	outline: none;
+	box-shadow: none;
+}

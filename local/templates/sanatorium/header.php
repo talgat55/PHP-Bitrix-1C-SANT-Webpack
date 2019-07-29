@@ -27,8 +27,18 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH; ?>/assets/build/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH; ?>/assets/build/app.css">
+    <!--   bvi -->
+    <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH; ?>/assets/build/css/bvi.min.css">
+    <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH; ?>/assets/build/css/bvi-font.min.css">
+    <!--  end  bvi -->
 
     <script src="<?= SITE_TEMPLATE_PATH; ?>/assets/build/global.js"></script>
+    <!--   bvi -->
+    <script src="<?= SITE_TEMPLATE_PATH; ?>/assets/build/js/responsivevoice.min.js"></script>
+    <script src="<?= SITE_TEMPLATE_PATH; ?>/assets/build/js/js.cookie.min.js"></script>
+    <script src="<?= SITE_TEMPLATE_PATH; ?>/assets/build/js/bvi-init.js"></script>
+    <script src="<?= SITE_TEMPLATE_PATH; ?>/assets/build/js/bvi.min.js"></script>
+    <!--  end  bvi -->
     <? $APPLICATION->ShowHeadScripts() ?>
 
     <?php
@@ -218,7 +228,7 @@ $APPLICATION->ShowPanel();
 
                         <ul class="list-actions d-flex justify-content-end">
                             <li>
-                                <a class="d-flex align-items-center" href="/search">
+                                <a class="d-flex align-items-center" href="/search/">
                                     <img src="/images/search.png" alt="Иконка"/>
                                     <p>
                                         Поиск по сайту
@@ -226,7 +236,7 @@ $APPLICATION->ShowPanel();
                                 </a>
                             </li>
                             <li>
-                                <a class="d-flex align-items-center" href="#">
+                                <a class="d-flex align-items-center" href="/angliskaya-versiya/">
                                     <img class="eng-img" src="/images/eng.png" alt="Иконка"/>
                                     <img class="ru-img" src="/images/eng.png" alt="Иконка"/>
                                     <p>
@@ -235,7 +245,7 @@ $APPLICATION->ShowPanel();
                                 </a>
                             </li>
                             <li>
-                                <a class="d-flex align-items-center  bvi" href="mailto:sanom@mail.ru">
+                                <a class="d-flex align-items-center   bvi-open " href="#">
                                     <img src="/images/eye.png" alt="Иконка"/>
                                     <p>
                                         версия для слабовидящих

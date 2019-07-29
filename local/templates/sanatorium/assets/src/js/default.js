@@ -163,28 +163,31 @@ function formHandler() {
 
 
     thisForm.submit(function () {
-        var formData = thisForm.serialize();
 
-        jQuery.post('ajax/send.php', formData, function (data) {
+        if(!thisForm.parent().hasClass('search-page')){
+            var formData = thisForm.serialize();
 
-            if (data) {
-                // reset form
-                thisForm[0].reset();
+            jQuery.post('ajax/send.php', formData, function (data) {
 
-                overlayLayer.addClass(activeClass);
-                modallayLayer.addClass(activeClass);
-                setTimeout(function() {
-                    overlayLayer.removeClass(activeClass);
-                    modallayLayer.removeClass(activeClass);
-                }, 2000);
+                if (data) {
+                    // reset form
+                    thisForm[0].reset();
 
-            }
+                    overlayLayer.addClass(activeClass);
+                    modallayLayer.addClass(activeClass);
+                    setTimeout(function() {
+                        overlayLayer.removeClass(activeClass);
+                        modallayLayer.removeClass(activeClass);
+                    }, 2000);
+
+                }
 
 
-        });
+            });
 
 
-        return false;
+            return false;
+        }
 
     });
 
