@@ -5,7 +5,6 @@
 .staff-list li {
     list-style: none;
     margin-bottom: 20px;
-    max-width: 228px;
 }
 
 .staff-list .staff-item img{
@@ -35,4 +34,32 @@
 
 .summer-theme .staff-list .staff-item .title{
     color: #60B40C;
+}
+.staff-list.beststaff-list{
+    padding: 0;
+    margin: 0 -15px!important;
+}
+
+
+.staff-list.beststaff-list li {
+    list-style: none;
+}
+
+.staff-list.beststaff-list  .staff-item img{
+    height: auto;
+}
+
+@media  (min-width: 1200px){
+    .col-custom {
+        width: 20%!important;
+        padding: 0 15px;
+        max-width: 20%!important;
+    }
+
+}
+
+@media  (max-width: 1200px){
+    .staff-list.beststaff-list  .staff-item{
+        max-width: initial!important;
+    }
 }

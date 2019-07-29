@@ -194,7 +194,7 @@ $APPLICATION->ShowPanel();
         <div id="top-bar">
             <div class="top">
                 <div class="row">
-                    <div class="first col-lg-6 col-xs-12 d-flex align-items-center">
+                    <div class="first col-xl-6  col-lg-5  col-xs-12 d-flex align-items-center">
 
                         <ul class="list-info d-flex">
                             <li>
@@ -224,7 +224,7 @@ $APPLICATION->ShowPanel();
 
                         </ul>
                     </div>
-                    <div class="second col-lg-6 col-xs-12">
+                    <div class="second  col-xl-6  col-lg-7   col-xs-12">
 
                         <ul class="list-actions d-flex justify-content-end">
                             <li>

@@ -17,7 +17,7 @@ $APPLICATION->SetTitle("contacts");
                             Контакты
                         </h1>
                 </div>
-                <div class="col-md-7 col-xs-12">
+                <div class="col-lg-7 col-xs-12">
                         <div class="block-contact w-100">
                             <h2 class="title">
                                 Служба бронирования и размещения

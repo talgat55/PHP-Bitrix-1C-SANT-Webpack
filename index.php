@@ -151,7 +151,7 @@ $APPLICATION->SetTitle("Главная");
                     <h2 class="sub-title">
                         Ключевые преимущества </h2>
                     <div class="w-100 row">
-                        <div class="item col-lg-3 col-xs-12 ">
+                        <div class="item col-lg-3 col-md-6 col-xs-12 ">
                             <div class="image-block">
                                 <img src="/images/transpaernt.png" class="lazy" data-src="/images/key-summer-1.png"
                                      alt="изображение">
@@ -161,7 +161,7 @@ $APPLICATION->SetTitle("Главная");
                                 к каждому пациенту
                             </div>
                         </div>
-                        <div class="item col-lg-3 col-xs-12 ">
+                        <div class="item col-lg-3  col-md-6 col-xs-12 ">
                             <div class="image-block">
                                 <img src="/images/transpaernt.png" class="lazy" data-src="/images/key-summer-2.png"
                                      alt="изображение">
@@ -171,7 +171,7 @@ $APPLICATION->SetTitle("Главная");
                                 природных факторов
                             </div>
                         </div>
-                        <div class="item col-lg-3 col-xs-12 ">
+                        <div class="item col-lg-3  col-md-6 col-xs-12 ">
                             <div class="image-block">
                                 <img src="/images/transpaernt.png" class="lazy" data-src="/images/key-summer-3.png"
                                      alt="изображение">
@@ -181,7 +181,7 @@ $APPLICATION->SetTitle("Главная");
                                 деятельности
                             </div>
                         </div>
-                        <div class="item col-lg-3 col-xs-12 ">
+                        <div class="item col-lg-3 col-md-6  col-xs-12 ">
                             <div class="image-block">
                                 <img src="/images/transpaernt.png" class="lazy" data-src="/images/key-summer-4.png"
                                      alt="изображение">

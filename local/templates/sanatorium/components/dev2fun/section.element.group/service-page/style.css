@@ -1,122 +1,146 @@
 .page-services .bx-breadcrumb {
-	width: 100%;
+    width: 100%;
 }
 
 
-.page-services  .swtich-cat-services{
-	padding: 0;
-	border-radius: 100px;
-	margin: 0;
+.page-services .swtich-cat-services {
+    padding: 0;
+    border-radius: 100px;
+    margin: 0;
 }
 
-.page-services  .swtich-cat-services li a{
-	font-weight: 700;
-	font-size: 18px;
-	letter-spacing: 0.02em;
-	color: #313131;
-	font-family: 'PT Sans', sans-serif;
-	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
-	display: inline-block;
-	padding: 12px 80px;
-}
-.page-services  .swtich-cat-services li.active a{
-	color: #fff;
-}
-.summer-theme .page-services  .swtich-cat-services li.active{
-	background: #60B40C;
+.page-services .swtich-cat-services li a {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #313131;
+    font-family: 'PT Sans', sans-serif;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
+    display: inline-block;
+    padding: 12px 80px;
 }
 
-.page-services  .swtich-cat-services li.active:hover a{
-	color: #fff!important;
-	text-decoration: none;
-}
-.page-services  .swtich-cat-services li{
-	list-style: none;
-	border-radius: 100px;
-}
-.swtich-cat-services-block{
-	overflow: hidden;
-	border-radius: 100px;
-	display: inline-block;
-	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
-	border: 1px solid #EDEDED;
-	margin-bottom: 40px;
-}
-.summer-theme  .page-services  .swtich-cat-services li a:hover{
-
-	color: #60B40C;
-}
-.page-services  .list-service-cats .item .m-l-30{
-	padding: 0;
-}
-.page-services  .list-service-cats .item{
-	display: none;
-}
-.page-services  .list-service-cats .item.active{
-	display: block;
-}
-.page-services  .list-service-cats {
-	margin: 0 -7.5px;
-	padding: 0;
-}
-.page-services  .list-service-cats  li  .service-item .link .images-icon .hover-icon{
-	display: none;
-}
-.page-services  .list-service-cats  li  .service-item .link .images-icon img {
-	max-width: 100%;
-	max-height: 100%;
-}
-.page-services  .list-service-cats  li  .service-item .link .images-icon{
-	width: 60px;
-	height: 60px;
-	margin: 0 auto 30px auto;
-}
-.page-services  .list-service-cats  li  .service-item .link{
-	text-decoration: none;
-	color: #313131;
-	display: inline-block;
-	text-align: center;
-	padding: 20px;
-	width: 100%;
-	height: 100%;
-}
-.page-services  .list-service-cats  li  .service-item{
-	width: 16.6666%;
-	margin: 7.5px;
-	text-align: center;
-	border: 1px solid rgba(76, 99, 139, 0.2);
-	box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
-	border-radius: 5px;
-	max-width: 172px;
-}
-.page-services  .list-service-cats  li {
-	list-style: none;
+.page-services .swtich-cat-services li.active a {
+    color: #fff;
 }
 
-.page-services  .list-service-cats  li  .service-item .link .title{
-	margin: 0;
-	font-weight: 700;
-	font-size: 14px;
-	font-family: 'PT Sans', sans-serif;
-	word-break: break-all;
+.summer-theme .page-services .swtich-cat-services li.active {
+    background: #60B40C;
+}
+
+.page-services .swtich-cat-services li.active:hover a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.page-services .swtich-cat-services li {
+    list-style: none;
+    border-radius: 100px;
+}
+
+.swtich-cat-services-block {
+    overflow: hidden;
+    border-radius: 100px;
+    display: inline-block;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid #EDEDED;
+    margin-bottom: 40px;
+}
+
+.summer-theme .page-services .swtich-cat-services li a:hover {
+
+    color: #60B40C;
+}
+
+.page-services .list-service-cats .item .m-l-30 {
+    padding: 0;
+}
+
+.page-services .list-service-cats .item {
+    display: none;
+}
+
+.page-services .list-service-cats .item.active {
+    display: block;
+}
+
+.page-services .list-service-cats {
+    margin: 0 -1px;
+    padding: 0;
+}
+
+.page-services .list-service-cats li .service-item .link .images-icon .hover-icon {
+    display: none;
+}
+
+.page-services .list-service-cats li .service-item .link .images-icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.page-services .list-service-cats li .service-item .link .images-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 30px auto;
+}
+
+.page-services .list-service-cats li .service-item .link {
+    text-decoration: none;
+    color: #313131;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.page-services .list-service-cats li {
+    list-style: none;
+    padding: 0 7.5px;
+}
+
+.page-services .list-service-cats .service-item-wallpaper {
+    margin: 0 0 15px 0;
+    text-align: center;
+    border: 1px solid rgba(76, 99, 139, 0.2);
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    min-height: 175px;
+}
+
+.page-services .list-service-cats li .service-item .link .title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    word-break: break-all;
 }
 
 
-.summer-theme .page-services  .list-service-cats  .service-item:hover{
-	border-color: #60B40C;
+.summer-theme .page-services .list-service-cats .service-item:hover {
+    border-color: #60B40C;
 }
-.summer-theme .page-services  .list-service-cats  .service-item:hover .link{
-	background-color: #60B40C;
-	color: #fff;
+
+
+.summer-theme .page-services .list-service-cats .service-item:hover .service-item-wallpaper {
+    background-color: #60B40C;
+
 }
-.summer-theme .page-services  .list-service-cats  .service-item  .link .images-icon svg {
-	height: 52px;
-	width: auto;
+
+.summer-theme .page-services .list-service-cats .service-item:hover .link {
+    color: #fff;
 }
-.summer-theme .page-services  .list-service-cats  .service-item:hover .link .images-icon svg path{
-	fill: white;
+
+.summer-theme .page-services .list-service-cats .service-item .link .images-icon svg {
+    height: 52px;
+    width: auto;
 }
-.summer-theme .page-services  .list-service-cats  .service-item:hover .link .images-icon .hover-icon{
- 	display: table;
-	margin: 0 auto;
+
+.summer-theme .page-services .list-service-cats .service-item:hover .link .images-icon svg path {
+    fill: white;
+}
+
+.summer-theme .page-services .list-service-cats .service-item:hover .link .images-icon .hover-icon {
+    display: table;
+    margin: 0 auto;
 }

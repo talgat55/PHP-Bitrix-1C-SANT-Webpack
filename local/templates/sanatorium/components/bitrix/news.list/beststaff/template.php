@@ -11,18 +11,18 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
+$APPLICATION->SetPageProperty('BodyClass', 'page-beststaff' );
 ?>
 
-    <div class="staff-list list-insert">
+    <ul class="staff-list  beststaff-list list-insert row">
 
-        <? $i = 1; ?>
         <? foreach ($arResult["ITEMS"] as $arItem): ?>
         <?
         $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
         $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
         ?>
-        <?= ($i == 1) ? '<div class="row w-100">' : ''; ?>
-        <div class="staff-item  item-insert col  col-xs-12" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
+
+        <li class="staff-item  item-insert   col-custom    col-lg-4  col-md-6  col-xs-12" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
             <? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])): ?>
                 <? if (!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])): ?>
                     <img
@@ -75,17 +75,8 @@ $this->setFrameMode(true);
                 <div style="clear:both"></div>
             <? endif ?>
 
-            <?
-            if ($i == '5') {
-            $i = 1;
-            ?>
-        </div>
-    <?
-    } else {
-        $i++;
-    }
-    ?>
-    </div>
+
+    </li>
     <? endforeach; ?>
 
 

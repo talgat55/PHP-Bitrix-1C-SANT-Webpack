@@ -99,8 +99,6 @@ a.main-link.alt
   text-decoration: none
   background: #fff
   padding: 14px 34px
-
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25)
   border-radius: 100px
   width: 260px
   transition: all .3s
@@ -697,6 +695,8 @@ footer
   background: #2f2f2f
 
 
+.show-on-mobile
+  display: none!important
 
 
 
@@ -1034,6 +1034,24 @@ footer
   opacity: 0!important
 
 
+.footer-mobile-row
+  display: none
+  padding: 20px 0
+
+  .list-actions
+    margin: 0
+    padding: 0
+
+    li
+      list-style: none
+
+      a
+        text-decoration: none
+        color: #313131
+        font-size: 14px
+        font-family: $font_playfair
+
+
 
 @media (max-width: 1538px)
   #main-navigation
@@ -1102,4 +1120,190 @@ footer
   #mobile-toggle
     display: inline-block
 
+
+@media (max-width: 1180px)
+  #top-bar
+    .top
+      .list-info
+        li:nth-child(2n)
+          display: none
+  #news-block,
+  #promotion-block
+    .item
+      .img-block
+        overflow: hidden
+
+  .news-list
+    .news-item
+      a
+        display: block
+        overflow: hidden
+
+
+@media (max-width: 992px)
+  #top-bar
+    display: none
+
+  .footer-mobile-row
+    display: block
+
+
+  .footer-menu
+    column-count: 2
+
+
+  footer
+    .bottom-footer
+      .copyright
+        font-size: 14px
+
+  .show-on-mobile
+    display: flex!important
+
+  .home-slider-wrap
+    max-height: max-content
+
+  .blog-img.col-lg-6.col-md-12.col-xs-12.d-flex.align-center-items.left
+    display: none!important
+
+  .home-slider-wrap .blog-img img
+    min-width: 100%
+
+  .home-slider-wrap .text-block.right,
+  .home-slider-wrap .text-block.left
+    margin-left: 0px
+    padding-left: 30px
+    padding-right: 30px
+    max-width: initial
+    padding-top: 10px
+
+  .home-slider-wrap .text-block .title
+    font-size: 30px
+
+  .home-slider-wrap .text-block .text
+    font-size: 14px
+
+  #home-contacts
+    .first-block
+      .sub-title
+        margin-bottom: 30px
+
+  .page-beststaff .pre-block .title
+    font-size: 20px
+
+
+@media (max-width: 768px)
+  #footer-service-menu
+    .parent-list
+      li.item:first-child
+        padding-bottom: 40px
+  #feedback-form
+    margin-bottom: 30px
+
+  .bottom-footer
+    div
+      text-align: center!important
+
+  footer
+    .bottom-footer
+      .link-scroll-up
+        margin: 10px 0 0
+        display: block
+
+  .home-slider-wrap .text-block .title
+    font-size: 25px
+
+  .home-slider .home-slider-arrow li .prev
+    top: 40%
+    left: 16px
+
+  .home-slider .home-slider-arrow li .next
+    top: 40%
+    right: 16px
+
+
+  #key-advantages
+    .item
+      .image-block
+        text-align: center
+
+      .text
+        text-align: center
+
+  #promotion-block
+    .item
+      .img-block
+        height: auto
+
+        img
+          height: auto
+
+
+    .sub-title
+      text-align: center
+
+    a.main-link.alt
+      margin: 32px auto 0 auto
+
+  #news-block
+    .item
+      .img-block
+        height: auto
+      .content
+        padding: 28px 0 0
+        .date
+          padding: 15px 0 0
+
+
+    .sub-title
+      text-align: center
+
+    a.main-link
+      margin: 32px auto 0 auto
+
+    .preview_picture
+      width: 100%
+      height: auto
+
+  #booking-form,
+  #feedback-form
+    .policy-block
+      margin-top: 15px
+
+  .main-title
+    margin-bottom: 0
+
+  .page-beststaff,
+  .page-staff,
+  .page-services,
+  .search-page,
+  .page-main,
+  .page-ticket,
+  .page-contacts,
+  .page-news
+    .main-title
+      margin-bottom: 30px
+
+  #ticket-block
+    padding: 0
+
+  .page-services
+    .swtich-cat-services
+      li
+        a
+          padding: 10px 20px
+
+
+  .page-beststaff .pre-block img
+    display: none
+
+
+@media (max-width: 600px)
+  .page-contacts
+    .list-info
+      .main
+        display: block!important
+
+    .list-info-two li
+      display: block!important
 

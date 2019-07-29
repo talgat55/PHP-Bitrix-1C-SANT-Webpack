@@ -141,6 +141,39 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
             </div>
         </div>
     </div>
+    <div class="footer-mobile-row">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 w-100">
+                    <ul class="list-actions row  w-100">
+                        <li class="col-md-4  col-sm-6 col-xs-12 ">
+                            <a class="d-flex align-items-center " href="/search/">
+                                <p class="w-100 text-center">
+                                    Поиск по сайту
+                                </p>
+                            </a>
+                        </li>
+                        <li class="col-md-4  col-sm-6 col-xs-12">
+                            <a class="d-flex align-items-center" href="/angliskaya-versiya/">
+                                <p class="w-100 text-center">
+                                    english version
+                                </p>
+                            </a>
+                        </li>
+                        <li class="col-md-4 col-sm-6  col-xs-12">
+                            <a class="d-flex align-items-center   bvi-open " href="#">
+                                <p class="w-100 text-center">
+                                    версия для слабовидящих
+                                </p>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container bottom-footer">
         <div class="row">
             <div class="col-md-7 col-xs-12">

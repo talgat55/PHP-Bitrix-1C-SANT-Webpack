@@ -27,7 +27,7 @@ $this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js")
             <? foreach ($arResult["ITEMS"] as $arItem): ?>
                 <?
 
-                $textBlock = '<div class="text-block  '.$arItem["DISPLAY_PROPERTIES"]["FLOAT_TEXT"]["VALUE_XML_ID"].'  col-md-6 col-xs-12">
+                $textBlock = '<div class="text-block  '.$arItem["DISPLAY_PROPERTIES"]["FLOAT_TEXT"]["VALUE_XML_ID"].'   col-lg-6 col-md-12  col-xs-12">
 
                         <h2 class="title">
                             ' . htmlspecialchars_decode($arItem["DISPLAY_PROPERTIES"]["TITLE"]["VALUE"]["TEXT"]) . '
@@ -52,12 +52,25 @@ $this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js")
 
 
                         <? if ($arItem["DISPLAY_PROPERTIES"]['FLOAT_TEXT']['VALUE_XML_ID'] == 'left') { ?>
+                            <div class="show-on-mobile   blog-img col-lg-6 col-md-12 col-xs-12 d-flex  align-center-items">
 
+
+                                <img
+                                        class="preview_picture"
+                                        border="0"
+                                        src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"
+                                        width="<?= $arItem["PREVIEW_PICTURE"]["WIDTH"] ?>"
+                                        height="<?= $arItem["PREVIEW_PICTURE"]["HEIGHT"] ?>"
+                                        alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
+                                        title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>"
+                                        style="float:left"
+                                />
+                            </div>
                             <?= $textBlock; ?>
 
                         <? } ?>
                         <? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])): ?>
-                            <div class="blog-img col-md-6 col-xs-12 d-flex  align-center-items">
+                            <div class="blog-img col-lg-6 col-md-12  col-xs-12 d-flex  align-center-items  <?=$arItem["DISPLAY_PROPERTIES"]['FLOAT_TEXT']['VALUE_XML_ID']; ?>">
 
 
                                 <img

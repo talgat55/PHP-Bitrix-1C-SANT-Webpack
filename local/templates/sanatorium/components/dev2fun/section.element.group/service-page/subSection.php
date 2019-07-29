@@ -26,23 +26,23 @@ global $arParams;
 		<? } ?>
 
 		<? if($arSectionChild["ITEMS"]){
-            echo '<ul class="m-l-30  ">';
-            $i =1;
+            echo '<ul class="m-l-30  row ">';
+//            $i =1;
 			foreach ($arSectionChild["ITEMS"] as $kSubItems => $vSubItems) {
-                if($i == 1){
-                    echo '<div class="d-flex w-100">';
-                }
+//                if($i == 1){
+//                    echo '<div class="d-flex w-100">';
+//                }
 				$GLOBALS['resItems'] = $vSubItems;
 
 					include(__DIR__.'/'.$arParams['TEMP_OUTPUT_ELEMETS']);
 
 				unset($GLOBALS['resItems']);
-                if($i == 6){
-                    echo '</div>';
-                    $i =1;
-                }else{
-                    $i++;
-                }
+//                if($i == 6){
+//                    echo '</div>';
+//                    $i =1;
+//                }else{
+//                    $i++;
+//                }
 			}
 
             echo '</ul>';
