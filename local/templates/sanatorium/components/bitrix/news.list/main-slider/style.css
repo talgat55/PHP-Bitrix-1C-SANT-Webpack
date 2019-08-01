@@ -7,18 +7,35 @@
 
 #main-slider img{
 	min-width: 100%;
-
+	height: auto!important;
 }
+
 #main-slider .main-title{
 	color: #FFFFFF;
 	font-size: 38px;
 	font-family: 'PT Sans', sans-serif;
 	padding: 5px 11px;
-	background: rgba(96, 180, 12, 0.9);
 	margin: 0;
 	position: absolute;
 	bottom: 118px;
 	left: 15px;
 
 }
+.summer-theme  #main-slider .main-title{
+	background: rgba(96, 180, 12, 0.9);
+}
+
+.autumn-theme  #main-slider .main-title{
+	background: rgba(212,125,45, 0.9);
+}
+
+.spring-theme  #main-slider .main-title{
+	background: rgba(208,78,93, 0.9);
+}
+
+.winter-theme  #main-slider .main-title{
+	background: rgba(50,136,197, 0.9);
+}
+
+
 

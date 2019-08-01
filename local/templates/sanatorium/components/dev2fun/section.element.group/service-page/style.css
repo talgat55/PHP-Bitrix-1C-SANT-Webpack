@@ -24,9 +24,23 @@
     color: #fff;
 }
 
+.autumn-theme .page-services .swtich-cat-services li.active {
+    background: #D47D2D;
+}
+
 .summer-theme .page-services .swtich-cat-services li.active {
     background: #60B40C;
 }
+
+.spring-theme .page-services .swtich-cat-services li.active {
+    background: #D04E5D;
+}
+
+.winter-theme .page-services .swtich-cat-services li.active {
+    background: #3288C5;
+}
+
+
 
 .page-services .swtich-cat-services li.active:hover a {
     color: #fff !important;
@@ -47,10 +61,22 @@
     margin-bottom: 40px;
 }
 
-.summer-theme .page-services .swtich-cat-services li a:hover {
+.winter-theme .page-services .swtich-cat-services li a:hover {
+    color: #3288C5;
+}
 
+.summer-theme .page-services .swtich-cat-services li a:hover {
     color: #60B40C;
 }
+
+.spring-theme .page-services .swtich-cat-services li a:hover {
+    color: #D04E5D;
+}
+
+.autumn-theme .page-services .swtich-cat-services li a:hover {
+    color: #D47D2D;
+}
+
 
 .page-services .list-service-cats .item .m-l-30 {
     padding: 0;
@@ -117,30 +143,53 @@
 }
 
 
+.autumn-theme .page-services .list-service-cats .service-item:hover {
+    border-color: #D47D2D;
+}
 .summer-theme .page-services .list-service-cats .service-item:hover {
     border-color: #60B40C;
+}
+
+.spring-theme .page-services .list-service-cats .service-item:hover {
+    border-color: #D04E5D;
+}
+
+.winter-theme .page-services .list-service-cats .service-item:hover {
+    border-color: #3288C5;
 }
 
 
 .summer-theme .page-services .list-service-cats .service-item:hover .service-item-wallpaper {
     background-color: #60B40C;
-
 }
 
-.summer-theme .page-services .list-service-cats .service-item:hover .link {
+.winter-theme .page-services .list-service-cats .service-item:hover .service-item-wallpaper {
+    background-color: #3288C5;
+}
+.spring-theme .page-services .list-service-cats .service-item:hover .service-item-wallpaper {
+    background-color: #D04E5D;
+}
+
+.autumn-theme .page-services .list-service-cats .service-item:hover .service-item-wallpaper {
+    background-color: #D47D2D;
+}
+
+
+
+.page-services .list-service-cats .service-item:hover .link {
     color: #fff;
 }
 
-.summer-theme .page-services .list-service-cats .service-item .link .images-icon svg {
+.page-services .list-service-cats .service-item .link .images-icon svg {
     height: 52px;
     width: auto;
 }
 
-.summer-theme .page-services .list-service-cats .service-item:hover .link .images-icon svg path {
+.page-services .list-service-cats .service-item:hover .link .images-icon svg path {
     fill: white;
 }
 
-.summer-theme .page-services .list-service-cats .service-item:hover .link .images-icon .hover-icon {
+.page-services .list-service-cats .service-item:hover .link .images-icon .hover-icon {
     display: table;
     margin: 0 auto;
 }

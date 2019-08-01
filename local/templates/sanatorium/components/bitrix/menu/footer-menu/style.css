@@ -1,7 +1,8 @@
-.footer-menu{
+.footer-menu {
     margin: 0;
     padding: 0;
 }
+
 #footer-navigation .title {
     font-size: 20px;
     color: #313131;
@@ -10,10 +11,11 @@
     margin: 0 0 20px;
 }
 
-#footer-navigation .footer-menu li{
+#footer-navigation .footer-menu li {
     list-style: none;
 }
-#footer-navigation .footer-menu  a{
+
+#footer-navigation .footer-menu a {
     font-size: 14px;
     text-decoration-line: underline;
     color: #313131;
@@ -23,6 +25,19 @@
     transition: all .3s;
 }
 
-.summer-theme #footer-navigation .footer-menu  a:hover{
+.summer-theme #footer-navigation .footer-menu a:hover {
     color: #60B40C;
 }
+
+.autumn-theme #footer-navigation .footer-menu a:hover {
+    color: #D47D2D;
+}
+
+.spring-theme #footer-navigation .footer-menu a:hover {
+    color: #D04E5D;
+}
+
+.winter-theme #footer-navigation .footer-menu a:hover {
+    color: #3288C5;
+}
+

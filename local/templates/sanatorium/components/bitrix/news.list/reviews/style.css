@@ -28,6 +28,16 @@
     background: url(/images/quote-summer.png) no-repeat!important;
 }
 
+.autumn-theme #review-list li::before{
+    background: url(/images/quote-autumn.png) no-repeat!important;
+}
+.spring-theme #review-list li::before{
+    background: url(/images/quote-spring.png) no-repeat!important;
+}
+.winter-theme #review-list li::before{
+    background: url(/images/quote-winter.png) no-repeat!important;
+}
+
 
 
 #review-list .review-item .add-field  .date{

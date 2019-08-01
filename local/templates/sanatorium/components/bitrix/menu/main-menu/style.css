@@ -1,8 +1,19 @@
 
 .summer-theme #main-navigation{
     background: #60B40C;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
 }
+.autumn-theme #main-navigation{
+    background: #D47D2D;
+}
+
+.spring-theme #main-navigation{
+    background: #D04E5D;
+}
+.winter-theme #main-navigation{
+    background: #3288C5;
+}
+
+
 #main-navigation .center-menu{
     margin: 0;
     padding: 0;
@@ -28,12 +39,29 @@
 .bottom #main-navigation{
     display: inline-block;
 }
+
 .bottom #buy-ticket{
     display: inline-block;
-    background: #4C8E0A;
+    background: #333;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
     transition: all .3s;
 }
+.summer-theme  .bottom #buy-ticket{
+    background: #4C8E0A;
+}
+.autumn-theme  .bottom #buy-ticket{
+    background: #BA6617;
+}
+
+.winter-theme  .bottom #buy-ticket{
+    background: #1567A3;
+}
+
+.spring-theme  .bottom #buy-ticket{
+    background: #9D2634;
+}
+
+
 .bottom #buy-ticket:hover{
 
     background: #333;

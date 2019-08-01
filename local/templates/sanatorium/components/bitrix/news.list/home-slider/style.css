@@ -49,8 +49,8 @@
     background: -o-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.95) 55%, rgba(255,255,255,.7) 81%,rgba(255,255,255,0) 100%);
     background: -ms-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.95) 55%, rgba(255,255,255,.7) 81%,rgba(255,255,255,0) 100%);
     background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.95) 55%,rgba(255,255,255,.7) 81%, rgba(255,255,255,0) 100%);
-
 }
+
 .home-slider-wrap .text-block .title{
     margin: 0;
     font-family: 'PT Sans', sans-serif;
@@ -60,11 +60,27 @@
     margin-bottom: 20px;
 
 }
+
 .home-slider-wrap .text-block .title b{
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
-    color: #60B40C;
+    color: #333;
+}
 
+.summer-theme .home-slider-wrap .text-block .title b{
+    color: #60B40C;
+}
+
+.autumn-theme .home-slider-wrap .text-block .title b{
+    color: #D47D2D;
+}
+
+.spring-theme .home-slider-wrap .text-block .title b{
+    color: #D04E5D;
+}
+
+.winter-theme .home-slider-wrap .text-block .title b{
+    color: #3288C5;
 }
 
 

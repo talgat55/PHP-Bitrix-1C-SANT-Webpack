@@ -153,7 +153,7 @@ $APPLICATION->SetTitle("Главная");
                     <div class="w-100 row">
                         <div class="item col-lg-3 col-md-6 col-xs-12 ">
                             <div class="image-block">
-                                <img src="/images/transpaernt.png" class="lazy" data-src="/images/key-summer-1.png"
+                                <img src="/images/transpaernt.png" class="lazy" data-src="/images/key-<?=$GLOBALS['theme']; ?>-1.png"
                                      alt="изображение">
                             </div>
                             <div class="text">
@@ -163,7 +163,7 @@ $APPLICATION->SetTitle("Главная");
                         </div>
                         <div class="item col-lg-3  col-md-6 col-xs-12 ">
                             <div class="image-block">
-                                <img src="/images/transpaernt.png" class="lazy" data-src="/images/key-summer-2.png"
+                                <img src="/images/transpaernt.png" class="lazy" data-src="/images/key-<?=$GLOBALS['theme']; ?>-2.png"
                                      alt="изображение">
                             </div>
                             <div class="text">
@@ -173,7 +173,7 @@ $APPLICATION->SetTitle("Главная");
                         </div>
                         <div class="item col-lg-3  col-md-6 col-xs-12 ">
                             <div class="image-block">
-                                <img src="/images/transpaernt.png" class="lazy" data-src="/images/key-summer-3.png"
+                                <img src="/images/transpaernt.png" class="lazy" data-src="/images/key-<?=$GLOBALS['theme']; ?>-3.png"
                                      alt="изображение">
                             </div>
                             <div class="text">
@@ -183,7 +183,7 @@ $APPLICATION->SetTitle("Главная");
                         </div>
                         <div class="item col-lg-3 col-md-6  col-xs-12 ">
                             <div class="image-block">
-                                <img src="/images/transpaernt.png" class="lazy" data-src="/images/key-summer-4.png"
+                                <img src="/images/transpaernt.png" class="lazy" data-src="/images/key-<?=$GLOBALS['theme']; ?>-4.png"
                                      alt="изображение">
                             </div>
                             <div class="text">

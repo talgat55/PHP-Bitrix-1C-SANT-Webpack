@@ -34,3 +34,15 @@
 .summer-theme .news-list li  .title{
 	color: #60B40C;
 }
+
+.autumn-theme .news-list li  .title{
+	color: #D47D2D;
+}
+
+.spring-theme .news-list li  .title{
+	color: #D04E5D;
+}
+.winter-theme .news-list li  .title{
+	color: #3288C5;
+}
+

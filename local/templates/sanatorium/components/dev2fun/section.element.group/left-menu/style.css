@@ -17,9 +17,23 @@
     color: #FFFFFF;
     padding: 20px;
 }
+.autumn-theme #header-service-menu #header-service-menu-list li .sub-section{
+    background: #D47D2D;
+}
+
 .summer-theme #header-service-menu #header-service-menu-list li .sub-section{
     background: #60B40C;
 }
+
+.spring-theme #header-service-menu #header-service-menu-list li .sub-section{
+    background: #D04E5D;
+}
+
+.winter-theme #header-service-menu #header-service-menu-list li .sub-section{
+    background: #3288C5;
+}
+
+
 #header-service-menu #header-service-menu-list li .sub-section:hover{
     text-decoration: none;
     background: #313131;
@@ -39,6 +53,15 @@
     display: inline-block;
 }
 
+.autumn-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover{
+    background: #D47D2D;
+}
+.spring-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover{
+    background: #D04E5D;
+}
+.winter-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover{
+    background: #3288C5;
+}
 .summer-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover{
     background: #60B40C;
 }
@@ -46,13 +69,13 @@
     color: #fff;
     text-decoration: none;
 }
-.summer-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover  .arrow-main {
+#header-service-menu #header-service-menu-list li .child-list .element-item a:hover  .arrow-main {
     display: none;
 }
-.summer-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover  .arrow-hover {
+#header-service-menu #header-service-menu-list li .child-list .element-item a:hover  .arrow-hover {
     display: inline-block!important;
 }
-.summer-theme #header-service-menu #header-service-menu-list li .child-list .element-item a:hover svg path {
+#header-service-menu #header-service-menu-list li .child-list .element-item a:hover svg path {
     fill: white;
 }
 

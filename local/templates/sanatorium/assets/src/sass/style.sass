@@ -56,6 +56,10 @@ $winter_main_color: #3288C5
 $autumn_main_color: #D47D2D
 $spring_main_color: #D04E5D
 
+main
+  overflow-x: hidden
+
+
 
 #primary
   margin-left: 280px
@@ -66,6 +70,21 @@ $spring_main_color: #D04E5D
 .summer-theme button.main-link,
 .summer-theme a.main-link
   background: linear-gradient(180deg, #60B40C 0%, #4C8E0A 100%)
+
+.autumn-theme button.main-link,
+.autumn-theme a.main-link
+  background: linear-gradient(180deg, #d48d28 0%, #D47D2D 100%)
+
+.spring-theme button.main-link,
+.spring-theme a.main-link
+  background: linear-gradient(180deg, #D04E5D 0%, #d0464a 100%)
+
+.winter-theme button.main-link,
+.winter-theme a.main-link
+  background: linear-gradient(180deg, #3288C5 0%, #347fc5 100%)
+
+
+
 
 button.main-link,
 a.main-link
@@ -124,6 +143,31 @@ a.main-link.alt
     i
       color: $summer_main_color
 
+.autumn-theme
+  a.main-link.alt
+    color: $autumn_main_color
+
+    i
+      color: $autumn_main_color
+
+.spring-theme
+  a.main-link.alt
+    color: $spring_main_color
+
+    i
+      color: $spring_main_color
+
+.winter-theme
+  a.main-link.alt
+    color: $winter_main_color
+
+    i
+      color: $winter_main_color
+
+
+
+
+
 
 .sub-title
   font-size: 28px
@@ -157,6 +201,15 @@ a.main-link.alt
 .summer-theme  .link-feedback
   background: #4C8E0A
 
+.autumn-theme  .link-feedback
+  background: #D47D2D
+
+.spring-theme  .link-feedback
+  background: #D04E5D
+
+.winter-theme  .link-feedback
+  background: #3288C5
+
 
 .main-title
   margin-top: 0
@@ -171,9 +224,32 @@ a.main-link.alt
 .summer-theme .main-title
   background-color: $summer_main_color
 
+.autumn-theme .main-title
+  background-color: $autumn_main_color
+
+.spring-theme .main-title
+  background-color: $spring_main_color
+
+.winter-theme .main-title
+  background-color: $winter_main_color
+
+
+
 
 .summer-theme .pagination-wrapper  .load-more
   background: $summer_main_color!important
+
+.autumn-theme .pagination-wrapper  .load-more
+  background: $autumn_main_color!important
+
+.spring-theme .pagination-wrapper  .load-more
+  background: $spring_main_color!important
+
+.winter-theme .pagination-wrapper  .load-more
+  background: $winter_main_color!important
+
+
+
 
 .pagination-wrapper
   .load-more
@@ -550,6 +626,30 @@ header
       .list-info
         .email-field
           color: $summer_main_color
+
+.autumn-theme
+  #home-contacts
+    .first-block
+      .list-info
+        .email-field
+          color: $autumn_main_color
+
+.spring-theme
+  #home-contacts
+    .first-block
+      .list-info
+        .email-field
+          color: $spring_main_color
+
+.winter-theme
+  #home-contacts
+    .first-block
+      .list-info
+        .email-field
+          color: $winter_main_color
+
+
+
 //
 //
 //
@@ -632,12 +732,55 @@ header
     .icon-select
       color: $summer_main_color
 
+.autumn-theme
+  #booking-form,
+  #feedback-form
+    .icon-select
+      color: $autumn_main_color
+
+.spring-theme
+  #booking-form,
+  #feedback-form
+    .icon-select
+      color: $spring_main_color
+
+.winter-theme
+  #booking-form,
+  #feedback-form
+    .icon-select
+      color: $winter_main_color
+
+
+
 .summer-theme
   #booking-form,
   #feedback-form
     .policy-block
       a:hover
         color: $summer_main_color
+
+.autumn-theme
+  #booking-form,
+  #feedback-form
+    .policy-block
+      a:hover
+        color: $autumn_main_color
+
+.spring-theme
+  #booking-form,
+  #feedback-form
+    .policy-block
+      a:hover
+        color: $spring_main_color
+
+.winter-theme
+  #booking-form,
+  #feedback-form
+    .policy-block
+      a:hover
+        color: $winter_main_color
+
+
 
 
 #map
@@ -679,6 +822,31 @@ footer
       &:hover
         color: #313131
 
+
+
+.summer-theme
+  footer
+    .bottom-footer
+      .link-scroll-up
+        color: #4C8E0A
+
+.autumn-theme
+  footer
+    .bottom-footer
+      .link-scroll-up
+        color: #D47D2D
+
+.spring-theme
+  footer
+    .bottom-footer
+      .link-scroll-up
+        color: #D04E5D
+
+.winter-theme
+  footer
+    .bottom-footer
+      .link-scroll-up
+        color: #3288C5
 
 
 
@@ -766,6 +934,19 @@ footer
   a
     color: $summer_main_color
 
+.autumn-theme .page-contacts .list-info-two
+  a
+    color: $autumn_main_color
+
+.spring-theme .page-contacts .list-info-two
+  a
+    color: $spring_main_color
+
+.winter-theme .page-contacts .list-info-two
+  a
+    color: $winter_main_color
+
+
 
 
 
@@ -816,7 +997,6 @@ footer
 
       &::before
           content: ""
-          background: url(/images/about-icon-summer.png)
           display: block
           position: absolute
           top: 10px
@@ -853,13 +1033,70 @@ footer
     margin: 0 -15px
 
 
+.summer-theme
+  .page-about
+    .about-list
+      li
+        &::before
+          background: url(/images/about-icon-summer.png)
+
+.autumn-theme
+  .page-about
+    .about-list
+      li
+        &::before
+          background: url(/images/about-icon-autumn.png)
+
+.spring-theme
+  .page-about
+    .about-list
+      li
+        &::before
+          background: url(/images/about-icon-spring.png)
+
+.winter-theme
+  .page-about
+    .about-list
+      li
+        &::before
+          background: url(/images/about-icon-winter.png)
+
+
+
+
 
 .summer-theme .page-about .about-list-links  li a,
 .summer-theme .page-about .special-block
   color: $summer_main_color
 
+.autumn-theme .page-about .about-list-links  li a,
+.autumn-theme .page-about .special-block
+  color: $autumn_main_color
+
+.spring-theme .page-about .about-list-links  li a,
+.spring-theme .page-about .special-block
+  color: $spring_main_color
+
+.winter-theme .page-about .about-list-links  li a,
+.winter-theme .page-about .special-block
+  color: $winter_main_color
+
+
+
+
 .summer-theme .page-about .main-title
   background: rgba(96,180 ,12 ,.8)
+
+.autumn-theme .page-about .main-title
+  background: rgba(212,125,45 ,.8)
+
+.spring-theme .page-about .main-title
+  background: rgba(208,78,93 ,.8)
+
+.winter-theme .page-about .main-title
+  background: rgba(50,136,197 ,.8)
+
+
 
 
 //

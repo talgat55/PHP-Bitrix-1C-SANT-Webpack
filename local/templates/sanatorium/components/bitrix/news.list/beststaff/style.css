@@ -35,6 +35,19 @@
 .summer-theme .staff-list .staff-item .title{
     color: #60B40C;
 }
+.autumn-theme .staff-list .staff-item .title{
+    color: #D47D2D;
+}
+
+.spring-theme .staff-list .staff-item .title{
+    color: #D04E5D;
+}
+
+.winter-theme .staff-list .staff-item .title{
+    color: #3288C5;
+}
+
+
 .staff-list.beststaff-list{
     padding: 0;
     margin: 0 -15px!important;

@@ -45,6 +45,21 @@
 .summer-theme #news-block .item .content .title a{
     color: #4C8E0A;
 }
+
+.spring-theme #news-block .item .content .title a{
+    color: #D47D2D;
+}
+
+.autumn-theme #news-block .item .content .title a{
+    color: #D47D2D;
+}
+
+.winter-theme #news-block .item .content .title a{
+    color: #3288C5;
+}
+
+
+
 #news-block .item .content .title a:hover{
     color:#313131;
 }

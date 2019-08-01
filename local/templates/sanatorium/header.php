@@ -50,15 +50,30 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
         $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
 
     }
-
-
     $APPLICATION->AddHeadScript("/local/templates/sanatorium/assets/build/app.js");
 
-    $GLOBALS['theme'] = 'summer';
+    // change theme colors
+
+    $mounth = date('m');
+     if($mounth == '01'  || $mounth == '02'  || $mounth == '12' ||  $_GET['theme'] == 'winter'){
+         $GLOBALS['theme'] = 'winter';
+         $mainClass = 'winter-theme';
+     }else if ($mounth == '03' || $mounth == '04'  || $mounth == '05' ||  $_GET['theme'] == 'spring'){
+         $GLOBALS['theme'] = 'spring';
+         $mainClass = 'spring-theme';
+     }else if ($mounth == '06' || $mounth == '07'  || $mounth == '08' ||  $_GET['theme'] == 'summer'){
+         $GLOBALS['theme'] = 'summer';
+         $mainClass = 'summer-theme';
+     }else if ($mounth == '09' || $mounth == '10'  || $mounth == '11' ||  $_GET['theme'] == 'autumn'){
+         $GLOBALS['theme'] = 'autumn';
+         $mainClass = 'autumn-theme';
+     }
+
+
     ?>
 </head>
 
-<body class="<? $APPLICATION->ShowProperty('BodyClass'); ?>   summer-theme" <? $APPLICATION->ShowProperty('BodyTag'); ?> >
+<body class="<? $APPLICATION->ShowProperty('BodyClass'); ?>   <?=$mainClass; ?>" <? $APPLICATION->ShowProperty('BodyTag'); ?> >
 <?
 $APPLICATION->ShowPanel();
 ?>

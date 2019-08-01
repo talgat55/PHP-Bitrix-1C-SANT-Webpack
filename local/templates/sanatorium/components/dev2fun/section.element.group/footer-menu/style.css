@@ -38,9 +38,24 @@
 	display: inline-block;
 	transition: all .3s;
 }
+
+.autumn-theme #footer-service-menu  .element-item a:hover{
+	color: #D47D2D;
+}
+
 .summer-theme #footer-service-menu  .element-item a:hover{
 	color: #60B40C;
 }
+
+.spring-theme #footer-service-menu  .element-item a:hover{
+	color: #D04E5D;
+}
+
+.winter-theme #footer-service-menu  .element-item a:hover{
+	color: #3288C5;
+}
+
+
 
 #footer-service-menu > ul li > ul{
 	padding: 0;

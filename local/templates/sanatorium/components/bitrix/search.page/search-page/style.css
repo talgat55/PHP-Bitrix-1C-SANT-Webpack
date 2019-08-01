@@ -34,6 +34,19 @@ div.search-page-params {
 .summer-theme .search-page form input[type=submit]{
 	background: #60B40C;
 }
+
+.autumn-theme .search-page form input[type=submit]{
+	background: #D47D2D;
+}
+.spring-theme .search-page form input[type=submit]{
+	background: #D04E5D;
+}
+.winter-theme .search-page form input[type=submit]{
+	background: #3288C5;
+}
+
+
+
 .search-page form input[type=submit]:hover{
 	background: linear-gradient(180deg, #333 0%, #333 100%)
 }

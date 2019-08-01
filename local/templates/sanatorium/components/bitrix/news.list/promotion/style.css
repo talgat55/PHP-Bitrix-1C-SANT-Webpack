@@ -11,6 +11,20 @@
 .summer-theme #promotion-block .item .content .title a{
     color: #4C8E0A;
 }
+
+.autumn-theme #promotion-block .item .content .title a{
+    color: #D47D2D;
+}
+
+.spring-theme #promotion-block .item .content .title a{
+    color: #D04E5D;
+}
+
+.winter-theme #promotion-block .item .content .title a{
+    color: #3288C5;
+}
+
+
 #promotion-block .item .content .date{
     font-family: 'OpenSans';
     font-weight: 300;
@@ -36,10 +50,30 @@
 }
 
 #promotion-block .item .content .link-promotion:hover{
-    background: linear-gradient(180deg, #60B40C 0%, #4C8E0A 100%);
     color: #fff;
+}
+
+.summer-theme #promotion-block .item .content .link-promotion:hover{
+    background: linear-gradient(180deg, #60B40C 0%, #4C8E0A 100%);
     border-color: #60B40C;
 }
+
+.autumn-theme #promotion-block .item .content .link-promotion:hover{
+    background: linear-gradient(180deg, #D47D2D 0%, #d48b25 100%);
+    border-color: #D47D2D;
+}
+
+.spring-theme #promotion-block .item .content .link-promotion:hover{
+    background: linear-gradient(180deg, #D04E5D 0%, #d04e43 100%);
+    border-color: #D04E5D;
+}
+
+.winter-theme #promotion-block .item .content .link-promotion:hover{
+    background: linear-gradient(180deg, #3288C5 0%, #2c9bc5 100%);
+    border-color: #3288C5;
+}
+
+
 
 #promotion-block .item .content{
     background-color: #fff;
@@ -48,10 +82,14 @@
 #promotion-block .item{
     margin-bottom: 51px;
 }
+
 #promotion-block .item .img-block{
     height: 170px;
-    box-shadow: 0px 4px 50px #6B8F1D;
 }
+
+
+
+
 #promotion-block .item .img-block img{
     min-width: 100%;
 }
@@ -72,8 +110,25 @@
     background-repeat: no-repeat!important;
     background-position: bottom;
 }
+.autumn-theme #promotion-block{
+    background-color: #D47D2D;
+    background-image: url("/images/promotion-bg-autumn.jpg");
+}
+
 .summer-theme #promotion-block{
     background-color: #8DB833;
     background-image: url("/images/promotion-bg-summer.jpg");
-
 }
+
+.spring-theme #promotion-block{
+    background-color: #D04E5D;
+    background-image: url("/images/promotion-bg-spring.jpg");
+}
+
+.winter-theme #promotion-block{
+    background-color: #3288C5;
+    background-image: url("/images/promotion-bg-winter.jpg");
+}
+
+
+
