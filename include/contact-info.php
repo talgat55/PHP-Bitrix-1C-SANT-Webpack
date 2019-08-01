@@ -3,7 +3,8 @@
         <div class="row">
             <div class="first-block col-lg-4 col-xs-12">
                 <h2 class="sub-title">
-                    Контакты </h2>
+                    Контакты
+                </h2>
                 <ul class="list-info">
                     <li>
                         <h4 class="title">

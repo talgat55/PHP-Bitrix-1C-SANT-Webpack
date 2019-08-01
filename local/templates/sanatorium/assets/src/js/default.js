@@ -9,6 +9,7 @@ jQuery(document).ready(function () {
     mobileMenu();
     hideLeftMenuOnScroll();
     formHandler();
+    inputsMask();
     // end redy function
 });
 
@@ -17,6 +18,29 @@ window.onload = function () {
     menuLoadFirstBlock();
 };
 
+
+//----------------------------------
+//   Masks for inputs
+//---------------------------------------
+
+function inputsMask() {
+    "use strict";
+
+    var phoneClass = jQuery('.phone-input');
+    var dateClass = jQuery('.date-input');
+
+    if (phoneClass.length) {
+        phoneClass.mask('+0(000) 000-0000');
+    }
+
+    if (dateClass.length) {
+        dateClass.datepicker({
+            autoClose: true
+        });
+    }
+
+
+}
 
 //----------------------------------
 //   Lasyload
@@ -142,13 +166,10 @@ function hideLeftMenuOnScroll() {
 
     jQuery(window).scroll(function () {
         var scroll = jQuery(window).scrollTop();
-
         if (scroll >= 120) {
             jQuery(menuClass + ', ' + headerClass).removeClass('is-active');
         }
-
     });
-
 }
 
 //----------------------------------
@@ -164,7 +185,7 @@ function formHandler() {
 
     thisForm.submit(function () {
 
-        if(!thisForm.parent().hasClass('search-page')){
+        if (!thisForm.parent().hasClass('search-page')) {
             var formData = thisForm.serialize();
 
             jQuery.post('ajax/send.php', formData, function (data) {
@@ -175,21 +196,14 @@ function formHandler() {
 
                     overlayLayer.addClass(activeClass);
                     modallayLayer.addClass(activeClass);
-                    setTimeout(function() {
+                    setTimeout(function () {
                         overlayLayer.removeClass(activeClass);
                         modallayLayer.removeClass(activeClass);
                     }, 2000);
-
                 }
-
-
             });
-
-
             return false;
         }
-
     });
-
 }
 

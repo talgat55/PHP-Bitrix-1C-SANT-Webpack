@@ -1,6 +1,13 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Купить путевку");
+
+$APPLICATION->SetAdditionalCSS("/local/templates/sanatorium/assets/build/css/datepicker.min.css");
+$APPLICATION->AddHeadScript("/local/templates/sanatorium/assets/build/js/datepicker.min.js");
+$APPLICATION->AddHeadScript("/local/templates/sanatorium/assets/build/js/jquery.mask.min.js");
+
+
+
 ?>
     <div class="main-content w-100  page-ticket">
         <div class="container">
@@ -78,7 +85,7 @@ $APPLICATION->SetTitle("Купить путевку");
                                             <label>
                                                 Дата заезда
                                             </label>
-                                            <input type="text" name="date_placement"
+                                            <input type="date" name="date_placement"
                                                    placeholder="ДД.ММ.ГГГГ"
                                                    class="text-input date-input">
                                         </div>

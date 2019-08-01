@@ -120,12 +120,33 @@ jQuery(document).ready(function () {
   backToTop();
   mobileMenu();
   hideLeftMenuOnScroll();
-  formHandler(); // end redy function
+  formHandler();
+  inputsMask(); // end redy function
 });
 
 window.onload = function () {
   menuLoadFirstBlock();
 }; //----------------------------------
+//   Masks for inputs
+//---------------------------------------
+
+
+function inputsMask() {
+  "use strict";
+
+  var phoneClass = jQuery('.phone-input');
+  var dateClass = jQuery('.date-input');
+
+  if (phoneClass.length) {
+    phoneClass.mask('+0(000) 000-0000');
+  }
+
+  if (dateClass.length) {
+    dateClass.datepicker({
+      autoClose: true
+    });
+  }
+} //----------------------------------
 //   Lasyload
 //---------------------------------------
 
