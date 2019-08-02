@@ -545,7 +545,23 @@ header.is-active {
   color: #60B40C;
 }
 
+.summer-theme #top-bar .top .list-info li a:hover {
+  color: #60B40C;
+}
+
+.summer-theme #top-bar .top .list-actions a:hover {
+  color: #60B40C;
+}
+
 .winter-theme #top-bar .top .list-info i {
+  color: #3288C5;
+}
+
+.winter-theme #top-bar .top .list-info li a:hover {
+  color: #3288C5;
+}
+
+.winter-theme #top-bar .top .list-actions a:hover {
   color: #3288C5;
 }
 
@@ -553,7 +569,23 @@ header.is-active {
   color: #D47D2D;
 }
 
+.autumn-theme #top-bar .top .list-info li a:hover {
+  color: #D47D2D;
+}
+
+.autumn-theme #top-bar .top .list-actions a:hover {
+  color: #D47D2D;
+}
+
 .spring-theme #top-bar .top .list-info i {
+  color: #D04E5D;
+}
+
+.spring-theme #top-bar .top .list-info li a:hover {
+  color: #D04E5D;
+}
+
+.spring-theme #top-bar .top .list-actions a:hover {
   color: #D04E5D;
 }
 

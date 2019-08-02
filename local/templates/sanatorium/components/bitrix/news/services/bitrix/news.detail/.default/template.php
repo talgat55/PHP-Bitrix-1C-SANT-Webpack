@@ -46,6 +46,7 @@ $this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js")
                 ); ?>
                 <h1 class="title"><?= $arResult["NAME"] ?></h1>
                 <div class="short-text-block">
+                    <? if (!empty($arResult['PROPERTIES']['EXCEPT']['VALUE']['TEXT'])) { ?>
                     <h2 class="sub-title-detail">
                         Кратко об услуге
                     </h2>
@@ -59,7 +60,7 @@ $this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js")
 
                         echo $redySvg;
                         ?>
-
+                        <? } ?>
                     </div>
                 </div>
                 <div class="main-content">
@@ -69,59 +70,61 @@ $this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js")
                     Время работы косметического салона: <i class="far fa-clock"></i>
                     <span><?= $arResult['PROPERTIES']['WORKTIME']['VALUE']['TEXT']; ?></span>
                 </div>
-                <div class="wrapper-slider position-relative w-100">
-                    <div class="row">
-                        <div class="col-lg-9 col-xs-12 position-relative">
-                            <ul id="slider" class="main-slider w-100">
+                <? if (!empty($arResult['PROPERTIES']['GALLERY']['VALUE'])) { ?>
+                    <div class="wrapper-slider position-relative w-100">
+                        <div class="row">
+                            <div class="col-lg-9 col-xs-12 position-relative">
+                                <ul id="slider" class="main-slider w-100">
 
-                                <? foreach ($arResult['PROPERTIES']['GALLERY']['VALUE'] as $value_img) { ?>
-                                    <? $image = CFile::GetPath($value_img); ?>
+                                    <? foreach ($arResult['PROPERTIES']['GALLERY']['VALUE'] as $value_img) { ?>
+                                        <? $image = CFile::GetPath($value_img); ?>
 
-                                    <li>
-                                        <img src="<?= $image; ?>" alt="Изображение"/>
-                                    </li>
-
-                                <? } ?>
-
-                            </ul>
-                            <ul class="service-slider-arrow">
-                                <li>
-                                    <a href="#" class="prev arrow">
-                                        <i class="fas fa-angle-left"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="next arrow">
-                                        <i class="fas fa-angle-right"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-xs-12">
-                            <ul id="carousel" class="half-slider w-100">
-                                <? foreach ($arResult['PROPERTIES']['GALLERY']['VALUE'] as $value_img) { ?>
-                                    <? $image = CFile::GetPath($value_img); ?>
-
-                                    <li>
-                                        <div class="wrapper">
+                                        <li>
                                             <img src="<?= $image; ?>" alt="Изображение"/>
-                                        </div>
+                                        </li>
 
+                                    <? } ?>
+
+                                </ul>
+                                <ul class="service-slider-arrow">
+                                    <li>
+                                        <a href="#" class="prev arrow">
+                                            <i class="fas fa-angle-left"></i>
+                                        </a>
                                     </li>
+                                    <li>
+                                        <a href="#" class="next arrow">
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-xs-12">
+                                <ul id="carousel" class="half-slider w-100">
 
-                                <? } ?>
-                            </ul>
+                                    <? foreach ($arResult['PROPERTIES']['GALLERY']['VALUE'] as $value_img) { ?>
+                                        <? $image = CFile::GetPath($value_img); ?>
+
+                                        <li>
+                                            <div class="wrapper">
+                                                <img src="<?= $image; ?>" alt="Изображение"/>
+                                            </div>
+
+                                        </li>
+
+                                    <? } ?>
+                                </ul>
+                            </div>
                         </div>
+
+
                     </div>
-
-
-
-                </div>
+                <? } ?>
                 <?
                 $APPLICATION->IncludeFile(
-                    SITE_DIR."/include/contact-info-alt.php",
+                    SITE_DIR . "/include/contact-info-alt.php",
                     Array(),
-                    Array("MODE"=>"html")
+                    Array("MODE" => "html")
                 );
                 ?>
 
