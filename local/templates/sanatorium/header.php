@@ -54,19 +54,44 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 
     // change theme colors
 
-    $mounth = date('m');
-     if($mounth == '01'  || $mounth == '02'  || $mounth == '12' ||  $_GET['theme'] == 'winter'){
-         $GLOBALS['theme'] = 'winter';
-         $mainClass = 'winter-theme';
-     }else if ($mounth == '03' || $mounth == '04'  || $mounth == '05' ||  $_GET['theme'] == 'spring'){
-         $GLOBALS['theme'] = 'spring';
-         $mainClass = 'spring-theme';
-     }else if ($mounth == '06' || $mounth == '07'  || $mounth == '08' ||  $_GET['theme'] == 'summer'){
-         $GLOBALS['theme'] = 'summer';
-         $mainClass = 'summer-theme';
-     }else if ($mounth == '09' || $mounth == '10'  || $mounth == '11' ||  $_GET['theme'] == 'autumn'){
-         $GLOBALS['theme'] = 'autumn';
-         $mainClass = 'autumn-theme';
+
+
+
+     if(!isset($_GET['theme'])){
+         $cookie_theme = $APPLICATION->get_cookie("theme_site");
+         if($cookie_theme == 'winter'  ){
+             $GLOBALS['theme'] = 'winter';
+             $mainClass = 'winter-theme';
+         }else if ($cookie_theme== 'spring' ){
+             $GLOBALS['theme'] = 'spring';
+             $mainClass = 'spring-theme';
+         }else if ($cookie_theme == 'summer' ){
+             $GLOBALS['theme'] = 'summer';
+             $mainClass = 'summer-theme';
+         }else if ($cookie_theme == 'autumn' ){
+             $GLOBALS['theme'] = 'autumn';
+             $mainClass = 'autumn-theme';
+         }
+
+     }else{
+         $mounth = date('m');
+         if($mounth == '01'  || $mounth == '02'  || $mounth == '12' ||  $_GET['theme'] == 'winter'  ){
+             $GLOBALS['theme'] = 'winter';
+             $mainClass = 'winter-theme';
+             $APPLICATION->set_cookie("theme_site", 'winter');
+         }else if ($mounth == '03' || $mounth == '04'  || $mounth == '05' ||  $_GET['theme'] == 'spring' ){
+             $GLOBALS['theme'] = 'spring';
+             $mainClass = 'spring-theme';
+             $APPLICATION->set_cookie("theme_site", 'spring');
+         }else if ($mounth == '06' || $mounth == '07'  || $mounth == '08' ||  $_GET['theme'] == 'summer' ){
+             $GLOBALS['theme'] = 'summer';
+             $mainClass = 'summer-theme';
+             $APPLICATION->set_cookie("theme_site", 'summer');
+         }else if ($mounth == '09' || $mounth == '10'  || $mounth == '11' ||  $_GET['theme'] == 'autumn' ){
+             $GLOBALS['theme'] = 'autumn';
+             $mainClass = 'autumn-theme';
+             $APPLICATION->set_cookie("theme_site", 'autumn');
+         }
      }
 
 

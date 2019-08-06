@@ -204,8 +204,14 @@ $APPLICATION->IncludeFile(
     Array(),
     Array("MODE" => "html")
 );
-?>
 
+$APPLICATION->IncludeFile(
+    SITE_DIR . "/include/modal-form.php",
+    Array(),
+    Array("MODE" => "html")
+);
+?>
+<div class="overlay-layer"></div>
 
 <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH; ?>/assets/build/css/fontawesome-all.min.css">
 

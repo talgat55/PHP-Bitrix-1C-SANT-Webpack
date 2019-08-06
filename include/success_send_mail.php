@@ -12,4 +12,4 @@
        Спасибо письмо отправлено
     </div>
 </div>
-<div class="overlay-layer"></div>
+

@@ -10,6 +10,7 @@ jQuery(document).ready(function () {
     hideLeftMenuOnScroll();
     formHandler();
     inputsMask();
+    formModal();
     // end redy function
 });
 
@@ -181,7 +182,7 @@ function formHandler() {
     var overlayLayer = jQuery('.overlay-layer');
     var modallayLayer = jQuery('.success-send-mail-modal');
     var activeClass = 'active-mode';
-
+    var modalLayer = jQuery('.modal-custom');
 
     thisForm.submit(function () {
 
@@ -193,11 +194,11 @@ function formHandler() {
                 if (data) {
                     // reset form
                     thisForm[0].reset();
-
+                    modalLayer.removeClass('is-active');
                     overlayLayer.addClass(activeClass);
                     modallayLayer.addClass(activeClass);
                     setTimeout(function () {
-                        overlayLayer.removeClass(activeClass);
+                        overlayLayer.removeClass(activeClass  + ' is-active');
                         modallayLayer.removeClass(activeClass);
                     }, 2000);
                 }
@@ -207,3 +208,30 @@ function formHandler() {
     });
 }
 
+//----------------------------------
+//   Form modal
+//------------------------------------
+function formModal() {
+    "use strict";
+    var clickClass = ' .link-feedback' ;
+    var overlayLayer = jQuery('.overlay-layer');
+    var modalLayer = jQuery('.modal-custom');
+    var bodyClass = jQuery('body');
+
+    bodyClass.on('click', clickClass, function () {
+
+        modalLayer.toggleClass('is-active');
+        overlayLayer.toggleClass('is-active');
+
+        return false;
+    });
+
+    bodyClass.on('click',  ' .modal-custom .close-modal', function () {
+
+        modalLayer.toggleClass('is-active');
+        overlayLayer.toggleClass('is-active');
+
+        return false;
+    });
+
+}
