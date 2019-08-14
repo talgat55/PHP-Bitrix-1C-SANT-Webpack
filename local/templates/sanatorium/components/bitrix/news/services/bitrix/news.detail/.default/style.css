@@ -114,6 +114,8 @@
 .service-page-detail .service-detail .main-slider{
     margin: 0;
     padding: 0;
+    max-height: 477px;
+    overflow: hidden;
 }
 .service-page-detail .service-detail .half-slider li,
 .service-page-detail .service-detail .main-slider li {
