@@ -461,14 +461,14 @@ header #logo a .text-block {
 
 header #logo a .text-block .first {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 30px;
   font-family: "PT Sans", sans-serif;
 }
 
 header #logo a .text-block .second {
   font-weight: 300;
-  font-size: 10px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 18px;
   font-family: "OpenSans";
 }
 

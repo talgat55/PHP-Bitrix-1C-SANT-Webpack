@@ -35,7 +35,7 @@ $this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js")
                         <div class="text">
                             ' . $arItem["PREVIEW_TEXT"] . '
                         </div>
-                        <a href="#" class="link-more d-flex align-items-center main-link  justify-content-center" >
+                        <a href="'.$arItem["DISPLAY_PROPERTIES"]["LINK"]["VALUE"].'" class="link-more d-flex align-items-center main-link  justify-content-center" >
                         <div>
                             <span>Подробнее об услуге </span>
                             <i class="fas fa-chevron-circle-right"></i>
@@ -59,11 +59,9 @@ $this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js")
                                         class="preview_picture"
                                         border="0"
                                         src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"
-                                        width="<?= $arItem["PREVIEW_PICTURE"]["WIDTH"] ?>"
-                                        height="<?= $arItem["PREVIEW_PICTURE"]["HEIGHT"] ?>"
                                         alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
                                         title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>"
-                                        style="float:left"
+                                        style="float:left; max-width: 100%;"
                                 />
                             </div>
                             <?= $textBlock; ?>
@@ -77,11 +75,9 @@ $this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js")
                                         class="preview_picture"
                                         border="0"
                                         src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"
-                                        width="<?= $arItem["PREVIEW_PICTURE"]["WIDTH"] ?>"
-                                        height="<?= $arItem["PREVIEW_PICTURE"]["HEIGHT"] ?>"
                                         alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
                                         title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>"
-                                        style="float:left"
+                                        style="float:left; max-width: 100%;"
                                 />
                             </div>
                         <? endif ?>

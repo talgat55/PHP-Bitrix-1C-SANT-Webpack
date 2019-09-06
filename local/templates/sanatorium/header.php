@@ -51,60 +51,10 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 
     }
     $APPLICATION->AddHeadScript("/local/templates/sanatorium/assets/build/app.js");
-
-    // change theme colors
-
-
-
-     if(!isset($_GET['theme'])){
-         $cookie_theme = $APPLICATION->get_cookie("theme_site");
-         if($cookie_theme == 'winter'  ){
-             $GLOBALS['theme'] = 'winter';
-             $mainClass = 'winter-theme';
-         }else if ($cookie_theme== 'spring' ){
-             $GLOBALS['theme'] = 'spring';
-             $mainClass = 'spring-theme';
-         }else if ($cookie_theme == 'autumn' ){
-             $GLOBALS['theme'] = 'autumn';
-             $mainClass = 'autumn-theme';
-
-         }else if ($cookie_theme == 'summer' ){
-             $GLOBALS['theme'] = 'summer';
-             $mainClass = 'summer-theme';
-
-         }
-
-     }else{
-         $mounth = date('m');
-         if(  $_GET['theme'] == 'winter' || $mounth == '01'  || $mounth == '02'  || $mounth == '12'    ){
-             $GLOBALS['theme'] = 'winter';
-             $mainClass = 'winter-theme';
-             $APPLICATION->set_cookie("theme_site", 'winter');
-         }else if (  $_GET['theme'] == 'spring' || $mounth == '03' || $mounth == '04'  || $mounth == '05'   ){
-             $GLOBALS['theme'] = 'spring';
-             $mainClass = 'spring-theme';
-             $APPLICATION->set_cookie("theme_site", 'spring');
-         }else if ( $_GET['theme'] == 'autumn'  || $mounth == '09' || $mounth == '10'  || $mounth == '11' ){
-             $GLOBALS['theme'] = 'autumn';
-             $mainClass = 'autumn-theme';
-             $APPLICATION->set_cookie("theme_site", 'autumn');
-
-         }else if (  $_GET['theme'] == 'summer' || $mounth == '06' || $mounth == '07'  || $mounth == '08'  ){
-             $GLOBALS['theme'] = 'summer';
-             $mainClass = 'summer-theme';
-             $APPLICATION->set_cookie("theme_site", 'summer');
-
-         }
-     }
-
-
     ?>
 </head>
-
-<body class="<? $APPLICATION->ShowProperty('BodyClass'); ?>   <?=$mainClass; ?>" <? $APPLICATION->ShowProperty('BodyTag'); ?> >
-<?
-$APPLICATION->ShowPanel();
-?>
+<body class="<? $APPLICATION->ShowProperty('BodyClass'); ?>   <?= checkTheme(); ?> " <? $APPLICATION->ShowProperty('BodyTag'); ?> >
+<? $APPLICATION->ShowPanel(); ?>
 <main class="<? $APPLICATION->ShowProperty('MainClass'); ?>   position-relative">
     <header>
         <div id="logo">
