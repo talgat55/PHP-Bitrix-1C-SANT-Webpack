@@ -40,7 +40,9 @@ $this->setFrameMode(true);
                     ?>
                     <div class="item col-lg-4 col-md-6 col-xs-12">
                         <div class="img-block">
-                            <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>"><img
+                            <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>">
+                                <?php   if($arItem["PREVIEW_PICTURE"]["SRC"]) : ?>
+                                <img
                                         class="preview_picture  lazy"
                                         border="0"
                                         src="/images/transpaernt.png" data-src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"
@@ -49,7 +51,21 @@ $this->setFrameMode(true);
                                         alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
                                         title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>"
                                         style="float:left"
-                                /></a>
+                                />
+                                <?php  else : ?>
+                                    <img
+                                            class="preview_picture  lazy"
+                                            border="0"
+                                            src="/images/transpaernt.png" data-src="/images/no-image.jpg"
+                                            width="<?= $arItem["PREVIEW_PICTURE"]["WIDTH"] ?>"
+                                            height="<?= $arItem["PREVIEW_PICTURE"]["HEIGHT"] ?>"
+                                            alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
+                                            title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>"
+                                            style="float:left"
+                                    />
+
+                                <?php endif; ?>
+                            </a>
                         </div>
                         <div class="content">
                             <h3 class="title">

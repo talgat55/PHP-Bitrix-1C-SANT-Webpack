@@ -31,7 +31,7 @@ $this->setFrameMode(true);
     </div>
 
     <? if ($arParams["DISPLAY_NAME"] != "N" && $arResult["NAME"]): ?>
-        <h1 class="title"><?= $arResult["NAME"] ?></h1>
+        <h1 class="title w-100"><?= $arResult["NAME"] ?></h1>
     <? endif; ?>
     <? if ($arParams["DISPLAY_DATE"] != "N" && $arResult["DISPLAY_ACTIVE_FROM"]): ?>
         <span class="news-date-time"><?= $arResult["DISPLAY_ACTIVE_FROM"] ?></span>

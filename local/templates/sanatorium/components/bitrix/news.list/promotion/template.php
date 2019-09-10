@@ -21,7 +21,7 @@ $this->setFrameMode(true);
                     </h2>
                 </div>
                 <div class="col-md-6 col-xs-12">
-                    <a href="/promotions/" class=" d-flex align-items-center main-link   alt   justify-content-center">
+                    <a href="/about/promotions/" class=" d-flex align-items-center main-link   alt   justify-content-center">
                         <div>
                         <span>Смотреть все акции</span>
                         <i class="fas fa-chevron-circle-right"></i>

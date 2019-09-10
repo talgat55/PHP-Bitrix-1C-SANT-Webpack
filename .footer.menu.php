@@ -55,30 +55,7 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
-	),
-	Array(
-		"Врачи", 
-		"/staff/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Доска почета", 
-		"/beststaff/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-    	Array(
-		"Акции",
-		"/promotions/",
-		Array(),
-		Array(),
-		""
-	)
-
-
+	)  
 
 );
 ?>

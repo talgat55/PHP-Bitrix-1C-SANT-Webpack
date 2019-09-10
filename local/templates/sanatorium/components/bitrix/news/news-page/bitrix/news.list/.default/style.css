@@ -20,6 +20,10 @@
 .news-list li  .title:hover{
 	color: #313131!important;
 }
+.news-list li .preview_picture{
+	min-width: 100%;
+	object-fit: cover!important;
+}
 .news-list li .news-date-time{
 	font-weight: 300;
 	font-size: 14px;

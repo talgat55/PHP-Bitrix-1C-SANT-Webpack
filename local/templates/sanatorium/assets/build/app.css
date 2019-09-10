@@ -479,7 +479,10 @@ header.is-active {
 
 #top-bar {
   background-color: #313131;
-  overflow: hidden;
+}
+
+#top-bar .bottom {
+  margin: 0 15px;
 }
 
 #top-bar .top .list-info {

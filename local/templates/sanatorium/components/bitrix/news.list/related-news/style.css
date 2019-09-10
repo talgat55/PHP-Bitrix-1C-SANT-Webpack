@@ -18,6 +18,10 @@
 #news-block .item .img-block{
     height: 160px;
 }
+#news-block .item .img-block .preview_picture{
+    min-width: 100%;
+    object-fit: cover!important;
+}
 #news-block .item{
     margin-bottom: 50px;
 }
