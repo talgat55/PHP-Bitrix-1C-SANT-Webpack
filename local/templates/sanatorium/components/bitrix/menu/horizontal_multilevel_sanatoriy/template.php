@@ -70,6 +70,7 @@
                             <div class="menu-clear-left"></div>
                             <? endif ?>
           </nav>
+
                         <div id="buy-ticket" class="col-md-2 col-xs-12">
                             <a href="/ticket/" class="d-flex align-items-center justify-content-between">
                                 <p>

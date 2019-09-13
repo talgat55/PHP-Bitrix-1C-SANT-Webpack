@@ -39,6 +39,7 @@
 }
 #main-navigation .center-menu  ul li a{
 	min-width: 160px;
+	display: block;
 }
 #main-navigation .center-menu li:hover ul{
 	display: inline-block;

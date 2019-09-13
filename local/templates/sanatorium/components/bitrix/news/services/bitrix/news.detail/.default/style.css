@@ -34,8 +34,17 @@
     padding: 10px;
 
 }
+.service-page-detail.winter-theme .service-detail .title{
+    background-color: #3288C5;
+}
 .service-page-detail.summer-theme .service-detail .title{
     background-color: #60B40C;
+}
+.service-page-detail.autumn-theme .service-detail .title{
+    background-color: #D47D2D;
+}
+.service-page-detail.spring-theme .service-detail .title{
+    background-color: #D04E5D;
 }
 
 
@@ -70,6 +79,16 @@
 .service-page-detail.summer-theme .service-detail .short-text-block .icon svg path{
     fill: #60B40C;
 }
+.service-page-detail.winter-theme .service-detail .short-text-block .icon svg path{
+    fill: #3288C5;
+}
+.service-page-detail.autumn-theme .service-detail .short-text-block .icon svg path{
+    fill: #D47D2D;
+}
+.service-page-detail.spring-theme .service-detail .short-text-block .icon svg path{
+    fill: #D04E5D;
+}
+
 
 .service-page-detail.summer-theme .service-detail .main-content h2,
 .service-page-detail.summer-theme .service-detail .main-content h3,
@@ -84,8 +103,24 @@
 .service-page-detail.summer-theme  .service-detail .service-slider-arrow .arrow i,
 .service-page-detail.summer-theme .service-detail .work-time i{
     color:  #60B40C;
-
 }
+
+.service-page-detail.winter-theme  .service-detail .service-slider-arrow .arrow i,
+.service-page-detail.winter-theme .service-detail .work-time i{
+    color:  #3288C5;
+}
+.service-page-detail.autumn-theme  .service-detail .service-slider-arrow .arrow i,
+.service-page-detail.autumn-theme .service-detail .work-time i{
+    color:  #D47D2D;
+}
+.service-page-detail.spring-theme  .service-detail .service-slider-arrow .arrow i,
+.service-page-detail.spring-theme .service-detail .work-time i{
+    color:  #D04E5D;
+}
+
+
+
+
 .service-page-detail .service-detail .work-time{
     background-color: #f9f9f9;
     font-weight: 300;
@@ -150,6 +185,15 @@
 
 .service-page-detail.summer-theme .service-detail .half-slider .slick-current:before{
     border: 1px solid #60B40C;
+}
+.service-page-detail.winter-theme .service-detail .half-slider .slick-current:before{
+    border: 1px solid #3288C5;
+}
+.service-page-detail.autumn-theme .service-detail .half-slider .slick-current:before{
+    border: 1px solid #D47D2D;
+}
+.service-page-detail.spring-theme .service-detail .half-slider .slick-current:before{
+    border: 1px solid #D04E5D;
 }
 
 

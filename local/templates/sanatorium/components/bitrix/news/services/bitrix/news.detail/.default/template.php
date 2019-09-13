@@ -18,7 +18,7 @@ $this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js")
 
 ?>
 
-<div class="service-detail">
+<div class="service-detail  section-id-<?=$arResult['IBLOCK_SECTION_ID']; ?>">
     <div class="img-wrapper">
         <? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arResult["DETAIL_PICTURE"])): ?>
             <img

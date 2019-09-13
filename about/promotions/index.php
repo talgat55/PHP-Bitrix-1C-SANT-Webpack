@@ -64,7 +64,7 @@ $APPLICATION->SetTitle("Акции");
 		"PAGER_TEMPLATE" => "load-more",
 		"PAGER_TITLE" => "Новости",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"SEF_FOLDER" => "/promotions/",
+		"SEF_FOLDER" => "/about/promotions/",
 		"SEF_MODE" => "Y",
 		"SET_LAST_MODIFIED" => "Y",
 		"SET_STATUS_404" => "N",

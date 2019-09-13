@@ -24,6 +24,7 @@
     background: url("/images/home-slider-mask.png");
     position: relative;
 }
+/*
 .home-slider-wrap .text-block.left + .blog-img::before{
     content: "";
     display: block;
@@ -54,6 +55,7 @@
     background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.95) 55%,rgba(255,255,255,.7) 81%, rgba(255,255,255,0) 100%);
 }
 
+*/
 .home-slider-wrap .text-block .title{
     margin: 0;
     font-family: 'PT Sans', sans-serif;

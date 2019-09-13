@@ -20,6 +20,41 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
-	)
+	),
+	Array(
+		"Руководство",
+		"/about/rukovodstvo/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Награды",
+		"/about/nagrady/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Фонд социального страхования РФ",
+		"/about/fond-sotsialnogo-strakhovaniya-rf/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Противодействие коррупции",
+		"/about/corruption/",
+		Array(), 
+		Array(), 
+		"" 
+	) ,
+	Array(
+		"Видео",
+		"/about/video/",
+		Array(), 
+		Array(), 
+		"" 
+	) 
 );
 ?>

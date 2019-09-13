@@ -116,10 +116,13 @@ function menuToggle() {
 function menuLoadFirstBlock() {
     "use strict";
 
-    jQuery('#header-service-menu-list .item:first-child  a.sub-section').trigger('click');
+    if(jQuery('.service-detail.section-id-2').length){
+        jQuery('#header-service-menu-list .item:first-child  a.sub-section').trigger('click');
+    }else{
+        jQuery('#header-service-menu-list .item:last-child  a.sub-section').trigger('click');
+    }
 
 }
-
 
 // ---------------------------------------------------------
 // Back To Top

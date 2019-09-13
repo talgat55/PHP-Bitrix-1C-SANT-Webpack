@@ -890,6 +890,31 @@ header.is-active {
   margin-bottom: 50px;
 }
 
+.list-text-add {
+  margin: 0;
+  padding: 0;
+}
+
+.list-text-add li {
+  list-style: none;
+}
+
+.list-text-add li a {
+  text-decoration: underline;
+  color: #313131;
+  transition: all .3s;
+}
+
+.list-text-add li a:hover {
+  text-decoration: none;
+  color: #313131;
+}
+
+.page-fss .img-text {
+  max-width: 100%;
+  height: 240px;
+}
+
 footer {
   border-top: 1px solid #E5E5E5;
   padding: 40px 0 20px;
@@ -1735,4 +1760,8 @@ footer .bottom-footer .link-scroll-up:hover {
   .page-contacts .list-info-two li {
     display: block !important;
   }
+}
+
+li#bx_1412550625_19 svg {
+  opacity: 0;
 }

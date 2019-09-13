@@ -176,9 +176,17 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     </div>
     <div class="container bottom-footer">
         <div class="row">
+            <div class="col-md-7 col-xs-12 mb-3">
+                <a target="_blank"
+                   href="http://anketa.rosminzdrav.ru/staticmojustank/10628#reviews" >
+                    <img src="/images/nok.png" alt="НОК"/>
+                </a>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-7 col-xs-12">
                 <p class="copyright">
-                    © 2019 ФГУ Центр реабилитации ФСС РФ «Омский»
+                    © 2019 ФБУ Центр реабилитации ФСС РФ «Омский»
                 </p>
             </div>
             <div class="col-md-5 col-xs-12 text-right">

@@ -52,17 +52,22 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     }
     $APPLICATION->AddHeadScript("/local/templates/sanatorium/assets/build/app.js");
     ?>
-</head> 
+</head>
 <body class="<? $APPLICATION->ShowProperty('BodyClass'); ?>   <?= checkTheme(); ?> " <? $APPLICATION->ShowProperty('BodyTag'); ?> >
 <? $APPLICATION->ShowPanel(); ?>
 <main class="<? $APPLICATION->ShowProperty('MainClass'); ?>   position-relative">
     <header>
         <div id="logo">
-            <a href="/" title="Перейти на главную страницу">
-                <div class="img-block d-flex justify-content-between ">
+
+            <div class="img-block d-flex justify-content-between ">
+                <a href="/" title="Перейти на главную страницу">
                     <img style="max-width: 100%;" src="/images/logo-left.png" alt="Логотип">
+                </a>
+                <a href="/about/fond-sotsialnogo-strakhovaniya-rf/" title="ФСС">
                     <img style="max-width: 100%;" src="/images/logo-right.png" alt="Логотип">
-                </div>
+                </a>
+            </div>
+            <a href="/" title="Перейти на главную страницу">
                 <div class="text-block">
                     <div class="first">«Омский»</div>
                     <div class="second">центр реабилитации</div>
@@ -189,7 +194,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
                 <div class="row">
                     <div class="first col-xl-6  col-lg-5  col-xs-12 d-flex align-items-center">
 
-                        <ul class="list-info d-flex">
+                        <ul class="list-info d-flex align-items-center">
                             <li>
                                 <a class="d-flex align-items-center" href="tel:+7 (3812) 23-15-32">
                                     <i class="fas fa-phone-alt"></i>
@@ -212,6 +217,11 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
                                     <p>
                                         sanom@mail.ru
                                     </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-flex align-items-center" target="_blank" href="http://www.dqs-russia.ru/">
+                                    <img src="/images/dqs_logo_DQS.png" style="height: 29px;"  />
                                 </a>
                             </li>
 
@@ -251,23 +261,22 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
                 </div>
             </div>
             <? $APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"horizontal_multilevel_sanatoriy", 
-	array(
-		"ALLOW_MULTI_SELECT" => "N",
-		"CHILD_MENU_TYPE" => "submenu",
-		"DELAY" => "N",
-		"MAX_LEVEL" => "2",
-		"MENU_CACHE_GET_VARS" => array(
-		),
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_TYPE" => "N",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"ROOT_MENU_TYPE" => "top",
-		"USE_EXT" => "N",
-		"COMPONENT_TEMPLATE" => "horizontal_multilevel_sanatoriy"
-	),
-	false
-); ?>
+                "bitrix:menu",
+                "horizontal_multilevel_sanatoriy",
+                array(
+                    "ALLOW_MULTI_SELECT" => "N",
+                    "CHILD_MENU_TYPE" => "submenu",
+                    "DELAY" => "N",
+                    "MAX_LEVEL" => "2",
+                    "MENU_CACHE_GET_VARS" => array(),
+                    "MENU_CACHE_TIME" => "3600",
+                    "MENU_CACHE_TYPE" => "N",
+                    "MENU_CACHE_USE_GROUPS" => "Y",
+                    "ROOT_MENU_TYPE" => "top",
+                    "USE_EXT" => "N",
+                    "COMPONENT_TEMPLATE" => "horizontal_multilevel_sanatoriy"
+                ),
+                false
+            ); ?>
         </div>
 

@@ -1,6 +1,10 @@
 div.news-detail
 {
 	word-wrap: break-word;
+
+}
+.page-news-detail{
+	margin-bottom: 40px;
 }
 div.news-detail img.detail_picture
 {
