@@ -16,6 +16,7 @@ $this->addExternalCss("/local/templates/sanatorium/assets/build/css/slick-theme.
 
 $this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js");
 
+ 
 ?>
 <div class="home-slider">
 <div class="container  position-relative  ">

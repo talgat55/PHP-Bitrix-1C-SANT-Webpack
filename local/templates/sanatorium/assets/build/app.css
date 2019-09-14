@@ -915,6 +915,19 @@ header.is-active {
   height: 240px;
 }
 
+.list-awards {
+  margin: 0 -15px;
+  padding: 0;
+}
+
+.list-awards li {
+  list-style: none;
+}
+
+.list-awards li img {
+  max-width: 145px;
+}
+
 footer {
   border-top: 1px solid #E5E5E5;
   padding: 40px 0 20px;
