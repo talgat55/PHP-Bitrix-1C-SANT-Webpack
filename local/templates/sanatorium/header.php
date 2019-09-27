@@ -63,7 +63,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
                 <a href="/" title="Перейти на главную страницу">
                     <img style="max-width: 100%;" src="/images/logo-left.png" alt="Логотип">
                 </a>
-                <a href="/about/fond-sotsialnogo-strakhovaniya-rf/" title="ФСС">
+                <a href="http://fss.ru/" title="ФСС">
                     <img style="max-width: 100%;" src="/images/logo-right.png" alt="Логотип">
                 </a>
             </div>
@@ -220,7 +220,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
                                 </a>
                             </li>
                             <li>
-                                <a class="d-flex align-items-center" target="_blank" href="http://www.dqs-russia.ru/">
+                                <a class="d-flex align-items-center" target="_blank" href="/cmk/">
                                     <img src="/images/dqs_logo_DQS.png" style="height: 29px;"  />
                                 </a>
                             </li>
