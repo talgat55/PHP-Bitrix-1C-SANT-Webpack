@@ -1,0 +1,32 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Бронирование",
+		"/uslugi/bronirovanie/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Досуг",
+		"/uslugi/dosug/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Питание",
+		"/uslugi/pitanie/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Проживание",
+		"/uslugi/prozhivanie/",
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

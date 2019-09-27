@@ -1,0 +1,17 @@
+#gallery-block .lists{
+    margin: 0;
+}
+
+
+#gallery-block .lists li{
+    list-style: none;
+    width: 100%;
+    height: 350px;
+    background-size: cover!important;
+    background-position: center center!important;
+}
+#gallery-block .lists li a{
+    display: block;
+    height: 100%;
+    margin: 0 -15px;
+}
