@@ -66,10 +66,12 @@ $this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js")
                 <div class="main-content">
                     <?= $arResult['DETAIL_TEXT']; ?>
                 </div>
+                <? if($arResult['PROPERTIES']['WORKTIME']['VALUE']['TEXT']) : ?>
                 <div class="work-time w-100">
-                    Время работы косметического салона: <i class="far fa-clock"></i>
+                    Время работы : <i class="far fa-clock"></i>
                     <span><?= $arResult['PROPERTIES']['WORKTIME']['VALUE']['TEXT']; ?></span>
                 </div>
+                <? endif; ?>
                 <? if (!empty($arResult['PROPERTIES']['GALLERY']['VALUE'])) { ?>
                     <div class="wrapper-slider position-relative w-100">
                         <div class="row">
@@ -119,6 +121,8 @@ $this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js")
 
 
                     </div>
+
+                    <div id="phone-block-data" data-phone="<?= $arResult['PROPERTIES']['WORK_PHONE']['VALUE']; ?>" ></div>
                 <? } ?>
                 <?
                 $APPLICATION->IncludeFile(

@@ -43,6 +43,20 @@ jQuery(document).ready(function () {
         jQuery(this).parent().parent().parent().find(sliderMainClassClear).slick('slickNext');
     });
 
+    // change number phone
+    var phoneBlock = jQuery('#phone-block-data');
+    var phoneField = jQuery('.phone-field');
+    if(phoneBlock.length){
+        var phone = phoneBlock.attr('data-phone');
+        if(phone.length){
+            phoneField.html(' ').html(phone);
+            phoneField.attr('href', 'tel:'+phone);
+        }
+
+    }
+
+
+
 
     // end redy function
 });

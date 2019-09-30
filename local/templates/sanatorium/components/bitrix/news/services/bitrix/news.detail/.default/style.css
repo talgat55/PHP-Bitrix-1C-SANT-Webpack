@@ -134,6 +134,12 @@
 .service-page-detail .service-detail .main-content *{
     font-weight: 300;
 }
+.service-page-detail .service-detail .main-content  p{
+    margin-bottom: 0!important;
+}
+.service-page-detail .service-detail .main-content b {
+    font-weight: 500!important;
+}
 .service-page-detail .service-detail .main-content ul{
     column-count: 2;
 }

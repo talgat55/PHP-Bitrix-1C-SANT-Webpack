@@ -54,7 +54,7 @@ $APPLICATION->SetTitle("Услуги");
 		"LIST_PROPERTY_CODE" => array(
 			0 => "WORKTIME",
 			1 => "EXCEPT",
-			2 => "",
+			2 => "WORK_PHONE",
 		),
 		"MESSAGE_404" => "",
 		"META_DESCRIPTION" => "-",
