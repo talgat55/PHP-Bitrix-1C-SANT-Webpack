@@ -54,7 +54,14 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     ?>
     <script src="<?= SITE_TEMPLATE_PATH; ?>/assets/build/app.js"></script>
 </head>
-<body class="<? $APPLICATION->ShowProperty('BodyClass'); ?>   <?= checkTheme(); ?> " <? $APPLICATION->ShowProperty('BodyTag'); ?> >
+
+<?php
+
+    $themeClass = checkTheme() ? checkTheme() : themeByMouth(date('m'));
+
+
+?>
+<body class="<? $APPLICATION->ShowProperty('BodyClass'); ?>   <?= $themeClass; ?> " <? $APPLICATION->ShowProperty('BodyTag'); ?> >
 <? $APPLICATION->ShowPanel(); ?>
 <main class="<? $APPLICATION->ShowProperty('MainClass'); ?>   position-relative">
     <header>
