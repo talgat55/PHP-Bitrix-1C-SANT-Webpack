@@ -5,7 +5,7 @@ $this->AddEditAction($arResult['ID'], $arResult['EDIT_LINK'], CIBlock::GetArrayB
 $this->AddDeleteAction($arResult['ID'], $arResult['DELETE_LINK'], CIBlock::GetArrayByID($arResult["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 ?>
 <li class="service-item col-xl-2 col-lg-3  col-md-4  col-sm-6 col-xs-12" id="<?= $this->GetEditAreaId($arResult['ID']); ?> ">
-    <div class="service-item-wallpaper">
+    <div class="service-item-wallpaper d-flex align-items-center">
 
         <?
 

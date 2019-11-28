@@ -6,6 +6,12 @@ body {
   font-weight: 400;
 }
 
+*:focus,
+*:active,
+* {
+  outline: none;
+}
+
 @font-face {
   font-family: 'OpenSans';
   src: local("OpenSans-SemiBold"), local("OpenSans-SemiBold"), url("/local/templates/sanatorium/assets/build/css/OpenSans-SemiBold.woff") format("woff"), url("/local/templates/sanatorium/assets/build/css/OpenSans-SemiBold.ttf") format("truetype");
@@ -119,6 +125,15 @@ a.main-link.alt span {
 
 a.main-link.alt i {
   font-size: 10px;
+}
+
+input.text-input.date-input {
+  line-height: 30px;
+}
+
+a.main-link:active,
+a.main-link:focus {
+  outline: none;
 }
 
 .summer-theme a.main-link.alt {
@@ -316,7 +331,7 @@ a.main-link.alt i {
 .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #fff;
+  background-color: #000;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -375,19 +390,19 @@ a.main-link.alt i {
 .common-home .hamburger.is-active .hamburger-inner,
 .common-home .hamburger.is-active .hamburger-inner::before,
 .common-home .hamburger.is-active .hamburger-inner::after {
-  background-color: #fff;
+  background-color: #000;
 }
 
 .hamburger-inner,
 .hamburger-inner::after,
 .hamburger-inner::before {
-  background-color: #fff;
+  background-color: #000;
 }
 
 .common-home .hamburger-inner,
 .common-home .hamburger-inner::after,
 .common-home .hamburger-inner::before {
-  background-color: #fff;
+  background-color: #000;
 }
 
 .hamburger--3dx .hamburger-box {
@@ -739,7 +754,7 @@ header.is-active {
   color: #313131;
   font-family: "OpenSans";
   border-bottom: 1px solid #E5E5E5;
-  padding: 16px 0;
+  padding: 16px 10px;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -1401,6 +1416,26 @@ footer .bottom-footer .link-scroll-up:hover {
   text-align: center;
 }
 
+.success-send-mail-modal .content .close-modal {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #333;
+  transition: all .3s;
+}
+
+.success-send-mail-modal .content .close-modal:hover {
+  color: red;
+}
+
+.success-send-mail-modal .content .close-modal:hover i {
+  color: red;
+}
+
+.success-send-mail-modal .content .close-modal i {
+  color: #333;
+}
+
 .active-mode {
   opacity: 1 !important;
   visibility: visible !important;
@@ -1591,6 +1626,30 @@ footer .bottom-footer .link-scroll-up:hover {
 }
 
 @media (max-width: 992px) {
+  .page-about .main-title,
+  .page-live .main-title {
+    margin-bottom: 30px;
+  }
+
+  .page-about #gallery-block,
+  .page-live #gallery-block {
+    margin-top: 30px;
+  }
+
+  .page-live #gallery-block {
+    width: 100%;
+  }
+
+  .page-live #gallery-block .list-sub.row.w-100 {
+    margin: 0 auto !important;
+    width: auto !important;
+  }
+
+  .page-live .lists .img-item h3 {
+    margin: 15px 0 30px;
+    text-align: center;
+  }
+
   #top-bar {
     display: none;
   }
@@ -1773,8 +1832,4 @@ footer .bottom-footer .link-scroll-up:hover {
   .page-contacts .list-info-two li {
     display: block !important;
   }
-}
-
-li#bx_1412550625_19 svg {
-  opacity: 0;
 }

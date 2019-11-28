@@ -6,6 +6,11 @@ body
   font-weight: 400
 
 
+*:focus,
+*:active,
+*
+  outline: none
+
 @font-face
   font-family: 'OpenSans'
   src: local('OpenSans-SemiBold'), local('OpenSans-SemiBold'),
@@ -134,8 +139,11 @@ a.main-link.alt
 
   i
     font-size: 10px
-
-
+input.text-input.date-input
+  line-height: 30px
+a.main-link:active,
+a.main-link:focus
+  outline: none
 .summer-theme
   a.main-link.alt
     color: $summer_main_color
@@ -309,7 +317,7 @@ a.main-link.alt
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
   width: 40px
   height: 4px
-  background-color: #fff
+  background-color: #000
   border-radius: 4px
   position: absolute
   transition-property: transform
@@ -363,14 +371,14 @@ a.main-link.alt
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after
-    background-color: #fff
+    background-color: #000
 .hamburger-inner, .hamburger-inner::after,
 .hamburger-inner::before
-  background-color: #fff
+  background-color: #000
 .common-home
   .hamburger-inner, .hamburger-inner::after,
   .hamburger-inner::before
-    background-color: #fff
+    background-color: #000
 
 .hamburger--3dx .hamburger-box
   perspective: 80px
@@ -697,13 +705,14 @@ header
     color: #313131
     font-family: $font_opensans
     border-bottom: 1px solid #E5E5E5
-    padding: 16px 0
+    padding: 16px 10px
     width: 100%
     margin-bottom: 20px
     +placeholder
       color: #313131
       font-family: $font_opensans
       font-size: 14px
+
 
   textarea
     resize: none
@@ -991,7 +1000,6 @@ footer
 .winter-theme .page-contacts .list-info-two
   a
     color: $winter_main_color
-
 
 
 
@@ -1296,6 +1304,22 @@ footer
     padding: 40px
     width: 35%
     text-align: center
+    .close-modal
+      position: absolute
+      top: 5px
+      right: 10px
+      color: #333
+      transition: all .3s
+      &:hover
+        color: red
+        i
+          color: red
+      i
+        color: #333
+
+
+
+
 
 .active-mode
   opacity: 1!important
@@ -1476,6 +1500,23 @@ footer
 
 
 @media (max-width: 992px)
+  .page-about,
+  .page-live
+    .main-title
+      margin-bottom: 30px
+    #gallery-block
+      margin-top: 30px
+
+  .page-live
+    #gallery-block
+      width: 100%
+      .list-sub.row.w-100
+        margin: 0 auto!important
+        width: auto!important
+    .lists .img-item h3
+      margin: 15px 0 30px
+      text-align: center
+
   #top-bar
     display: none
 
@@ -1645,6 +1686,3 @@ footer
       display: block!important
 
 
-
-li#bx_1412550625_19 svg
-  opacity: 0

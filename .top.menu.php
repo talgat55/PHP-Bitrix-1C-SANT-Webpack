@@ -51,7 +51,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Противодействие коррупции", 
-		"/corruption/",
+		"/about/corruption/",
 		Array(), 
 		Array(), 
 		"" 

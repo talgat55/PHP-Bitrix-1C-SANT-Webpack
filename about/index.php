@@ -125,35 +125,37 @@ $APPLICATION->SetTitle("about");
                         </div>
                         <ul class="about-list-links">
                             <li>
-                                <a href="#">
+                                <a target="_blank" href="/images/about/1.pdf">
                                     Лицензия на осуществление медицинской деятельности
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a target="_blank"
+                                   href="/images/about/Сведения о медицинских работниках, участвующих в предоставлении платных медицинских услуг_1.xls">
                                     Сведения о медицинских работниках, участвующих в предоставлении платных
                                     медицинских услуг
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a target="_blank" href="/images/about/алгоритм направления пациентов.pdf">
                                     Порядок направления пациентов в стационар (категории пациентов,
                                     противопоказания, маршрутизация)
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a target="_blank" href="/images/about/Svedenia.docx">
                                     Сведения об условиях предоставления медицинской помощи застрахованным гражданам
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a target="_blank" href="/images/about/postan_382_0.docx">
                                     Постановление о территориальной программе государственных гарантий бесплатного
                                     оказания гражданам медицинской помощи в Омской области на 2016 год
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a target="_blank"
+                                   href="/images/about/ob_usloviyah_okazaniya_medicinskoy_pomoshchi_2.docx">
                                     Об условиях оказания медицинской помощи, установленных территориальной
                                     программой государственных гарантий бесплатного оказания гражданам медицинской
                                     помощи
@@ -161,45 +163,54 @@ $APPLICATION->SetTitle("about");
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a target="_blank"
+                                   href="/images/about/o_pokazatelyah_dostupnosti_i_kachestva_medicinskoy_pomoshchi_2 (1).docx">
                                     О показателях доступности и качества медицинской помощи
-
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a target="_blank"
+                                   href="/images/about/strahovye_medicinskie_organizacii_s_kotorymi_zaklyucheny_dogovory_na_okazanie_i_oplatu_medicinskoy_pomoshchi_po_obyazatelnomu_medicinskomu_strahovaniyu (1).docx">
                                     Страховые медицинские организации, с которыми заключены договоры на оказание и
                                     оплату медицинской помощи по обязательному медицинскому страхованию
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a target="_blank"
+                                   href="/images/about/perechen_zhiznenno_neobhodimyh_i_vazhneyshih_lekarstvennyh_preparatov_0.docx">
                                     Перечень жизненно необходимых и важнейших лекарственных препаратов
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a target="_blank"
+                                   href="/images/about/prava_i_obyazannosti_grazhdan_v_sfere_ohrany_zdorovya.doc">
                                     Права и обязанности граждан в сфере охраны здоровья
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a target="_blank"
+                                   href="/images/about/Правила внутреннего распорядка для пациентов.doc">
                                     Правила внутреннего распорядка
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a target="_blank" href="/images/about/adresa.doc">
                                     Адреса вышестоящих организаций (ОМС)
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a target="_blank" href="/images/about/svedenia_o_kadrax.docx">
                                     Информация о медицинских работниках (ОМС)
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a target="_blank" href="/images/about/vacancy (1).docx">
                                     Вакансии (ОМС)
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="/images/about/Выписка из Учетной политики.docx">
+                                    Выписка из учетной политики
                                 </a>
                             </li>
 

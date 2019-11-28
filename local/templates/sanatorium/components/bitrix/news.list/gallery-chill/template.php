@@ -15,9 +15,13 @@ $this->setFrameMode(true);
 
 $this->addExternalCss("/local/templates/sanatorium/assets/build/css/lightbox.min.css");
 $this->addExternalJS("/local/templates/sanatorium/assets/build/js/lightbox.min.js");
+$this->addExternalCss("/local/templates/sanatorium/assets/build/css/slick.css");
+$this->addExternalCss("/local/templates/sanatorium/assets/build/css/slick-theme.css");
+
+$this->addExternalJS("/local/templates/sanatorium/assets/build/js/slick.min.js");
 ?>
 <div id="gallery-block">
-    <div class="container">
+    <div class="container position-relative">
         <div class="row">
             <ul class="lists row w-100  col-md-12">
                 <? foreach ($arResult["ITEMS"] as $arItem): ?>
@@ -27,6 +31,18 @@ $this->addExternalJS("/local/templates/sanatorium/assets/build/js/lightbox.min.j
                     ?>
                 <li class="img-item col-lg-3 col-md-6  col-sm-12"  style="background: url(<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>);"><a  href="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>" data-lightbox="image"></a></li>
                 <? endforeach; ?>
+            </ul>
+            <ul class="home-slider-arrow">
+                <li>
+                    <a href="#"  class="prev">
+                        <i class="fas fa-angle-left"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="next">
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

@@ -43,101 +43,104 @@ $APPLICATION->SetPageProperty('BodyClass', 'page-staff');
                         <?
                         $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
                         $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
-                        ?>
+ 
+                        if ($arItem["DISPLAY_PROPERTIES"]['NO_SHOW_PAGE_STAFF']['VALUE_XML_ID'] != 'yes') {
+                            ?>
 
-                        <li class="staff-item item-insert  col-custom    col-lg-4  col-md-6  col-xs-12"
-                            id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
-                            <div class="item-wrapper" data-tooltip-content="#tooltip_content">
-                                <? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])): ?>
-                                    <? if (!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])): ?>
-                                        <img
-                                                class="preview_picture"
-                                                border="0"
-                                                src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"
-                                                width="<?= $arItem["PREVIEW_PICTURE"]["WIDTH"] ?>"
-                                                height="<?= $arItem["PREVIEW_PICTURE"]["HEIGHT"] ?>"
-                                                alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
-                                                title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>"
-                                                style="float:left"
-                                        />
-                                    <? else: ?>
-                                        <img
-                                                class="preview_picture"
-                                                border="0"
-                                                src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"
-                                                width="<?= $arItem["PREVIEW_PICTURE"]["WIDTH"] ?>"
-                                                height="<?= $arItem["PREVIEW_PICTURE"]["HEIGHT"] ?>"
-                                                alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
-                                                title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>"
-                                                style="float:left"
-                                        />
+                            <li class="staff-item item-insert  col-custom    col-lg-4  col-md-6  col-xs-12"
+                                id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
+                                <div class="item-wrapper" data-tooltip-content="#tooltip_content">
+                                    <? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])): ?>
+                                        <? if (!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])): ?>
+                                            <img
+                                                    class="preview_picture"
+                                                    border="0"
+                                                    src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"
+                                                    width="<?= $arItem["PREVIEW_PICTURE"]["WIDTH"] ?>"
+                                                    height="<?= $arItem["PREVIEW_PICTURE"]["HEIGHT"] ?>"
+                                                    alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
+                                                    title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>"
+                                                    style="float:left"
+                                            />
+                                        <? else: ?>
+                                            <img
+                                                    class="preview_picture"
+                                                    border="0"
+                                                    src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"
+                                                    width="<?= $arItem["PREVIEW_PICTURE"]["WIDTH"] ?>"
+                                                    height="<?= $arItem["PREVIEW_PICTURE"]["HEIGHT"] ?>"
+                                                    alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
+                                                    title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>"
+                                                    style="float:left"
+                                            />
+                                        <? endif; ?>
+                                    <? endif ?>
+
+                                    <? if ($arParams["DISPLAY_NAME"] != "N" && $arItem["NAME"]): ?>
+                                        <? if (!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])): ?>
+                                            <h3 class="title"><? echo $arItem["NAME"] ?></h3>
+
+                                        <? else: ?>
+                                            <? echo $arItem["NAME"] ?>
+                                        <? endif; ?>
                                     <? endif; ?>
-                                <? endif ?>
+                                    <div class="position">
+                                        <? foreach ($arItem["DISPLAY_PROPERTIES"]['POSITION']['VALUE'] as $key => $item_position) {
+                                            if ($key != '0') {
+                                                echo ', ';
+                                            }
+                                            echo $item_position;
 
-                                <? if ($arParams["DISPLAY_NAME"] != "N" && $arItem["NAME"]): ?>
-                                    <? if (!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])): ?>
+
+                                        } ?>
+                                    </div>
+                                    <? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])): ?>
+                                        <div style="clear:both"></div>
+                                    <? endif ?>
+                                </div>
+                                <div class="tooltip_templates">
+                                    <div class="content">
                                         <h3 class="title"><? echo $arItem["NAME"] ?></h3>
-
-                                    <? else: ?>
-                                        <? echo $arItem["NAME"] ?>
-                                    <? endif; ?>
-                                <? endif; ?>
-                                <div class="position">
-                                    <? foreach ($arItem["DISPLAY_PROPERTIES"]['POSITION']['VALUE'] as $key => $item_position) {
-                                        if ($key != '0') {
-                                            echo ', ';
-                                        }
-                                        echo $item_position;
-
-
-                                    } ?>
-                                </div>
-                                <? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])): ?>
-                                    <div style="clear:both"></div>
-                                <? endif ?>
-                            </div>
-                            <div class="tooltip_templates">
-                                <div class="content">
-                                    <h3 class="title"><? echo $arItem["NAME"] ?></h3>
-                                    <div class="heading">О ВРАЧЕ</div>
-                                    <ul class="list text">
-                                        <li>
-                                            <div>Специальность</div>
-                                            <div>
-                                                <? foreach ($arItem["DISPLAY_PROPERTIES"]['POSITION']['VALUE'] as $key_new => $item_position_modal) {
-                                                    if ($key_new != '0') {
-                                                        echo ', ';
-                                                    }
-                                                    echo $item_position_modal;
+                                        <div class="heading">О ВРАЧЕ</div>
+                                        <ul class="list text">
+                                            <li>
+                                                <div>Специальность</div>
+                                                <div>
+                                                    <? foreach ($arItem["DISPLAY_PROPERTIES"]['POSITION']['VALUE'] as $key_new => $item_position_modal) {
+                                                        if ($key_new != '0') {
+                                                            echo ', ';
+                                                        }
+                                                        echo $item_position_modal;
 
 
-                                                } ?>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>Категория</div>
-                                            <div>
-                                                <?= $arItem["DISPLAY_PROPERTIES"]['CATEGORY']['VALUE']; ?>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>Общий стаж</div>
-                                            <div>
-                                                <?= $arItem["DISPLAY_PROPERTIES"]['EXPERIENCE']['VALUE']; ?>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <div class="heading">Последние достижения</div>
-                                    <div class="text">
-                                        <?= $arItem["DISPLAY_PROPERTIES"]['PROGRESS']['DISPLAY_VALUE']; ?>
-                                    </div>
-                                    <div class="heading">Расписание приема</div>
-                                    <div class="text">
-                                        <b><?= $arItem["DISPLAY_PROPERTIES"]['WORK_TIME']['VALUE']; ?></b>
+                                                    } ?>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>Категория</div>
+                                                <div>
+                                                    <?= $arItem["DISPLAY_PROPERTIES"]['CATEGORY']['VALUE']; ?>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>Общий стаж</div>
+                                                <div>
+                                                    <?= $arItem["DISPLAY_PROPERTIES"]['EXPERIENCE']['VALUE']; ?>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="heading">Последние достижения</div>
+                                        <div class="text">
+                                            <?= $arItem["DISPLAY_PROPERTIES"]['PROGRESS']['DISPLAY_VALUE']; ?>
+                                        </div>
+                                        <div class="heading">Расписание приема</div>
+                                        <div class="text">
+                                            <b><?= $arItem["DISPLAY_PROPERTIES"]['WORK_TIME']['VALUE']; ?></b>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
+                        <? } ?>
                     <? endforeach; ?>
 
                 </ul>

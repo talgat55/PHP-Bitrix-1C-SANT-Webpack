@@ -10,3 +10,11 @@
     text-decoration-line: underline;
     color: #313131;
 }
+@media (max-width: 993px){
+    .bx-breadcrumb-item{
+        display: inline-block;
+    }
+    .bx-breadcrumb{
+        margin-top: 55px;
+    }
+}

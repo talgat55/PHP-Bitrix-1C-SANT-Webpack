@@ -42,6 +42,7 @@
 }
 .service-page-detail.autumn-theme .service-detail .title{
     background-color: #D47D2D;
+    display: inline-block;
 }
 .service-page-detail.spring-theme .service-detail .title{
     background-color: #D04E5D;
@@ -234,4 +235,55 @@
     right: 40px;
 }
 
+.service-detail #block-contacts .container{
+    width: auto!important;
+    padding: 0!important;
+}
 
+#block-contacts .first-block .list-info li .title{
+    display: block;
+}
+
+@media (max-width:  993px){
+    .service-page-detail .service-detail  #carousel{
+        display: none!important;
+    }
+    .service-page-detail .service-detail  #block-contacts .first-block{
+        margin: 0!important;
+
+    }
+    .service-page-detail .service-detail .wrapper-slider {
+        margin-bottom: 30px;
+    }
+    .service-page-detail .service-detail .main-content ul{
+        column-count: 1;
+    }
+    .service-page-detail .service-detail .img-wrapper{
+        height: auto!important;
+    }
+
+}
+
+@media (max-width:  768px){
+    .service-page-detail .service-detail .first-block{
+        top: 0;
+        margin-bottom: 0;
+    }
+
+    .page-services .bx-breadcrumb {
+        margin-top: 25px;
+
+    }
+    .service-page-detail .service-detail .bx-breadcrumb span{
+        color: #000;
+    }
+    .service-page-detail .service-detail .short-text-block .icon{
+        right: 0;
+        bottom: -42px;
+    }
+
+    .service-page-detail .service-detail .short-text-block{
+        margin-bottom: 70px;
+    }
+
+}

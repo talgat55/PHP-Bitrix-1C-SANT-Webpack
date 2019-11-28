@@ -192,7 +192,7 @@ function formHandler() {
         if (!thisForm.parent().hasClass('search-page')) {
             var formData = thisForm.serialize();
 
-            jQuery.post('ajax/send.php', formData, function (data) {
+            jQuery.post('/ajax/send.php', formData, function (data) {
 
                 if (data) {
                     // reset form
@@ -232,6 +232,13 @@ function formModal() {
     bodyClass.on('click',  ' .modal-custom .close-modal', function () {
 
         modalLayer.toggleClass('is-active');
+        overlayLayer.toggleClass('is-active');
+
+        return false;
+    });
+    bodyClass.on('click',  ' .success-send-mail-modal .close-modal', function () {
+
+        jQuery('.success-send-mail-modal').toggleClass('is-active');
         overlayLayer.toggleClass('is-active');
 
         return false;

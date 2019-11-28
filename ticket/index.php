@@ -101,7 +101,7 @@ $APPLICATION->AddHeadScript("/local/templates/sanatorium/assets/build/js/jquery.
                                             <p class="col-lg-6 col-xs-12">
                                                 Ваша заявка на бронирование является предварительной и не может
                                                 считаться утвержденной!
-                                                Наши специалисты свяжутся с Вами в течении трех рабочих дней!
+                                                Наши специалисты свяжутся с Вами в течение трех рабочих дней!
                                             </p>
                                         </div>
                                         <div class="policy-block col-md-12 col-xs-12 justify-content-center ">

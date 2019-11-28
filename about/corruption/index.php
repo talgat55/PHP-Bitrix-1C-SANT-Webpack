@@ -16,7 +16,7 @@ $APPLICATION->SetTitle("Противодействие коррупции");
                     false
                 ); ?>
                 <h1 class="main-title">
-                    <? $APPLICATION->ShowTitle() ?>
+                    Противодействие коррупции
                 </h1>
             </div>
         </div>

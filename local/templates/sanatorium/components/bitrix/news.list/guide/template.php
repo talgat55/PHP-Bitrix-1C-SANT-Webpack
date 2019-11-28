@@ -27,11 +27,11 @@ $APPLICATION->SetPageProperty('BodyClass', 'page-beststaff');
         <li class="staff-item  item-insert   col-custom    col-lg-4  col-md-6  col-xs-12"
             id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
 
-            <? if(!empty($arItem["DISPLAY_PROPERTIES"]['IMAGE_BEST_PART']['FILE_VALUE']['SRC'])) {?>
+            <? if(!empty($arItem["DISPLAY_PROPERTIES"]['IMAGE_GUIDE']['FILE_VALUE']['SRC'])) {?>
                 <img
                         class="preview_picture"
                         border="0"
-                        src="<?= $arItem["DISPLAY_PROPERTIES"]['IMAGE_BEST_PART']['FILE_VALUE']['SRC'] ?>"
+                        src="<?= $arItem["DISPLAY_PROPERTIES"]['IMAGE_GUIDE']['FILE_VALUE']['SRC'] ?>"
 
                         style="float:left"
                 />
