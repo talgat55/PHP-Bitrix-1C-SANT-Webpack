@@ -12,8 +12,13 @@ function checkTheme()
     $mounth = date('m');
 
     if (!isset($_GET['theme'])) {
-        $cookie_theme = $APPLICATION->get_cookie("theme_site");
+
+
+
+       /*
+       $cookie_theme = $APPLICATION->get_cookie("theme_site");
         if (!empty($cookie_theme)) {
+
             if ($cookie_theme == 'winter') {
                 $GLOBALS['theme'] = 'winter';
                 $mainClass = 'winter-theme';
@@ -34,7 +39,8 @@ function checkTheme()
 
             echo $cookie_theme;
             themeByMouth($mounth);
-        }
+        }*/
+        themeByMouth($mounth);
 
     } else {
 

@@ -115,9 +115,12 @@ function menuToggle() {
 //----------------------------------
 function menuLoadFirstBlock() {
     "use strict";
-
-    if(jQuery('.service-detail.section-id-2').length){
-        jQuery('#header-service-menu-list .item:first-child  a.sub-section').trigger('click');
+    var detailPageId = jQuery('.service-detail');
+    console.log(detailPageId);
+    if(detailPageId.length){
+        var IdValueServicePage = detailPageId.attr('data-id');
+        console.log(IdValueServicePage);
+        jQuery('#header-service-menu-list .item.item-'+IdValueServicePage+'  a.sub-section').trigger('click');
     }else{
         jQuery('#header-service-menu-list .item:last-child  a.sub-section').trigger('click');
     }

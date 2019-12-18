@@ -6,10 +6,11 @@ global $arParams;
     <?   $i =0; ?>
 <? foreach ($GLOBALS['arSectionsChild'] as  $arSectionChild) { ?>
 	<?
+
 	$this->AddEditAction($arSectionChild['ID'], $arSectionChild['EDIT_LINK'], CIBlock::GetArrayByID($arSectionChild["IBLOCK_ID"], "SECTION_EDIT"));
 	$this->AddDeleteAction($arSectionChild['ID'], $arSectionChild['DELETE_LINK'], CIBlock::GetArrayByID($arSectionChild["IBLOCK_ID"], "SECTION_DELETE"), array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_CONFIRM')));
 	?>
-	<li class="item  " id="<?=$this->GetEditAreaId($arSectionChild['ID']);?>">
+	<li class="item  item-<?=$arSectionChild['ID']; ?>" id="<?=$this->GetEditAreaId($arSectionChild['ID']);?>">
 		<?if( !empty($arItems['PICTURE']) && $arParams["DISPLAY_SECTION_PICTURE"]!="N" ){?>
 			<img
 				border="0"
