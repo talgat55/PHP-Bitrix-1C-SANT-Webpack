@@ -55,9 +55,9 @@ $APPLICATION->SetPageProperty("title", $arResult["NAME"]);
                         </div>
                         <div class="icon">
                             <?
-                            $image = CFile::GetPath($arResult['PROPERTIES']['IMAGE_SERVICE']['VALUE']);
-                            $redySvg = file_get_contents(__DIR__ . '/../../../../../../../../../../' . $image);
-                            echo $redySvg;
+//                            $image = CFile::GetPath($arResult['PROPERTIES']['IMAGE_SERVICE']['VALUE']);
+//                            $redySvg = file_get_contents(__DIR__ . '/../../../../../../../../../../' . $image);
+//                            echo $redySvg;
                             ?>
                         </div>
                     <? } ?>

@@ -213,8 +213,13 @@ function menuToggle() {
 function menuLoadFirstBlock() {
   "use strict";
 
-  if (jQuery('.service-detail.section-id-2').length) {
-    jQuery('#header-service-menu-list .item:first-child  a.sub-section').trigger('click');
+  var detailPageId = jQuery('.service-detail');
+  console.log(detailPageId);
+
+  if (detailPageId.length) {
+    var IdValueServicePage = detailPageId.attr('data-id');
+    console.log(IdValueServicePage);
+    jQuery('#header-service-menu-list .item.item-' + IdValueServicePage + '  a.sub-section').trigger('click');
   } else {
     jQuery('#header-service-menu-list .item:last-child  a.sub-section').trigger('click');
   }
@@ -240,12 +245,9 @@ function backToTop() {
 function mobileMenu() {
   "use strict";
 
-  let menuClass = '#mobile-toggle';
-  let mobileClass = jQuery('header');
-  let bodyClass = 'body';
-  jQuery(bodyClass).on('click', menuClass, function () {
-    mobileClass.toggleClass('is-active');
-    jQuery(menuClass).toggleClass('is-active');
+  jQuery('body').on('click', '#mobile-toggle', function () {
+    jQuery('header').toggleClass('is-active');
+    jQuery('#mobile-toggle').toggleClass('is-active');
     return false;
   });
 } //----------------------------------
@@ -256,13 +258,13 @@ function mobileMenu() {
 function hideLeftMenuOnScroll() {
   "use strict";
 
-  var menuClass = '#mobile-toggle';
+  var menuClassMobile = '#mobile-toggle';
   var headerClass = 'header';
   jQuery(window).scroll(function () {
-    var scroll = jQuery(window).scrollTop();
+    let scroll = jQuery(window).scrollTop();
 
     if (scroll >= 120) {
-      jQuery(menuClass + ', ' + headerClass).removeClass('is-active');
+      jQuery(menuClassMobile + ', ' + headerClass).removeClass('is-active');
     }
   });
 } //----------------------------------

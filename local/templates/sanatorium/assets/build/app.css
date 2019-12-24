@@ -1591,6 +1591,14 @@ footer .bottom-footer .link-scroll-up:hover {
     padding: 12px 30px 12px 80px;
   }
 
+  #top-bar .top .list-info a p {
+    font-size: 10px !important;
+  }
+
+  #top-bar .top .list-actions li a p {
+    font-size: 10px !important;
+  }
+
   header {
     left: -280px;
     transition: all .3s;

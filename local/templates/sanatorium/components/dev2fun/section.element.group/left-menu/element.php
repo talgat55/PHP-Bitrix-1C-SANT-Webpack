@@ -8,16 +8,16 @@ $this->AddDeleteAction($arResult['ID'], $arResult['DELETE_LINK'], CIBlock::GetAr
 <li class="element-item" id="<?= $this->GetEditAreaId($arResult['ID']); ?>">
     <?
 
-    $image = CFile::GetPath($arResult['PROPERTIES']['IMAGE_SERVICE']['VALUE']);
-    //  var_dump($image);
-    $redySvg = file_get_contents(__DIR__ .'/../../../../../../../'.$image);
+//    $image = CFile::GetPath($arResult['PROPERTIES']['IMAGE_SERVICE']['VALUE']);
+//
+//    $redySvg = file_get_contents(__DIR__ .'/../../../../../../../'.$image);
 
     ?>
 
     <a href="<? echo $arResult["DETAIL_PAGE_URL"] ?>" class=" d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
             <div class="images-icon">
-                <?= $redySvg; ?>
+<!--                --><?//= $redySvg; ?>
             </div>
             <span><? echo $arResult["NAME"] ?></span>
         </div>

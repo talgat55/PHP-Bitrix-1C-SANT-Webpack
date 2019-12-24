@@ -147,14 +147,10 @@ function backToTop() {
 //------------------------------------
 function mobileMenu() {
     "use strict";
-    let menuClass = '#mobile-toggle';
-    let mobileClass = jQuery('header');
-    let bodyClass = 'body';
+    jQuery('body').on('click', '#mobile-toggle', function () {
 
-    jQuery(bodyClass).on('click', menuClass, function () {
-
-        mobileClass.toggleClass('is-active');
-        jQuery(menuClass).toggleClass('is-active');
+        jQuery('header').toggleClass('is-active');
+        jQuery('#mobile-toggle').toggleClass('is-active');
 
         return false;
     });
@@ -168,13 +164,13 @@ function mobileMenu() {
 //------------------------------------
 function hideLeftMenuOnScroll() {
     "use strict";
-    var menuClass = '#mobile-toggle';
+    var menuClassMobile = '#mobile-toggle';
     var headerClass = 'header';
 
     jQuery(window).scroll(function () {
-        var scroll = jQuery(window).scrollTop();
+        let scroll = jQuery(window).scrollTop();
         if (scroll >= 120) {
-            jQuery(menuClass + ', ' + headerClass).removeClass('is-active');
+            jQuery(menuClassMobile + ', ' + headerClass).removeClass('is-active');
         }
     });
 }
